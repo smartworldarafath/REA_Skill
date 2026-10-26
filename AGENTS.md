@@ -39,3 +39,13 @@ Reference the skill in your prompt:
 $rea-personal-use-authorization
 ```
 
+## Agent Reach Integration Directive
+When the user asks to search the web, read external links, research vulnerabilities, or fetch discussions from platforms (Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn, Bilibili, login-walled web):
+- Leverage `agent-reach` (https://github.com/Panniantong/agent-reach) CLI to access internet sources with zero API fees:
+  - `agent-reach channels` — check status, actions, and parameters
+  - `agent-reach <channel> <action> [args]` — perform targeted search/reads
+  - `agent-reach read <url>` — automatically detect channel and parse link
+- Seamlessly pair Agent Reach with REA workflows to cross-reference security CVEs, analyze upstream code, and read documentation.
+- Maintain strict read-only operation: never post, comment, or compromise credentials.
+
+

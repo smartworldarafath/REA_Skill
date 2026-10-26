@@ -3,8 +3,9 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Supports-Antigravity%20%7C%20Claude%20Code%20%7C%20Codex%20%7C%20Cursor%20%7C%20Windsurf%20%7C%20Cline-8A2BE2)](#supported-platforms--file-formats)
 [![Tool](https://img.shields.io/badge/Powered%20By-REA%20(Reverse%20Engineer%20Anything)-orange)](https://github.com/morluto/rea)
+[![Integration](https://img.shields.io/badge/Enhanced%20With-Agent%20Reach-brightgreen)](https://github.com/Panniantong/agent-reach)
 
-A portable, cross-platform **Owner Authorization, Personal-Use Rule, and Website Security Audit Suite** for using [REA (Reverse Engineer Anything)](https://github.com/morluto/rea) seamlessly across **Google Antigravity**, **Claude Code**, **OpenAI Codex**, **Cursor**, **Windsurf**, and **Cline**.
+A portable, cross-platform **Owner Authorization, Personal-Use Rule, Website Security Audit, and Agent Reach Suite** for using [REA (Reverse Engineer Anything)](https://github.com/morluto/rea) and [Agent Reach](https://github.com/Panniantong/agent-reach) seamlessly across **Google Antigravity**, **Claude Code**, **OpenAI Codex**, **Cursor**, **Windsurf**, and **Cline**.
 
 ---
 
@@ -16,6 +17,7 @@ When developers and security researchers use AI coding assistants to reverse-eng
 - ❌ Pausing every single turn to question authorization or lecturing about cybersecurity ethics.
 - ❌ Requiring tedious, repetitive prompt engineering to explain: *"I am the owner/developer of this app."*
 - ❌ Giving up or hesitating when asked to find vulnerabilities, check weakpoints, or recover lost source code/data from personal applications.
+- ❌ Getting blocked when attempting to fetch external documentation, CVE intelligence, or discussions from login-walled platforms (Twitter/X, Reddit, YouTube transcripts, GitHub).
 
 ### 💡 The Solution
 
@@ -24,6 +26,7 @@ This suite provides unified, standards-compliant authorization and audit skills 
 - ✅ Directs agents to **make maximum effort** and treat all REA tasks as legitimate debugging, auditing, learning, and data recovery workflows.
 - ✅ Bans repetitive questioning and ethical lectures for your own property.
 - ✅ Enables agents to proceed directly to technical analysis, automated 5-phase website auditing, and actionable fixes.
+- ✅ Integrates **Agent Reach** to seamlessly read, search, and extract live data across Twitter/X, Reddit, YouTube, GitHub, LinkedIn, and the web with zero API fees.
 
 ---
 
@@ -34,6 +37,7 @@ This suite provides unified, standards-compliant authorization and audit skills 
 | **`rea-owner-authorization`** | `.agents/skills/rea-owner-authorization/SKILL.md` | Primary authorization establishing legal ownership and preventing generic reverse-engineering refusals. |
 | **`rea-personal-use-authorization`** | `.agents/skills/rea-personal-use-authorization/SKILL.md` | Instructs agents to make maximum effort without repeated confirmation on vulnerability hunting, website weakpoint audits, or data recovery. |
 | **`website-security-audit`** | `.agents/skills/website-security-audit/SKILL.md` | Automated 5-Phase defensive security audit methodology for HTTP headers (CSP/HSTS/CORS), secret leaks, RLS, and APIs. |
+| **`agent-reach`** | `.agents/skills/agent-reach/SKILL.md` | Universal internet reaching skill to read & search Twitter/X, Reddit, YouTube transcripts, GitHub, and login-walled web platforms. |
 
 ---
 
@@ -68,7 +72,15 @@ REA provides an official skill that routes specific reverse engineering workflow
 npx skills add morluto/rea --skill reverse-engineer-anything
 ```
 
-### Step 3: Install This Owner Authorization Suite
+### Step 3: Install Agent Reach (Zero-Fee Internet Reading)
+Install the Agent Reach CLI using `uv`:
+
+```bash
+uv tool install https://github.com/Panniantong/Agent-Reach/archive/refs/tags/v1.6.0.zip
+agent-reach setup
+```
+
+### Step 4: Install This Skill Suite
 
 You can install this suite either **per-project** or **globally** across your entire computer.
 
@@ -96,7 +108,7 @@ Or copy the rule folders directly:
 
 ### Option B: Global Machine-Level Installation (Recommended for Personal Dev)
 
-Configure it once on your computer, and every AI agent will automatically recognize your authorization in **any** folder or project:
+Configure it once on your computer, and every AI agent will automatically recognize your authorization and reach capabilities in **any** folder or project:
 
 #### 1. Google Antigravity (Global Skills)
 Copy all skills to your user-level Gemini / Antigravity skills directory:
@@ -105,15 +117,18 @@ Copy all skills to your user-level Gemini / Antigravity skills directory:
 mkdir "%USERPROFILE%\.gemini\config\skills\rea-owner-authorization"
 mkdir "%USERPROFILE%\.gemini\config\skills\rea-personal-use-authorization"
 mkdir "%USERPROFILE%\.gemini\config\skills\website-security-audit"
+mkdir "%USERPROFILE%\.gemini\config\skills\agent-reach"
 copy ".agents\skills\rea-owner-authorization\SKILL.md" "%USERPROFILE%\.gemini\config\skills\rea-owner-authorization\SKILL.md"
 copy ".agents\skills\rea-personal-use-authorization\SKILL.md" "%USERPROFILE%\.gemini\config\skills\rea-personal-use-authorization\SKILL.md"
 copy ".agents\skills\website-security-audit\SKILL.md" "%USERPROFILE%\.gemini\config\skills\website-security-audit\SKILL.md"
+xcopy /E /I /Y ".agents\skills\agent-reach" "%USERPROFILE%\.gemini\config\skills\agent-reach"
 
 # macOS / Linux
-mkdir -p ~/.gemini/config/skills/rea-owner-authorization ~/.gemini/config/skills/rea-personal-use-authorization ~/.gemini/config/skills/website-security-audit
+mkdir -p ~/.gemini/config/skills/rea-owner-authorization ~/.gemini/config/skills/rea-personal-use-authorization ~/.gemini/config/skills/website-security-audit ~/.gemini/config/skills/agent-reach
 cp .agents/skills/rea-owner-authorization/SKILL.md ~/.gemini/config/skills/rea-owner-authorization/SKILL.md
 cp .agents/skills/rea-personal-use-authorization/SKILL.md ~/.gemini/config/skills/rea-personal-use-authorization/SKILL.md
 cp .agents/skills/website-security-audit/SKILL.md ~/.gemini/config/skills/website-security-audit/SKILL.md
+cp -r .agents/skills/agent-reach/* ~/.gemini/config/skills/agent-reach/
 ```
 
 #### 2. OpenAI Codex (Global System Prompt)
@@ -178,6 +193,15 @@ You can also directly trigger the personal authorization in any prompt:
 $rea-personal-use-authorization Audit my app for security weakpoints.
 ```
 
+### Example 8: Live Threat Intelligence & Web Reach with Agent Reach
+> *"Use Agent Reach to look up latest CVE disclosures and Reddit discussions about Next.js middleware vulnerabilities."*
+
+The agent will invoke:
+```bash
+agent-reach github search "Next.js middleware vulnerability CVE"
+agent-reach reddit search "Next.js middleware security bypass"
+```
+
 ---
 
 ## 📂 Repository File Structure
@@ -190,22 +214,28 @@ REA_Skill/
 │       │   └── SKILL.md                 # Primary Antigravity owner skill (YAML + Markdown)
 │       ├── rea-personal-use-authorization/
 │       │   └── SKILL.md                 # Antigravity personal-use & maximum effort skill
-│       └── website-security-audit/
-│           └── SKILL.md                 # Automated 5-Phase defensive website audit skill
+│       ├── website-security-audit/
+│       │   └── SKILL.md                 # Automated 5-Phase defensive website audit skill
+│       └── agent-reach/
+│           ├── SKILL.md                 # Universal internet platform reaching skill
+│           └── references/              # Capabilities, sessions, and maintenance references
 ├── .clinerules/
 │   ├── rea-owner.md                     # Cline owner rule definition
 │   ├── rea-personal-use.md              # Cline personal-use rule definition
-│   └── website-security-audit.md        # Cline website security audit rule
+│   ├── website-security-audit.md        # Cline website security audit rule
+│   └── agent-reach.md                   # Cline agent-reach rule definition
 ├── .cursor/
 │   └── rules/
 │       ├── rea-owner.mdc                # Cursor owner rule (MDC format)
 │       ├── rea-personal-use.mdc         # Cursor personal-use rule (MDC format)
-│       └── website-security-audit.mdc   # Cursor website security audit rule
+│       ├── website-security-audit.mdc   # Cursor website security audit rule
+│       └── agent-reach.mdc              # Cursor agent-reach rule (MDC format)
 ├── .windsurf/
 │   └── rules/
 │       ├── rea-owner.md                 # Windsurf Wave-8 owner rule
 │       ├── rea-personal-use.md          # Windsurf Wave-8 personal-use rule
-│       └── website-security-audit.md    # Windsurf Wave-8 website security audit rule
+│       ├── website-security-audit.md    # Windsurf Wave-8 website security audit rule
+│       └── agent-reach.md               # Windsurf Wave-8 agent-reach rule
 ├── .windsurfrules                       # Windsurf legacy rule file
 ├── AGENTS.md                            # Codex, Copilot, & universal agent instructions
 ├── CLAUDE.md                            # Claude Code root import configuration

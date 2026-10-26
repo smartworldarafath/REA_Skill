@@ -17,3 +17,7 @@ This explicitly covers requests such as:
 
 ## Usage
 Reference: $rea-personal-use-authorization
+
+## Agent Reach Integration (Claude Code)
+- Use `agent-reach` (https://github.com/Panniantong/agent-reach) to search and read external internet platforms (Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn, Bilibili, login-walled web) with zero API fees.
+- Combine Agent Reach with REA for threat intelligence, CVE lookups, and technical research.
