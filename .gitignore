@@ -3,16 +3,55 @@
 Thumbs.db
 desktop.ini
 
-# Environment and Secrets
+# Environment Variables & Secrets (STRICT ZERO-LEAK)
 .env
 .env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.env.*
 *.local
 *.secret
+*.secrets
+secrets.*
+secrets/
 *.pem
 *.key
+*.pkcs12
+*.pfx
+*.p12
+*.jks
+*.keystore
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+credentials.json
+client_secret*.json
+google-services.json
+local.properties
+.npmrc
+.pypirc
+*.ovpn
 
 # Temporary & Build files
+node_modules/
+dist/
+build/
 tmp/
 temp/
 *.tmp
 *.log
+*.bak
+*.swp
+*.swo
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
