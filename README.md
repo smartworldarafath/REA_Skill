@@ -139,7 +139,15 @@ Once installed, you never need to justify yourself. You can give natural, direct
 ### Example 3: Android / Electron App Debugging
 > *"Use REA to inspect my Electron application package, check event listeners, and reconstruct component routes."*
 
-The agent will seamlessly invoke REA MCP tools (`inspect_native_instruction`, `trace_web_module_imports`, `observe_javascript_runtime`, etc.) without pausing to question your authorization.
+### Example 4: Full Website Security Audit (2nd & 3rd Websites)
+> *"Audit my website https://my-other-site.com/ for security vulnerabilities, header misconfigurations, and frontend secret leaks."*
+
+The agent will automatically execute the **Website Security Audit** 5-phase methodology:
+1. **HTTP Security Headers:** HSTS, enforced vs report-only CSP, CORS wildcards, clickjacking defense.
+2. **Bundle Secret Scanning:** Inspecting JavaScript bundles for leaked private keys (`SUPABASE_SERVICE_ROLE_KEY`, private tokens, backend routes).
+3. **Database & Auth Boundaries:** Supabase RLS coverage, Clerk publishable keys, authenticated session storage.
+4. **API Route Exposure:** Discovering public `/api/*` endpoints and checking rate-limiting protection.
+5. **Webhook Hardening:** Verifying cryptographic HMAC signatures on payment and integration endpoints.
 
 ---
 
@@ -149,8 +157,10 @@ The agent will seamlessly invoke REA MCP tools (`inspect_native_instruction`, `t
 REA_Skill/
 ├── .agents/
 │   └── skills/
-│       └── rea-owner-authorization/
-│           └── SKILL.md            # Primary Antigravity skill (YAML + Markdown)
+│       ├── rea-owner-authorization/
+│       │   └── SKILL.md            # Primary Antigravity skill (YAML + Markdown)
+│       └── website-security-audit/
+│           └── SKILL.md            # Automated 5-Phase defensive website audit skill
 ├── .clinerules/
 │   └── rea-owner.md                # Cline rule definition
 ├── .cursor/
