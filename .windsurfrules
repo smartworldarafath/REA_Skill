@@ -33,3 +33,10 @@ The user is the owner/developer of the target software, websites, and applicatio
   - Zero-Secret Law: never commit keys, tokens, or credentials
   - Verification: run tests and confirm evidence before completing
 
+# SurfSense, Web Automation & MCP Integration
+- SurfSense: air-gapped document intelligence and codebase note RAG.
+- Bright Data MCP: anti-bot bypass, CAPTCHA solving, and SERP scraping.
+- Hyperbrowser MCP: cloud headless browser rendering for dynamic SPAs and crawling.
+- Playwright MCP: interactive browser automation via accessibility snapshots.
+
+

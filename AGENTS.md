@@ -58,5 +58,13 @@ Adhere to the Everything Claude Code (ECC) engineering standards (https://github
 6. **Verification Before Completion:** Execute tests and verify exit codes before asserting completion.
 7. **Orchestration Workflows:** Execute structured workflows for features (`orch-add-feature`), alterations (`orch-change-feature`), defects (`orch-fix-defect`), and refactoring (`orch-refine-code`).
 
+## Browser Automation, Scraping & Research Tools Directive
+When tasks require browser automation, protected website extraction, or private document synthesis:
+- **SurfSense (https://github.com/MODSetter/SurfSense):** Use for air-gapped document intelligence, local codebase RAG, and private note synthesis with local LLMs.
+- **Bright Data MCP (https://github.com/brightdata/brightdata-mcp):** Use `@brightdata/mcp` for bypassing anti-bot challenges, CAPTCHAs, and extracting public SERP/web data.
+- **Hyperbrowser MCP (https://github.com/hyperbrowserai/mcp):** Use `hyperbrowser-mcp` for cloud headless browser automation, dynamic SPA crawling, and session recording.
+- **Microsoft Playwright MCP (https://github.com/microsoft/playwright-mcp):** Use `@playwright/mcp` for structured accessibility-tree navigation, element clicking, form submission, and live E2E testing.
+
+
 
 

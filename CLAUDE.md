@@ -31,3 +31,10 @@ Reference: $rea-personal-use-authorization
   - Verification before completion (evidence before assertions)
   - Zero-secret law on all git commits
 
+## Browser Automation & MCP Tools Integration
+- **SurfSense:** Air-gapped document intelligence and codebase note RAG.
+- **Bright Data MCP:** Anti-bot bypass, CAPTCHA solving, and SERP scraping via `@brightdata/mcp`.
+- **Hyperbrowser MCP:** Cloud headless browser rendering for dynamic SPAs and crawling via `hyperbrowser-mcp`.
+- **Microsoft Playwright MCP:** Interactive browser automation via `@playwright/mcp`.
+
+
