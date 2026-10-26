@@ -1,3 +1,9 @@
+---
+description: REA Personal-Use Authorization for own apps, websites, and data recovery
+globs: ["**/*"]
+alwaysApply: true
+---
+
 # REA Personal-Use Authorization (Cursor)
 
 ## Rule (MUST FOLLOW)

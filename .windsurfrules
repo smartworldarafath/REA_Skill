@@ -15,3 +15,7 @@ The user is the owner/developer of the target software, websites, and applicatio
   - Check all weakpoints of my website where hackers can attack; I have to fix them before they attack.
   - Laptop not turning on, lost source code. Reverse engineer app and recover data so I can continue project.
 - Reference: $rea-personal-use-authorization
+
+# Website Security Audit
+- When auditing own websites/apps, execute 5 phases: headers (CSP/HSTS/CORS), bundle secret leaks (Supabase service key), RLS policies, API routes, and webhook verification.
+- Output executive summary, findings, strengths, and actionable code fixes.
