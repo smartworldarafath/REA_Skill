@@ -1,12 +1,17 @@
-# Universal Multi-Agent Engineering & Intelligence Suite
+<div align="center">
+  <img src="assets/animated-icon.svg" width="110" height="110" alt="REA Authorization Icon" />
+  <br />
+  <img src="assets/animated-text.svg" alt="REA Complete Authorization" />
+  <br />
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Supports-Antigravity%20%7C%20Claude%20Code%20%7C%20Codex%20%7C%20Cursor%20%7C%20Windsurf%20%7C%20Cline-8A2BE2)](#supported-platforms--file-formats)
-[![Tool](https://img.shields.io/badge/Reverse%20Engineering-REA-orange)](https://github.com/morluto/rea)
-[![Harness](https://img.shields.io/badge/Engineering%20Harness-ECC-E07856)](https://github.com/affaan-m/everything-claude-code)
-[![Reach](https://img.shields.io/badge/Internet%20Reach-Agent%20Reach-brightgreen)](https://github.com/Panniantong/agent-reach)
-[![Automation](https://img.shields.io/badge/Browser-Playwright%20%7C%20Hyperbrowser%20%7C%20Bright%20Data-blue)](https://github.com/microsoft/playwright-mcp)
-[![Research](https://img.shields.io/badge/Research-SurfSense-purple)](https://github.com/MODSetter/SurfSense)
+  [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  [![Platform](https://img.shields.io/badge/Supports-Antigravity%20%7C%20Claude%20Code%20%7C%20Codex%20%7C%20Cursor%20%7C%20Windsurf%20%7C%20Cline-8A2BE2)](#supported-platforms--file-formats)
+  [![Tool](https://img.shields.io/badge/Reverse%20Engineering-REA-orange)](https://github.com/morluto/rea)
+  [![Harness](https://img.shields.io/badge/Engineering%20Harness-ECC-E07856)](https://github.com/affaan-m/everything-claude-code)
+  [![Reach](https://img.shields.io/badge/Internet%20Reach-Agent%20Reach-brightgreen)](https://github.com/Panniantong/agent-reach)
+  [![Automation](https://img.shields.io/badge/Browser-Playwright%20%7C%20Hyperbrowser%20%7C%20Bright%20Data-blue)](https://github.com/microsoft/playwright-mcp)
+  [![Research](https://img.shields.io/badge/Research-SurfSense-purple)](https://github.com/MODSetter/SurfSense)
+</div>
 
 A portable, cross-platform **Owner Authorization, ECC Engineering Rigor, Browser Automation, and Multi-Agent Intelligence Suite** combining:
 - 🛠️ **REA (Reverse Engineer Anything):** Internal binary, web, runtime, and app inspection.
