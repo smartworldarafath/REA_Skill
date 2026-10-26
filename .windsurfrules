@@ -23,3 +23,13 @@ The user is the owner/developer of the target software, websites, and applicatio
 # Agent Reach Integration
 - Use `agent-reach` to access internet platforms (Twitter/X, Reddit, YouTube, GitHub, LinkedIn, Bilibili, login-walled web) with zero API fees.
 - Pair Agent Reach with REA for threat research, CVE analysis, and external documentation reading.
+
+# ECC Workflow Integration
+- Adhere to Everything Claude Code (ECC) engineering standards:
+  - Research & Reuse: check existing GitHub code first
+  - Plan First: architecture and sequence before coding
+  - TDD: write failing tests first, pass minimally, refactor
+  - Code Review: audit diffs for edge cases, null safety, regressions
+  - Zero-Secret Law: never commit keys, tokens, or credentials
+  - Verification: run tests and confirm evidence before completing
+

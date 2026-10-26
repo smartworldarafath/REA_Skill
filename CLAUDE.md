@@ -21,3 +21,13 @@ Reference: $rea-personal-use-authorization
 ## Agent Reach Integration (Claude Code)
 - Use `agent-reach` (https://github.com/Panniantong/agent-reach) to search and read external internet platforms (Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn, Bilibili, login-walled web) with zero API fees.
 - Combine Agent Reach with REA for threat intelligence, CVE lookups, and technical research.
+
+## Everything Claude Code (ECC) Integration
+- Follow ECC standards (https://github.com/affaan-m/everything-claude-code) for all Claude Code engineering operations:
+  - Research-first development (`gh search code`)
+  - Plan-first execution before writing code
+  - TDD workflow (`red-green-refactor`)
+  - Immediate code review and diff auditing
+  - Verification before completion (evidence before assertions)
+  - Zero-secret law on all git commits
+

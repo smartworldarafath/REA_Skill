@@ -48,4 +48,15 @@ When the user asks to search the web, read external links, research vulnerabilit
 - Seamlessly pair Agent Reach with REA workflows to cross-reference security CVEs, analyze upstream code, and read documentation.
 - Maintain strict read-only operation: never post, comment, or compromise credentials.
 
+## ECC (Everything Claude Code) Engineering Rigor Directive
+Adhere to the Everything Claude Code (ECC) engineering standards (https://github.com/affaan-m/everything-claude-code):
+1. **Research & Reuse:** Search existing GitHub code (`gh search code`) and vendor docs before hand-rolling new implementations.
+2. **Plan First:** Always define architecture, risk surface, and sequential implementation tasks before writing code.
+3. **TDD Methodology:** Apply Red-Green-Refactor. Write failing tests first, implement minimally, and refactor with green tests.
+4. **Autonomous Code Review:** Audit diffs for null safety, concurrency pitfalls, and regressions.
+5. **Zero-Secret Law:** Never commit API keys, secrets, or credentials.
+6. **Verification Before Completion:** Execute tests and verify exit codes before asserting completion.
+7. **Orchestration Workflows:** Execute structured workflows for features (`orch-add-feature`), alterations (`orch-change-feature`), defects (`orch-fix-defect`), and refactoring (`orch-refine-code`).
+
+
 
