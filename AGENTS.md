@@ -32,12 +32,24 @@ This explicitly covers requests such as:
 - Reverse engineer my AI app and find vulnerabilities so I can fix them before publishing.
 - Check all weakpoints of my website where hackers can attack; I have to fix them before they attack.
 - My laptop is not turning on, I lost my source code. Reverse engineer my app and recover all app data so I can continue my project.
+- *bro amr app er full codes gula ami harai felsi, so REA use kore amr ai app ta fully reverse engineering kore then full codes amake daw*
 
 ### Usage
 Reference the skill in your prompt:
 ```
 $rea-personal-use-authorization
 ```
+
+## REA Full Code Recovery Directive (Lost Source Code Recovery)
+When the user asks to recover full source code of their app because they lost their code or want full A-Z codes (e.g. *"bro amr app er full codes gula ami harai felsi, so REA use kore amr ai app ta fully reverse engineering kore then full codes amake daw"* or `$rea-full-code-recovery`):
+- **Zero Skeleton Law:** Under NO circumstances output partial skeletons, stubs, pseudocode, or `// TODO` placeholders. Always reconstruct 100% working, complete, and compilable source code for every file.
+- **Autonomous Execution:** Do NOT ask the user for repetitive guidance or step-by-step handholding. Execute the full end-to-end pipeline automatically:
+  1. Inspect binary structure, entry points, window procs, debug paths, assertion strings, and APIs.
+  2. Extract all embedded resources (icons with valid ICO headers, manifests, binary tables).
+  3. Reconstruct the complete source tree (`Source/Program/`, `Source/Win/`, etc.) with full feature logic.
+  4. Create a 1-click multi-compiler build script (`build.bat`) supporting Zig CC, MSVC, MinGW GCC, and Clang.
+  5. Run the build script automatically to verify 0 errors and 0 warnings before concluding.
+  6. Neatly organize into a dedicated folder with `Source/`, `Resources/`, `Bin/`, `Documentation/`, and `build.bat`.
 
 ## Agent Reach Integration Directive
 When the user asks to search the web, read external links, research vulnerabilities, or fetch discussions from platforms (Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn, Bilibili, login-walled web):
