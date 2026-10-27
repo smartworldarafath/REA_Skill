@@ -26,6 +26,14 @@
   <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/opencode.svg" width="30" height="30" alt="OpenCode" title="OpenCode" /></a>
 </p>
 
+# REA_Skill: REA (Reverse Engineer Anything) Skills for Claude Code, Codex, Cursor & Antigravity
+
+**REA_Skill** is the open-source skill suite for [REA (Reverse Engineer Anything)](https://github.com/morluto/rea): 21 agent skills and 500+ prompts to recover lost source code, decompile binaries and APKs, and audit your own apps and websites with Claude Code, OpenAI Codex, Cursor, Windsurf, Cline and Google Antigravity. 🌐 [Website](https://smartworldarafath.github.io/REA_Skill/)
+
+```bash
+npx skills add smartworldarafath/REA_Skill
+```
+
 A portable, cross-platform **Owner Authorization, ECC Engineering Rigor, Browser Automation, and Multi-Agent Intelligence Suite** combining:
 - 🛠️ **REA (Reverse Engineer Anything):** Internal binary, web, runtime, and app inspection.
 - 🏛️ **ECC (Everything Claude Code):** Rigorous development pipeline (Research → Plan → TDD → Review → Verify).

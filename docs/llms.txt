@@ -1,0 +1,12 @@
+# REA_Skill (Reverse Engineer Anything Skill)
+
+> REA_Skill: 21 agent skills + 500 prompts for Reverse Engineer Anything (REA). Recover lost source code and audit apps with Claude Code, Codex, Cursor.
+
+- Website: https://smartworldarafath.github.io/REA_Skill/
+- Repository: https://github.com/smartworldarafath/REA_Skill
+- Install (Claude Code): /plugin marketplace add smartworldarafath/REA_Skill
+- Install (any agent): npx skills add smartworldarafath/REA_Skill
+- License: MIT
+
+## Skills
+21 skills under .agents/skills/ covering binary disassembly, full source code recovery, mobile (APK/IPA), web bundles, protocols, databases, game assets, firmware, crash triage and website security audit.

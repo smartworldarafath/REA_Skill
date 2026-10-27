@@ -20,6 +20,10 @@
     "check-plugin-version": "node scripts/sync-plugin-version.mjs --check"
   },
   "keywords": [
+    "reverse-engineer-anything",
+    "rea-mcp",
+    "agent-skills",
+    "claude-code-plugin",
     "reverse-engineering",
     "decompilation",
     "code-recovery",
