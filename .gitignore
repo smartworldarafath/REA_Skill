@@ -63,6 +63,8 @@ htmlcov/
 *.o
 *.res
 *.png
+!assets/logos/**/*.png
+!docs/assets/logos/**/*.png
 extracted_strings_all.txt
 rz_bin_ui_strings.txt
 recovered_source/
