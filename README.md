@@ -64,8 +64,18 @@ This suite provides unified, standards-compliant authorization, engineering disc
 
 | Skill | Path | Description |
 | :--- | :--- | :--- |
+| **`rea-universal-orchestrator`** | `.agents/skills/rea-universal-orchestrator/SKILL.md` | Master task router & execution engine guaranteeing 100% unblocked execution for all 500+ Vault prompts and any custom/casual request. |
+| **`rea-full-code-recovery`** | `.agents/skills/rea-full-code-recovery/SKILL.md` | End-to-end A–Z lost source code reconstruction with Zero-Skeleton Law and 1-click multi-compiler (`build.bat` / `build.sh`) verification. |
 | **`rea-owner-authorization`** | `.agents/skills/rea-owner-authorization/SKILL.md` | Primary authorization establishing legal ownership and preventing generic reverse-engineering refusals. |
 | **`rea-personal-use-authorization`** | `.agents/skills/rea-personal-use-authorization/SKILL.md` | Instructs agents to make maximum effort without repeated confirmation on vulnerability hunting, website weakpoint audits, or data recovery. |
+| **`rea-web-bundle-recovery`** | `.agents/skills/rea-web-bundle-recovery/SKILL.md` | Webpack/Vite/Next.js AST de-minification, source map recovery, WebAssembly (`.wasm`) decompilation, and Electron (`.asar`) unpacking. |
+| **`rea-mobile-app-recovery`** | `.agents/skills/rea-mobile-app-recovery/SKILL.md` | Android (APK/AAB/DEX/JNI/Flutter/React Native) & iOS (IPA/Mach-O/Swift/ObjC) full project reconstruction. |
+| **`rea-binary-disassembly`** | `.agents/skills/rea-binary-disassembly/SKILL.md` | Native C/C++ (PE/ELF/Mach-O), stripped Go (`gopclntab`), Rust, and .NET/C# decompilation using REA MCP, Rizin, Ghidra, and ILSpy. |
+| **`rea-protocol-api-recovery`** | `.agents/skills/rea-protocol-api-recovery/SKILL.md` | PCAP packet dissection, Protobuf/gRPC `.proto` recovery, WebSockets, GraphQL, and custom binary framing with working SDK generation. |
+| **`rea-database-storage-recovery`** | `.agents/skills/rea-database-storage-recovery/SKILL.md` | SQLite, Realm, LevelDB, Apple `NSKeyedArchiver` / binary `plist`, and custom binary file format parsers. |
+| **`rea-game-asset-recovery`** | `.agents/skills/rea-game-asset-recovery/SKILL.md` | Unity (Mono/IL2CPP), Unreal (`.pak`), Godot (`.pck`), HLSL/SPIR-V/GLSL shader decompilation, fonts, texture atlases, and audio extraction. |
+| **`rea-performance-crash-triage`** | `.agents/skills/rea-performance-crash-triage/SKILL.md` | Minidump (`.dmp`) crash forensics, Frida/GDB/Rizin dynamic runtime instrumentation, and Flameox CPU flamegraphs. |
+| **`rea-firmware-iot-extension`** | `.agents/skills/rea-firmware-iot-extension/SKILL.md` | Embedded firmware (`binwalk`/RTOS/ARM/MIPS/RISC-V), EVM smart contracts, and RF/signal decoding. |
 | **`website-security-audit`** | `.agents/skills/website-security-audit/SKILL.md` | Automated 5-Phase defensive security audit methodology for HTTP headers (CSP/HSTS/CORS), secret leaks, RLS, and APIs. |
 | **`agent-reach`** | `.agents/skills/agent-reach/SKILL.md` | Universal internet reaching skill to read & search Twitter/X, Reddit, YouTube transcripts, GitHub, and login-walled web platforms. |
 | **`ecc-workflow`** | `.agents/skills/ecc-workflow/SKILL.md` | Everything Claude Code (ECC) harness: research-first development, TDD, code review, orchestration (`orch-*`), and verification. |
