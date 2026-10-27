@@ -1,0 +1,47 @@
+{
+  "name": "rea-skills",
+  "version": "2.0.0",
+  "description": "Universal Reverse Engineering, Lost Source Code Recovery, Binary Disassembly, Web/Mobile Security Auditing & Asset Reconstruction skill suite powered by REA MCP.",
+  "author": {
+    "name": "smartworldarafath",
+    "url": "https://github.com/smartworldarafath"
+  },
+  "homepage": "https://github.com/smartworldarafath/REA_Skill",
+  "repository": "https://github.com/smartworldarafath/REA_Skill",
+  "license": "MIT",
+  "keywords": [
+    "reverse-engineering",
+    "decompilation",
+    "code-recovery",
+    "binary-analysis",
+    "security-audit",
+    "mcp",
+    "rea",
+    "mobile-security",
+    "web-security",
+    "grilling"
+  ],
+  "skills": [
+    "./.agents/skills/agent-reach",
+    "./.agents/skills/brightdata-mcp",
+    "./.agents/skills/ecc-workflow",
+    "./.agents/skills/hyperbrowser-mcp",
+    "./.agents/skills/playwright-mcp",
+    "./.agents/skills/rea-binary-disassembly",
+    "./.agents/skills/rea-database-storage-recovery",
+    "./.agents/skills/rea-firmware-iot-extension",
+    "./.agents/skills/rea-full-code-recovery",
+    "./.agents/skills/rea-game-asset-recovery",
+    "./.agents/skills/rea-grill-me",
+    "./.agents/skills/rea-grilling",
+    "./.agents/skills/rea-mobile-app-recovery",
+    "./.agents/skills/rea-owner-authorization",
+    "./.agents/skills/rea-performance-crash-triage",
+    "./.agents/skills/rea-personal-use-authorization",
+    "./.agents/skills/rea-protocol-api-recovery",
+    "./.agents/skills/rea-universal-orchestrator",
+    "./.agents/skills/rea-web-bundle-recovery",
+    "./.agents/skills/surfsense",
+    "./.agents/skills/website-security-audit"
+  ]
+}

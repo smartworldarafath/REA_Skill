@@ -176,31 +176,38 @@
                 </div>
                 <p class="terminal-prompt">
                   <span class="prompt-symbol" aria-hidden="true">&rsaquo;</span>
-                  <span id="home-install-prompt">
-                    Install REA_Skill and connect it to this coding agent using
-                    <span translate="no">git clone https://github.com/smartworldarafath/REA_Skill.git</span>.
-                    Show me the setup plan for approval, then verify the installation.
-                  </span>
+                  <span id="home-install-prompt">/plugin marketplace add smartworldarafath/REA_Skill &amp;&amp; /plugin install rea-skills@smartworldarafath</span>
                   <span class="terminal-cursor" aria-hidden="true"></span>
                 </p>
               </div>
             </div>
 
             <details class="home-setup-command" open="">
-              <summary>Or run this in your terminal:</summary>
+              <summary>Or install via Universal Skills CLI (skills.sh):</summary>
+              <div class="code-block code-inline" style="margin-bottom: 8px;">
+                <code id="setup-command-skills">npx skills add smartworldarafath/REA_Skill</code>
+                <button
+                  type="button"
+                  class="copy-button"
+                  data-copy="setup-command-skills"
+                  aria-label="Copy npx skills command"
+                >
+                  Copy
+                </button>
+              </div>
               <div class="code-block code-inline">
                 <code id="setup-command">git clone https://github.com/smartworldarafath/REA_Skill.git &amp;&amp; cd REA_Skill</code>
                 <button
                   type="button"
                   class="copy-button"
                   data-copy="setup-command"
-                  aria-label="Copy setup command"
+                  aria-label="Copy git clone command"
                 >
                   Copy
                 </button>
               </div>
               <p class="caption">
-                All skills &amp; rules are pre-configured for instant multi-agent execution.
+                All 21 skills, ADRs, and dual-harness rules are pre-configured for instant multi-agent execution.
               </p>
             </details>
 

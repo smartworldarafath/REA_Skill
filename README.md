@@ -60,23 +60,25 @@ This suite provides unified, standards-compliant authorization, engineering disc
 
 ---
 
-## 🧩 Included Skills
+## 🧩 Included Skills (21-Skill Multi-Domain Suite)
 
 | Skill | Path | Description |
 | :--- | :--- | :--- |
 | **`rea-universal-orchestrator`** | `.agents/skills/rea-universal-orchestrator/SKILL.md` | Master task router & execution engine guaranteeing 100% unblocked execution for all 500+ Vault prompts and any custom/casual request. |
+| **`rea-grill-me`** | `.agents/skills/rea-grill-me/SKILL.md` | *(User-Invoked)* Relentless interview to sharpen, scope, and stress-test reverse engineering, lost source recovery, or security audit plans before execution. |
+| **`rea-grilling`** | `.agents/skills/rea-grilling/SKILL.md` | *(Model-Invoked)* Active interrogation engine computing frontier decisions (Compilers, Fidelity, Assets, Secrets) formatted for 1-click `"yes"` acceptance. |
 | **`rea-full-code-recovery`** | `.agents/skills/rea-full-code-recovery/SKILL.md` | End-to-end A–Z lost source code reconstruction with Zero-Skeleton Law and 1-click multi-compiler (`build.bat` / `build.sh`) verification. |
 | **`rea-owner-authorization`** | `.agents/skills/rea-owner-authorization/SKILL.md` | Primary authorization establishing legal ownership and preventing generic reverse-engineering refusals. |
 | **`rea-personal-use-authorization`** | `.agents/skills/rea-personal-use-authorization/SKILL.md` | Instructs agents to make maximum effort without repeated confirmation on vulnerability hunting, website weakpoint audits, or data recovery. |
 | **`rea-web-bundle-recovery`** | `.agents/skills/rea-web-bundle-recovery/SKILL.md` | Webpack/Vite/Next.js AST de-minification, source map recovery, WebAssembly (`.wasm`) decompilation, and Electron (`.asar`) unpacking. |
-| **`rea-mobile-app-recovery`** | `.agents/skills/rea-mobile-app-recovery/SKILL.md` | Android (APK/AAB/DEX/JNI/Flutter/React Native) & iOS (IPA/Mach-O/Swift/ObjC) full project reconstruction. |
+| **`rea-mobile-app-recovery`** | `.agents/skills/rea-mobile-app-recovery/SKILL.md` | Android (APK/AAB/DEX/JNI/Flutter/React Native) & iOS (IPA/Mach-O/Swift/ObjC) full project reconstruction + PTKD/OWASP 5-Pillar scanner. |
 | **`rea-binary-disassembly`** | `.agents/skills/rea-binary-disassembly/SKILL.md` | Native C/C++ (PE/ELF/Mach-O), stripped Go (`gopclntab`), Rust, and .NET/C# decompilation using REA MCP, Rizin, Ghidra, and ILSpy. |
 | **`rea-protocol-api-recovery`** | `.agents/skills/rea-protocol-api-recovery/SKILL.md` | PCAP packet dissection, Protobuf/gRPC `.proto` recovery, WebSockets, GraphQL, and custom binary framing with working SDK generation. |
 | **`rea-database-storage-recovery`** | `.agents/skills/rea-database-storage-recovery/SKILL.md` | SQLite, Realm, LevelDB, Apple `NSKeyedArchiver` / binary `plist`, and custom binary file format parsers. |
 | **`rea-game-asset-recovery`** | `.agents/skills/rea-game-asset-recovery/SKILL.md` | Unity (Mono/IL2CPP), Unreal (`.pak`), Godot (`.pck`), HLSL/SPIR-V/GLSL shader decompilation, fonts, texture atlases, and audio extraction. |
 | **`rea-performance-crash-triage`** | `.agents/skills/rea-performance-crash-triage/SKILL.md` | Minidump (`.dmp`) crash forensics, Frida/GDB/Rizin dynamic runtime instrumentation, and Flameox CPU flamegraphs. |
 | **`rea-firmware-iot-extension`** | `.agents/skills/rea-firmware-iot-extension/SKILL.md` | Embedded firmware (`binwalk`/RTOS/ARM/MIPS/RISC-V), EVM smart contracts, and RF/signal decoding. |
-| **`website-security-audit`** | `.agents/skills/website-security-audit/SKILL.md` | Automated 5-Phase defensive security audit methodology for HTTP headers (CSP/HSTS/CORS), secret leaks, RLS, and APIs. |
+| **`website-security-audit`** | `.agents/skills/website-security-audit/SKILL.md` | Automated 5-Phase & 10-Layer defensive security audit methodology for HTTP headers (CSP/HSTS/CORS), secret leaks, RLS, and APIs. |
 | **`agent-reach`** | `.agents/skills/agent-reach/SKILL.md` | Universal internet reaching skill to read & search Twitter/X, Reddit, YouTube transcripts, GitHub, and login-walled web platforms. |
 | **`ecc-workflow`** | `.agents/skills/ecc-workflow/SKILL.md` | Everything Claude Code (ECC) harness: research-first development, TDD, code review, orchestration (`orch-*`), and verification. |
 | **`playwright-mcp`** | `.agents/skills/playwright-mcp/SKILL.md` | Microsoft Playwright MCP for live browser automation, accessibility snapshot navigation, and E2E testing. |
@@ -166,11 +168,30 @@ npm install -g ecc-universal ecc-agentshield
 
 ### Step 5: Install This Multi-Agent Skill Suite
 
-You can install this suite either **per-project** or **globally** across your entire computer.
+#### 🌟 Option A: 1-Click Claude Code Plugin (Recommended)
+REA_Skill is distributed as a native Claude Code plugin and self-hosted marketplace:
+```bash
+/plugin marketplace add smartworldarafath/REA_Skill
+/plugin install rea-skills@smartworldarafath
+```
+
+#### ⚡ Option B: Universal Agent Skills Standard (`skills.sh`)
+Install into any agent harness across Antigravity, Codex, Cursor, and Claude Code:
+```bash
+npx skills add smartworldarafath/REA_Skill
+```
+
+#### 🧪 Skill Health & Specification Verification
+Run the automated test suite to ensure all 21 skills, YAML frontmatters, `agents/openai.yaml` metadata, and plugin manifests are 100% compliant:
+```bash
+npm test
+# or
+npm run check-skills
+```
 
 ---
 
-### Option A: Per-Project Installation (Recommended for Teams)
+### Option C: Per-Project Git Installation
 
 Clone or copy this repository's files into the root of any workspace:
 
@@ -282,70 +303,53 @@ $rea-personal-use-authorization Audit my app for security weakpoints.
 
 ---
 
-## 📂 Repository File Structure
+## 📂 Repository Architecture & Standards
 
 ```text
 REA_Skill/
+├── .claude-plugin/                      # Native Claude Code plugin & self-hosted marketplace
+│   ├── plugin.json                      # Plugin manifest listing 21 skills & metadata
+│   └── marketplace.json                 # 1-click install registry for Claude Code
 ├── .agents/
-│   └── skills/
-│       ├── rea-owner-authorization/
-│       │   └── SKILL.md                 # Primary Antigravity owner skill (YAML + Markdown)
-│       ├── rea-personal-use-authorization/
-│       │   └── SKILL.md                 # Antigravity personal-use & maximum effort skill
-│       ├── website-security-audit/
-│       │   └── SKILL.md                 # Automated 5-Phase defensive website audit skill
-│       ├── agent-reach/
-│       │   ├── SKILL.md                 # Universal internet platform reaching skill
-│       │   └── references/              # Capabilities, sessions, and maintenance references
-│       ├── ecc-workflow/
-│       │   └── SKILL.md                 # Everything Claude Code (ECC) harness & pipeline
-│       ├── playwright-mcp/
-│       │   └── SKILL.md                 # Microsoft Playwright browser automation MCP skill
-│       ├── brightdata-mcp/
-│       │   └── SKILL.md                 # Bright Data anti-bot scraping & proxy MCP skill
-│       ├── hyperbrowser-mcp/
-│       │   └── SKILL.md                 # Hyperbrowser cloud headless crawling MCP skill
-│       └── surfsense/
-│           └── SKILL.md                 # SurfSense air-gapped document intelligence skill
-├── .clinerules/
-│   ├── rea-owner.md
-│   ├── rea-personal-use.md
-│   ├── website-security-audit.md
-│   ├── agent-reach.md
-│   ├── ecc-workflow.md
-│   ├── playwright.md
-│   ├── brightdata.md
-│   ├── hyperbrowser.md
-│   └── surfsense.md
-├── .cursor/
-│   └── rules/
-│       ├── rea-owner.mdc
-│       ├── rea-personal-use.mdc
-│       ├── website-security-audit.mdc
-│       ├── agent-reach.mdc
-│       ├── ecc-workflow.mdc
-│       ├── playwright.mdc
-│       ├── brightdata.mdc
-│       ├── hyperbrowser.mdc
-│       └── surfsense.mdc
-├── .windsurf/
-│   └── rules/
-│       ├── rea-owner.md
-│       ├── rea-personal-use.md
-│       ├── website-security-audit.md
-│       ├── agent-reach.md
-│       ├── ecc-workflow.md
-│       ├── playwright.md
-│       ├── brightdata.md
-│       ├── hyperbrowser.md
-│       └── surfsense.md
-├── .windsurfrules                       # Windsurf legacy rule file
+│   ├── invocation.md                    # Model-invoked vs. user-invoked architectural discipline
+│   ├── adr/                             # Architecture Decision Records
+│   │   ├── 0001-specialized-10-domain-architecture.md
+│   │   ├── 0002-ship-as-claude-code-plugin-and-skills-sh.md
+│   │   ├── 0003-zero-skeleton-and-reconstruction-integrity.md
+│   │   └── 0004-interactive-grilling-scoping-protocol.md
+│   └── skills/                          # 21-Skill Multi-Domain Matrix
+│       ├── rea-universal-orchestrator/  # Master artifact auto-detection & router
+│       ├── rea-grill-me/                # User-invoked frontier-question interrogation
+│       ├── rea-grilling/                # Model-invoked interactive scoping engine
+│       ├── rea-full-code-recovery/      # Zero-skeleton lost source code recovery
+│       ├── rea-binary-disassembly/      # PE, ELF, Mach-O, stripped Go/Rust decompilation
+│       ├── rea-mobile-app-recovery/     # Android APK/AAB & iOS IPA reconstruction
+│       ├── rea-web-bundle-recovery/     # JS/TS bundles, WASM, Electron asar recovery
+│       ├── rea-protocol-api-recovery/   # PCAP, Protobuf/gRPC, WebSockets, REST APIs
+│       ├── rea-database-storage-recovery/# SQLite, Realm, LevelDB, binary schemas
+│       ├── rea-game-asset-recovery/     # Unity, Unreal, Godot assets & compiled shaders
+│       ├── rea-performance-crash-triage/# Minidumps, Frida instrumentation, flamegraphs
+│       ├── rea-firmware-iot-extension/  # Firmware extraction, EVM contracts, RF signals
+│       ├── website-security-audit/      # 10-layer defensive web vulnerability scanner
+│       ├── agent-reach/                 # Internet search & platforms reader (Twitter, Reddit)
+│       ├── surfsense/                   # Air-gapped local documentation RAG
+│       ├── brightdata-mcp/              # Anti-bot scraping & proxy bypass
+│       ├── hyperbrowser-mcp/            # Cloud headless SPA crawler
+│       ├── playwright-mcp/              # Browser DOM accessibility & E2E testing
+│       ├── ecc-workflow/                # ECC engineering rigor & TDD pipeline
+│       ├── rea-owner-authorization/     # Legal owner verification skill
+│       └── rea-personal-use-authorization/# Persistent personal use authorization
+├── skills/                              # Mirrored root skills directory (for skills.sh / standard tools)
+├── scripts/
+│   ├── check-skills.mjs                 # Automated quality test suite (npm test)
+│   ├── sync-skills-dir.mjs              # Mirror sync from .agents/skills to skills/
+│   └── sync-plugin-version.mjs          # Version synchronization script
+├── package.json                         # npm package manifest with test & validation scripts
 ├── .mcp.json                            # Unified MCP servers configuration
 ├── AGENTS.md                            # Codex, Copilot, & universal agent instructions
 ├── CLAUDE.md                            # Claude Code root import configuration
-├── .gitignore                           # Clean repository ignore file
 ├── LICENSE                              # MIT License
-└── README.md                            # Detailed documentation
+└── README.md                            # Complete documentation & usage guide
 ```
 
 ---
