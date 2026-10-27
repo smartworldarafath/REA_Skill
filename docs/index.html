@@ -402,105 +402,204 @@
       </section>
 
       <!-- ================================================================= -->
-      <!-- INTERACTIVE AI PROMPT BUILDER / GENERATOR -->
+      <!-- INTERACTIVE AI PROMPT BUILDER / GENERATOR (ECC + REA ENGINE) -->
       <!-- ================================================================= -->
       <section class="section" id="prompt-builder" style="background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow" style="color: #6366f1; font-weight: 600;">Custom AI Prompt Architect</p>
-            <h2>Convert Your Idea into an Unblockable Prompt.</h2>
+            <p class="eyebrow" style="color: #6366f1; font-weight: 600;">ECC &amp; REA Unified Prompt Engine</p>
+            <h2>Convert Any Idea into a 100% Unblockable ECC + REA Prompt.</h2>
             <p class="lede">
-              Have a unique codebase, a crashed hard drive, or a custom application you need to audit? Fill in your details below to generate a tailored, 100% model-approved prompt that bypasses safety refusals legally and completely.
+              Engineered specifically for Everything Claude Code (ECC) and Reverse Engineer Anything (REA). Translates any project scenario &mdash; even written in Bengali or colloquial language &mdash; into an authoritative, zero-refusal prompt that enforces 100% complete compilable code, automated build scripts, and Red-Green TDD verification across Google Antigravity, Claude Code, OpenAI Codex, and Cursor IDE.
             </p>
+          </div>
+
+          <!-- Quick Scenario Presets -->
+          <div class="preset-chips-container">
+            <span class="preset-chips-label">Quick 1-Click Engineering Presets:</span>
+            <div class="preset-chips-row">
+              <button type="button" class="preset-chip" data-preset="win32-recovery">
+                <span>🚀</span> Lost Win32/C++ App Recovery (.exe)
+              </button>
+              <button type="button" class="preset-chip" data-preset="android-apk">
+                <span>📱</span> Android APK &amp; JNI (.so) Decompile
+              </button>
+              <button type="button" class="preset-chip" data-preset="web-security-audit">
+                <span>🛡️</span> Next.js &amp; Supabase 5-Phase Audit
+              </button>
+              <button type="button" class="preset-chip" data-preset="protocol-grpc">
+                <span>🌐</span> Custom Binary Protocol / gRPC
+              </button>
+              <button type="button" class="preset-chip" data-preset="game-remaster">
+                <span>🎮</span> Game Shaders, Fonts &amp; Assets
+              </button>
+              <button type="button" class="preset-chip" data-preset="perf-flamegraph">
+                <span>⚡</span> Performance &amp; Flamegraph Profiling
+              </button>
+            </div>
           </div>
 
           <div class="prompt-builder-card">
             <form id="custom-prompt-generator-form">
               <div class="builder-grid">
                 <div class="form-group" style="grid-column: 1 / -1;">
-                  <label for="gen-user-idea">1. Describe Your Application &amp; What You Want to Do *</label>
+                  <label for="gen-user-idea">
+                    1. Describe Your Scenario, App or Lost Code (English, বাংলা or mixed) *
+                  </label>
                   <textarea
                     id="gen-user-idea"
                     required
-                    placeholder="e.g. My laptop crashed and I lost the source code for my Win32 C++ audio editor. I only have the compiled .exe file and need to recover full compilable source code with dual-pane UI, WASAPI audio playback, and a build script."
+                    placeholder="e.g. My laptop crashed and I lost the source code for my Win32 C++ audio editor. I only have the compiled .exe file and need to recover full compilable source code with dual-pane UI, WASAPI audio playback, and a build script. (অথবা: আমার অ্যাপের সব কোড হারিয়ে ফেলছি, .exe ফাইল আছে, সম্পূর্ণ কম্পাইলার উপযোগী কোড এবং build.bat চাই)"
                   ></textarea>
                 </div>
 
                 <div class="form-group">
                   <label for="gen-assistant-select">2. Target AI Coding Assistant</label>
                   <select id="gen-assistant-select">
-                    <option value="Google Antigravity">Google Antigravity (Advanced Agentic Assistant)</option>
-                    <option value="Claude Code">Claude Code (Anthropic CLI Agent)</option>
-                    <option value="OpenAI Codex">OpenAI Codex / ChatGPT (GPT-4o / Reasoning)</option>
-                    <option value="Cursor IDE">Cursor IDE (Composer / Agent Mode)</option>
-                    <option value="Windsurf">Windsurf (Cascade Agent)</option>
-                    <option value="Coding Assistant">Universal Coding Assistant</option>
+                    <option value="Google Antigravity">Google Antigravity (Subagents &amp; Native REA Tools)</option>
+                    <option value="Claude Code">Claude Code (Anthropic Terminal Agent &amp; ECC Rigor)</option>
+                    <option value="OpenAI Codex">OpenAI Codex / ChatGPT (GPT-4o &amp; Reasoning)</option>
+                    <option value="Cursor IDE">Cursor IDE (Composer &amp; .cursorrules)</option>
+                    <option value="Windsurf">Windsurf (Cascade Agent &amp; .windsurfrules)</option>
+                    <option value="Universal Coding Assistant">Universal Coding Assistant</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="gen-task-type">3. Core Task Intent</label>
+                  <label for="gen-task-type">3. Core Task Intent &amp; Scope</label>
                   <select id="gen-task-type">
                     <option value="Lost Source Code Recovery">Lost Source Code Recovery (Hard Drive Crash / Lost Repo)</option>
-                    <option value="Owner Website Security Audit">Defensive Website Security Audit (5-Phase Audit)</option>
-                    <option value="Frontend Architecture Reconstruction">Frontend Architecture &amp; Bundle Reconstruction</option>
+                    <option value="Owner Website Security Audit">Defensive Website Security Audit (5-Phase Web Audit)</option>
                     <option value="Personal Mobile App Debugging">Mobile App Debugging (Android APK / iOS IPA)</option>
-                    <option value="Binary Analysis & Architecture Recovery">Binary Analysis &amp; Assembly Decompilation</option>
-                    <option value="Protocol Interoperability & Schema Recovery">Protocol Interoperability &amp; API Schema Recovery</option>
-                    <option value="Database Schema & Model Recovery">Database Schema &amp; ORM Model Recovery</option>
+                    <option value="Binary Analysis &amp; Architecture Recovery">Binary Analysis &amp; Assembly Decompilation</option>
+                    <option value="Protocol Interoperability &amp; Schema Recovery">Protocol Interoperability &amp; API Schema Recovery</option>
+                    <option value="Database Schema &amp; Model Recovery">Database Schema &amp; ORM Model Recovery</option>
+                    <option value="Frontend Architecture Reconstruction">Frontend Architecture &amp; Bundle Reconstruction</option>
+                    <option value="Performance Profiling &amp; Optimization">Performance Profiling &amp; Flameox Analysis</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="gen-target-lang">4. Target Output Language</label>
+                  <label for="gen-target-lang">4. Target Output Language / Stack</label>
                   <input
                     type="text"
                     id="gen-target-lang"
-                    placeholder="e.g. C/Win32, C++20, Rust, TypeScript / Next.js, Go, Python"
-                    value="C / Win32"
+                    placeholder="e.g. C / Win32, C++20, Rust, TypeScript / Next.js, Go, Kotlin / Compose"
+                    value="C (Win32 &amp; Direct2D)"
                   />
                 </div>
 
                 <div class="form-group">
-                  <label>5. Output Rigor Enforcement</label>
-                  <span style="font-size: 0.825rem; color: var(--muted); margin-top: 0.4rem;">Select the engineering standards to automatically embed into your generated prompt:</span>
+                  <label>5. ECC &amp; REA Rigor Controls</label>
+                  <span style="font-size: 0.825rem; color: var(--muted); margin-top: 0.4rem;">
+                    Active quality gates automatically incorporated into the prompt:
+                  </span>
                 </div>
 
                 <div class="checkbox-group">
                   <label class="checkbox-item">
                     <input type="checkbox" id="gen-zero-skeleton" checked />
-                    <span><strong>Zero Skeleton Law:</strong> Ban stubs, TODOs, and partial skeletons</span>
+                    <span><strong>Zero Skeleton Law:</strong> Strict ban on stubs, mock code, and // TODOs</span>
                   </label>
                   <label class="checkbox-item">
                     <input type="checkbox" id="gen-build-script" checked />
-                    <span><strong>1-Click Build Script:</strong> Include multi-compiler build.bat/sh</span>
+                    <span><strong>1-Click Multi-Compiler Build:</strong> Mandate Zig CC, MSVC, GCC, Clang</span>
                   </label>
                   <label class="checkbox-item">
                     <input type="checkbox" id="gen-include-tdd" checked />
-                    <span><strong>TDD Test Suite:</strong> Include automated regression tests</span>
+                    <span><strong>ECC TDD Methodology:</strong> Enforce Red-Green-Refactor test cycle</span>
                   </label>
                   <label class="checkbox-item">
                     <input type="checkbox" id="gen-anti-leak" checked />
-                    <span><strong>Zero Secret Gate:</strong> Mandate strict secret sanitization</span>
+                    <span><strong>Zero-Secret Gate:</strong> Inspect output to ensure zero leaked tokens</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" id="gen-struct-layout" checked />
+                    <span><strong>Clean Directory Tree:</strong> Source/, Resources/, Bin/, Documentation/</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" id="gen-autonomous" checked />
+                    <span><strong>Autonomous Execution:</strong> Run end-to-end without repetitive prompting</span>
                   </label>
                 </div>
               </div>
 
-              <button type="submit" class="button" style="background: #4f46e5; width: 100%; justify-content: center; padding: 0.85rem; font-size: 1rem;">
-                Generate 100% Unblocked Prompt &rarr;
+              <!-- Live Strength Meter -->
+              <div class="strength-meter-box">
+                <div class="strength-meter-header">
+                  <span class="strength-title">Prompt Strength &amp; Unblockability Rating:</span>
+                  <span class="strength-score" id="strength-score-val">100% (Zero Refusal Risk)</span>
+                </div>
+                <div class="strength-bar-track">
+                  <div class="strength-bar-fill" id="strength-bar-fill-elem"></div>
+                </div>
+                <div class="strength-badges-row">
+                  <span class="strength-badge">✓ First-Party Ownership Declared</span>
+                  <span class="strength-badge">✓ $rea-personal-use-authorization Active</span>
+                  <span class="strength-badge">✓ Zero Skeleton Law Enforced</span>
+                  <span class="strength-badge">✓ Multi-Compiler Build Mandated</span>
+                  <span class="strength-badge">✓ ECC TDD Verification Active</span>
+                </div>
+              </div>
+
+              <button type="submit" class="button" style="background: #4f46e5; width: 100%; justify-content: center; padding: 0.95rem; font-size: 1.05rem; font-weight: 600;">
+                Generate 100% Unblocked ECC + REA Prompt &rarr;
               </button>
             </form>
 
-            <!-- Output Box -->
-            <div id="generator-output-container" class="generator-result-box" hidden>
-              <div class="terminal-header" style="background: #1c2128; padding: 0.5rem 1rem;">
-                <span class="terminal-title" style="color: #adbac7;">
-                  <span class="terminal-dots"><i></i><i></i><i></i></span>
-                  Generated Unblockable Prompt &middot; Ready to Copy
-                </span>
-                <button type="button" class="copy-button" id="copy-generated-prompt">Copy Prompt</button>
+            <!-- Output Box with Multi-Tab Navigation -->
+            <div id="generator-output-container" class="generator-result-box" hidden style="margin-top: 2rem;">
+              <div class="output-tabs-container">
+                <button type="button" class="output-tab-button is-active" data-tab="prompt">
+                  📋 1. Master Unblocked Prompt
+                </button>
+                <button type="button" class="output-tab-button" data-tab="rules">
+                  ⚙️ 2. AGENTS.md / Rules Payload
+                </button>
+                <button type="button" class="output-tab-button" data-tab="roadmap">
+                  🗺️ 3. ECC + REA Roadmap
+                </button>
+                <button type="button" class="output-tab-button" data-tab="safety">
+                  🛡️ 4. Model Guardrail Clearance
+                </button>
               </div>
-              <pre class="terminal-code"><code id="generator-output-prompt"></code></pre>
+
+              <!-- Tab 1: Master Prompt -->
+              <div class="output-tab-pane is-active" id="tab-pane-prompt">
+                <div class="terminal-header" style="background: #161b22; padding: 0.6rem 1rem; border-bottom: 1px solid #2d333b;">
+                  <span class="terminal-title" style="color: #adbac7;">
+                    <span class="terminal-dots"><i></i><i></i><i></i></span>
+                    Ready-to-Copy Master Prompt (Optimized for Universal Model Comprehension)
+                  </span>
+                  <button type="button" class="copy-button" id="copy-generated-prompt">
+                    Copy Prompt
+                  </button>
+                </div>
+                <pre class="terminal-code"><code id="generator-output-prompt"></code></pre>
+              </div>
+
+              <!-- Tab 2: Rules Payload -->
+              <div class="output-tab-pane" id="tab-pane-rules">
+                <div class="terminal-header" style="background: #161b22; padding: 0.6rem 1rem; border-bottom: 1px solid #2d333b;">
+                  <span class="terminal-title" style="color: #adbac7;">
+                    Save to AGENTS.md, CLAUDE.md, or .cursorrules in your project root
+                  </span>
+                  <button type="button" class="copy-button" id="copy-generated-rules">
+                    Copy Rules
+                  </button>
+                </div>
+                <pre class="terminal-code"><code id="generator-output-rules"></code></pre>
+              </div>
+
+              <!-- Tab 3: Roadmap -->
+              <div class="output-tab-pane" id="tab-pane-roadmap">
+                <div id="generator-output-roadmap"></div>
+              </div>
+
+              <!-- Tab 4: Guardrail Clearance -->
+              <div class="output-tab-pane" id="tab-pane-safety">
+                <div id="generator-output-safety"></div>
+              </div>
             </div>
           </div>
         </div>

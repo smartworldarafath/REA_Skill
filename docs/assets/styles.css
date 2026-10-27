@@ -3430,3 +3430,173 @@ html[dir="rtl"] .brand-name {
   color: var(--muted);
   line-height: 1.5;
 }
+
+/* ==========================================================================
+   Upgraded ECC & REA Prompt Architect Styles
+   ========================================================================== */
+
+.preset-chips-container {
+  margin-bottom: 1.5rem;
+}
+
+.preset-chips-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.preset-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.preset-chip {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--page);
+  color: var(--ink);
+  transition: all 0.15s ease;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.preset-chip:hover {
+  border-color: #6366f1;
+  background: #f5f3ff;
+  color: #4338ca;
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .preset-chip:hover {
+  background: #1e1b4b;
+  color: #c7d2fe;
+}
+
+.strength-meter-box {
+  background: var(--page);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.strength-meter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.strength-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.strength-score {
+  font-weight: 700;
+  color: #10b981;
+}
+
+.strength-bar-track {
+  height: 8px;
+  background: var(--soft);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #6366f1, #10b981);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.strength-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.strength-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+[data-theme="dark"] .strength-badge {
+  background: #064e3b;
+  color: #a7f3d0;
+  border-color: #047857;
+}
+
+.output-tabs-container {
+  display: flex;
+  gap: 0.25rem;
+  background: #1c2128;
+  padding: 0.4rem 0.6rem 0;
+  border-bottom: 1px solid #2d333b;
+  overflow-x: auto;
+}
+
+.output-tab-button {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 550;
+  color: #adbac7;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.output-tab-button:hover {
+  color: #ffffff;
+}
+
+.output-tab-button.is-active {
+  background: #111418;
+  color: #58a6ff;
+  border-top: 2px solid #58a6ff;
+}
+
+.output-tab-pane {
+  display: none;
+}
+
+.output-tab-pane.is-active {
+  display: block;
+}
+
+.execution-playbook-list {
+  padding: 1.25rem 1.5rem;
+  margin: 0;
+  color: #adbac7;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.execution-playbook-list li {
+  margin-bottom: 0.85rem;
+}
+
+.execution-playbook-list strong {
+  color: #76e3ea;
+}
