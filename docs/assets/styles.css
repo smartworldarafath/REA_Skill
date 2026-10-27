@@ -4087,3 +4087,92 @@ details[open] > *:not(summary) {
 .wordmark-minimax {
   max-height: 48px;
 }
+
+/* ==========================================================================
+   Three.js 3D Cyber Core & Canvas Styling
+   ========================================================================== */
+
+.home-hero {
+  position: relative;
+  overflow: visible;
+}
+
+.hero-3d-container {
+  position: absolute;
+  top: -8%;
+  left: -5%;
+  width: 110%;
+  height: 116%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+}
+
+#rea-hero-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.home-start-grid,
+.hero-agent-ecosystem {
+  position: relative;
+  z-index: 1;
+}
+
+/* 3D Interactive Badge */
+.hero-3d-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--page-translucent, rgba(255, 255, 255, 0.75));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s var(--ease-spring), border-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.hero-3d-badge:hover {
+  transform: translateY(-1px);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+}
+
+[data-theme="dark"] .hero-3d-badge {
+  background: rgba(22, 27, 34, 0.75);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.live-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: liveDotPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes liveDotPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
