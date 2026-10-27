@@ -142,7 +142,7 @@ async function initializeWebsite() {
     if (reduceMotion) return;
 
     const selector =
-      ".home-case-card, .prompt-card, .workflows > div, .rule-box, .home-start-grid > div, .builder-step, .faq-item, .comparison-row, .workflow-summary";
+      ".home-case-card, .prompt-card, .workflows > div, .rule-box, .home-start-grid > div, .builder-step, .faq-item, .comparison-row, .workflow-summary, .hero-agent-ecosystem, .ecosystem-section, .wordmark-card";
     const elements = document.querySelectorAll(selector);
     if (!elements.length) return;
 

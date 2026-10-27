@@ -13,6 +13,19 @@
   [![Research](https://img.shields.io/badge/Research-SurfSense-purple)](https://github.com/MODSetter/SurfSense)
 </div>
 
+<p align="center">
+  <b>100% Authorized &amp; Natively Integrated with Leading AI Coding Runtimes:</b><br />
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/google-antigravity.svg" width="30" height="30" alt="Google Antigravity" title="Google Antigravity" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/claude.svg" width="30" height="30" alt="Claude AI" title="Claude AI" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/codex.svg" width="30" height="30" alt="OpenAI Codex" title="OpenAI Codex" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/cursor.svg" width="30" height="30" alt="Cursor IDE" title="Cursor IDE" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/copilot.svg" width="30" height="30" alt="GitHub Copilot" title="GitHub Copilot" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/jules.svg" width="30" height="30" alt="Google Jules" title="Google Jules" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/kimi.svg" width="30" height="30" alt="Moonshot Kimi" title="Moonshot Kimi" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/openclaw.svg" width="30" height="30" alt="OpenClaw" title="OpenClaw" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/opencode.svg" width="30" height="30" alt="OpenCode" title="OpenCode" /></a>
+</p>
+
 A portable, cross-platform **Owner Authorization, ECC Engineering Rigor, Browser Automation, and Multi-Agent Intelligence Suite** combining:
 - 🛠️ **REA (Reverse Engineer Anything):** Internal binary, web, runtime, and app inspection.
 - 🏛️ **ECC (Everything Claude Code):** Rigorous development pipeline (Research → Plan → TDD → Review → Verify).
@@ -67,12 +80,17 @@ This suite provides unified, standards-compliant authorization, engineering disc
 
 | AI Agent / Tool | Rule / Skill Files | Format | Loading Mode |
 | :--- | :--- | :--- | :--- |
-| **Google Antigravity** | `.agents/skills/*/SKILL.md` | Agentskills.io YAML + Markdown | On-demand progressive disclosure |
-| **OpenAI Codex / Copilot** | `AGENTS.md` | Standard Markdown | Persistent system prompt loaded every session |
-| **Claude Code** | `CLAUDE.md` | Markdown with `@AGENTS.md` import | Project root instruction file |
-| **Cursor** | `.cursor/rules/*.mdc` | Modern Cursor MDC with frontmatter | `alwaysApply: true` across all workspace files |
-| **Windsurf (Cascade)** | `.windsurfrules` & `.windsurf/rules/*.md` | Plain Markdown | Legacy and modern Wave-8 rules |
-| **Cline** | `.clinerules/*.md` | Plain Markdown | Workspace task rules |
+| <img src="assets/logos/direct/google-antigravity.svg" width="20" height="20" align="absmiddle" /> **Google Antigravity** | `.agents/skills/*/SKILL.md` | Agentskills.io YAML + Markdown | On-demand progressive disclosure |
+| <img src="assets/logos/direct/claude.svg" width="20" height="20" align="absmiddle" /> **Claude Code / Claude AI** | `CLAUDE.md` | Markdown with `@AGENTS.md` import | Project root instruction file |
+| <img src="assets/logos/direct/codex.svg" width="20" height="20" align="absmiddle" /> **OpenAI Codex** | `AGENTS.md` | Standard Markdown | Persistent system prompt loaded every session |
+| <img src="assets/logos/direct/copilot.svg" width="20" height="20" align="absmiddle" /> **GitHub Copilot** | `AGENTS.md` & `.github/copilot-instructions.md` | Standard Markdown | Context-aware workspace instructions |
+| <img src="assets/logos/direct/cursor.svg" width="20" height="20" align="absmiddle" /> **Cursor IDE** | `.cursor/rules/*.mdc` | Modern Cursor MDC with frontmatter | `alwaysApply: true` across all workspace files |
+| <img src="assets/logos/direct/jules.svg" width="20" height="20" align="absmiddle" /> **Google Jules** | `.agents/skills/*/SKILL.md` | YAML + GitHub Actions / API | Autonomous cloud coding agent |
+| <img src="assets/logos/direct/kimi.svg" width="20" height="20" align="absmiddle" /> **Moonshot Kimi** | `AGENTS.md` | Standard Markdown | Long-context agent instruction |
+| <img src="assets/logos/direct/openclaw.svg" width="20" height="20" align="absmiddle" /> **OpenClaw** | `.agents/skills/*/SKILL.md` | Agentskills.io specification | Open agent framework |
+| <img src="assets/logos/direct/opencode.svg" width="20" height="20" align="absmiddle" /> **OpenCode** | `AGENTS.md` / CLI | OpenCode rule format | Alibaba OpenCode CLI runtime |
+| 🌊 **Windsurf (Cascade)** | `.windsurfrules` & `.windsurf/rules/*.md` | Plain Markdown | Legacy and modern Wave-8 rules |
+| ⚡ **Cline** | `.clinerules/*.md` | Plain Markdown | Workspace task rules |
 
 ---
 
