@@ -136,6 +136,40 @@ async function initializeWebsite() {
 
   initializeBackToTop();
 
+  function initializeScrollReveal() {
+    if (!("IntersectionObserver" in window)) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) return;
+
+    const selector =
+      ".home-case-card, .prompt-card, .workflows > div, .rule-box, .home-start-grid > div, .builder-step, .faq-item, .comparison-row, .workflow-summary";
+    const elements = document.querySelectorAll(selector);
+    if (!elements.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -40px 0px", threshold: 0.08 }
+    );
+
+    elements.forEach((el, index) => {
+      el.classList.add("reveal-on-scroll");
+      const staggerDelay = (index % 4) * 50;
+      if (staggerDelay > 0) {
+        el.style.transitionDelay = staggerDelay + "ms";
+      }
+      observer.observe(el);
+    });
+  }
+
+  initializeScrollReveal();
+
   async function initializeGitHubStars() {
     const link = document.querySelector(".nav-github");
     const count = link?.querySelector(".nav-github-count");

@@ -3600,3 +3600,261 @@ html[dir="rtl"] .brand-name {
 .execution-playbook-list strong {
   color: #76e3ea;
 }
+
+/* ==========================================================================
+   Butter-Smooth Micro-Transitions & 60fps Animation Suite
+   ========================================================================== */
+
+:root {
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --trans-fast: 150ms var(--ease-spring);
+  --trans-normal: 250ms var(--ease-spring);
+  --trans-slow: 400ms var(--ease-spring);
+}
+
+/* 1. Global Smooth Scrolling & Scroll Margins */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+div[id],
+article[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* 2. Custom Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* 3. Navigation Links Micro-Interactions */
+.navigation a {
+  position: relative;
+  transition: color 0.2s var(--ease-spring), transform 0.2s var(--ease-spring) !important;
+}
+
+.navigation a:hover {
+  color: var(--ink) !important;
+  transform: translateY(-1px);
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.25s var(--ease-spring);
+  pointer-events: none;
+}
+
+.navigation a:hover::after,
+.navigation a[aria-current="page"]::after,
+.navigation a[aria-current="true"]::after {
+  width: 100%;
+}
+
+.navigation a[aria-current="page"],
+.navigation a[aria-current="true"] {
+  text-decoration: none !important;
+}
+
+/* 4. Global Button Enhancements */
+.button,
+.copy-button,
+.pag-btn,
+.theme-toggle,
+.nav-github,
+.step-selector button {
+  position: relative;
+  transition: transform 0.2s var(--ease-spring), box-shadow 0.2s var(--ease-spring), background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+  will-change: transform;
+}
+
+.button:hover,
+.nav-github:hover,
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.button:active,
+.copy-button:active,
+.pag-btn:active,
+.step-selector button:active {
+  transform: translateY(0) scale(0.97) !important;
+}
+
+.copy-button {
+  transition: all 0.2s var(--ease-spring) !important;
+}
+
+.copy-button.copied {
+  animation: copySuccessBounce 0.35s var(--ease-bounce);
+}
+
+@keyframes copySuccessBounce {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* 5. Card Elevations & Butter-Smooth Lifts */
+.prompt-card,
+.home-case-card,
+.workflows > div,
+.prompt-builder-card,
+.rule-box {
+  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-spring), border-color 0.3s ease !important;
+  will-change: transform, box-shadow;
+}
+
+.home-case-card:hover,
+.workflows > div:hover,
+.rule-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(41, 79, 130, 0.4);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .home-case-card:hover,
+[data-theme="dark"] .workflows > div:hover,
+[data-theme="dark"] .rule-box:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* 6. Filter Pills & Chips Spring Interactions */
+.filter-pill,
+.preset-chip,
+.step-selector button {
+  transition: transform 0.2s var(--ease-spring), background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s var(--ease-spring) !important;
+}
+
+.filter-pill:hover,
+.preset-chip:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.filter-pill:active,
+.preset-chip:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 7. Form Inputs Fluid Transitions */
+.prompt-search-input,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  transition: border-color 0.2s var(--ease-spring), box-shadow 0.25s var(--ease-spring), background-color 0.2s ease !important;
+}
+
+.prompt-search-input:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15) !important;
+  transform: translateY(-1px);
+}
+
+/* 8. Terminal Windows & Pulsing Header Dots */
+.terminal-dots i {
+  display: inline-block;
+  transition: transform 0.2s var(--ease-bounce), opacity 0.2s ease;
+}
+
+.terminal-header:hover .terminal-dots i:nth-child(1) { transform: scale(1.3); }
+.terminal-header:hover .terminal-dots i:nth-child(2) { transform: scale(1.3); transition-delay: 40ms; }
+.terminal-header:hover .terminal-dots i:nth-child(3) { transform: scale(1.3); transition-delay: 80ms; }
+
+/* 9. Details Accordion Reveal Animation */
+details {
+  transition: border-color 0.25s ease;
+}
+
+details summary {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+details[open] > *:not(summary) {
+  animation: butterReveal 0.3s var(--ease-spring) forwards;
+}
+
+@keyframes butterReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 10. Scroll-Triggered Reveal Animation (Entrance Physics) */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s var(--ease-spring), transform 0.5s var(--ease-spring);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 11. Tab Switch Smooth Fade In */
+.output-tab-pane.is-active {
+  animation: tabFadeIn 0.25s var(--ease-spring) forwards;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 12. Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
