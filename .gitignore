@@ -55,3 +55,17 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Binary executables and dumps
+*.exe
+*.pdb
+*.obj
+*.o
+*.res
+*.png
+extracted_strings_all.txt
+rz_bin_ui_strings.txt
+recovered_source/
+recovered_fpilot_assets/
+Simple2D.*.hlsl
+fpilot_*.png
