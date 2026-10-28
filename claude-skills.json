@@ -4,8 +4,8 @@
   "license": "MIT",
   "homepage": "https://smartworldarafath.github.io/REA_Skill/",
   "repository": "https://github.com/smartworldarafath/REA_Skill",
-  "totalCategories": 30,
-  "totalSkills": 164,
+  "totalCategories": 31,
+  "totalSkills": 165,
   "categories": {
     "rea-core": [
       "rea-binary-disassembly",
@@ -34,6 +34,9 @@
     ],
     "ai-pentest": [
       "strix"
+    ],
+    "privilege-escalation": [
+      "gtfobins"
     ],
     "web": [
       "offensive-business-logic",
@@ -1380,6 +1383,13 @@
       "path": "skills/strix/SKILL.md",
       "agentPath": ".agents/skills/strix/SKILL.md",
       "description": "Autonomous AI penetration testing agent that finds and fixes vulnerabilities in your own applications and web services using the Strix AI pentest agent (usestrix/strix). Owner-authorized, defensive security auditing only."
+    },
+    {
+      "name": "gtfobins",
+      "category": "privilege-escalation",
+      "path": "skills/gtfobins/SKILL.md",
+      "agentPath": ".agents/skills/gtfobins/SKILL.md",
+      "description": "Curated GTFOBins reference of Unix-like executables for bypassing local security restrictions (SUID/sudo abuse, bind/reverse shell, exfiltration) on owner-authorized systems. References GTFOBins externally (GPL-3.0); no content copied into REA_Skill (MIT). Owner-authorized, defensive security auditing only."
     }
   ]
 }

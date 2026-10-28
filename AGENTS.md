@@ -102,6 +102,7 @@ In addition to the 21 REA Core & Multi-Agent Ecosystem skills, this repository i
 - **Infrastructure (`skills/infrastructure/` — 7 skills):** `offensive-initial-access`, `offensive-advanced-redteam`, `offensive-edr-evasion`, `offensive-shellcode`, `offensive-keylogger-arch`, `offensive-windows-mitigations`, `offensive-windows-boundaries`
 - **Cloud, Mobile, IoT, API, Container, CI/CD, Crypto, PrivEsc, Post-Exploitation, Forensics, Recon, Supply Chain, Social Engineering, Network, AI & Utility (`skills/*/` — 28 skills):** All indexed in `claude-skills.json` and `MINDMAP.md`.
 - **AI Penetration Testing (`skills/strix/` — 1 skill):** `strix` — autonomous AI pentest agent (usestrix/strix) to find and fix vulnerabilities in your own applications and web services. Owner-authorized only; see `SECURITY.md` and the Strix authorized-use policy.
+- **Privilege Escalation (`skills/gtfobins/` — 1 skill):** `gtfobins` — curated GTFOBins reference of Unix-like executables for bypassing local security restrictions (SUID/sudo, bind/reverse shell, exfiltration) on owner-authorized systems. References GTFOBins externally (GPL-3.0); no content copied. Owner-authorized only.
 
 ## Integrated PayloadsAllTheThings Payload Library (163 Total Skills — NEW in v2.1.0)
 In addition to the 100 REA + claude-red skills, this repository now integrates **63 payload skills** from [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) across 4 categories, for a total of **163 skills across 29 categories**:
