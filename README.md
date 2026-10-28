@@ -1,147 +1,450 @@
 <div align="center">
-  <img src="assets/animated-icon.svg" width="110" height="110" alt="REA Authorization Icon" />
+  <img src="assets/animated-icon.svg" width="110" height="110" alt="REA_Skill Icon" />
   <br />
-  <img src="assets/animated-text.svg" alt="REA Complete Authorization" />
-  <br />
+  <img src="assets/animated-text.svg" alt="REA_Skill — Reverse Engineer Anything & Security Intelligence Suite" />
 
-  [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-  [![Platform](https://img.shields.io/badge/Supports-Antigravity%20%7C%20Claude%20Code%20%7C%20Codex%20%7C%20Cursor%20%7C%20Windsurf%20%7C%20Cline-8A2BE2)](#supported-platforms--file-formats)
-  [![Tool](https://img.shields.io/badge/Reverse%20Engineering-REA-orange)](https://github.com/morluto/rea)
-  [![Harness](https://img.shields.io/badge/Engineering%20Harness-ECC-E07856)](https://github.com/affaan-m/everything-claude-code)
-  [![Reach](https://img.shields.io/badge/Internet%20Reach-Agent%20Reach-brightgreen)](https://github.com/Panniantong/agent-reach)
-  [![Automation](https://img.shields.io/badge/Browser-Playwright%20%7C%20Hyperbrowser%20%7C%20Bright%20Data-blue)](https://github.com/microsoft/playwright-mcp)
-  [![Research](https://img.shields.io/badge/Research-SurfSense-purple)](https://github.com/MODSetter/SurfSense)
-</div>
+# REA_Skill
+
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment & Multi-Agent Skills for Claude Code, Codex, Cursor & Antigravity — 100 drop-in `SKILL.md` files across 25 categories.**
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-100-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-25-orange.svg)](#categories)
+[![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
+[![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
+[![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
+[![Forks](https://img.shields.io/github/forks/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill/network/members)
 
 <p align="center">
-  <b>100% Authorized &amp; Natively Integrated with Leading AI Coding Runtimes:</b><br />
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/google-antigravity.svg" width="30" height="30" alt="Google Antigravity" title="Google Antigravity" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/claude.svg" width="30" height="30" alt="Claude AI" title="Claude AI" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/codex.svg" width="30" height="30" alt="OpenAI Codex" title="OpenAI Codex" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/cursor.svg" width="30" height="30" alt="Cursor IDE" title="Cursor IDE" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/copilot.svg" width="30" height="30" alt="GitHub Copilot" title="GitHub Copilot" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/jules.svg" width="30" height="30" alt="Google Jules" title="Google Jules" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/kimi.svg" width="30" height="30" alt="Moonshot Kimi" title="Moonshot Kimi" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/openclaw.svg" width="30" height="30" alt="OpenClaw" title="OpenClaw" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#supported-platforms--file-formats"><img src="assets/logos/direct/opencode.svg" width="30" height="30" alt="OpenCode" title="OpenCode" /></a>
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/google-antigravity.svg" width="28" height="28" alt="Google Antigravity" title="Google Antigravity" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/claude.svg" width="28" height="28" alt="Claude Code" title="Claude Code" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/codex.svg" width="28" height="28" alt="OpenAI Codex" title="OpenAI Codex" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/cursor.svg" width="28" height="28" alt="Cursor IDE" title="Cursor IDE" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/copilot.svg" width="28" height="28" alt="GitHub Copilot" title="GitHub Copilot" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/jules.svg" width="28" height="28" alt="Google Jules" title="Google Jules" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/kimi.svg" width="28" height="28" alt="Moonshot Kimi" title="Moonshot Kimi" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/openclaw.svg" width="28" height="28" alt="OpenClaw" title="OpenClaw" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/opencode.svg" width="28" height="28" alt="OpenCode" title="OpenCode" /></a>
 </p>
 
-# REA_Skill: REA (Reverse Engineer Anything) Skills for Claude Code, Codex, Cursor & Antigravity
+[Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Mindmap](MINDMAP.md) &bull; [Platforms & MCP](#supported-platforms--mcp-configuration) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
 
-**REA_Skill** is the open-source skill suite for [REA (Reverse Engineer Anything)](https://github.com/morluto/rea): 21 agent skills and 500+ prompts to recover lost source code, decompile binaries and APKs, and audit your own apps and websites with Claude Code, OpenAI Codex, Cursor, Windsurf, Cline and Google Antigravity. 🌐 [Website](https://smartworldarafath.github.io/REA_Skill/)
+</div>
+
+---
+
+## Overview
+
+`REA_Skill` is a unified library of **100 specialized skills across 25 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+
+1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (12 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
+2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
+3. **23-Category Security Assessment & Vulnerability Research Library (79 skills integrated from `claude-red`):** Structured `SKILL.md` methodologies spanning Web OWASP Top 10, JWT/OAuth, Active Directory, Wireless/BLE/Zigbee/LoRa, Cloud, Mobile MASVS, IoT/Firmware, Binary Mitigations, Crash Analysis, Coverage-Guided Fuzzing (AFL++/libFuzzer), APIs, Containers/Kubernetes, CI/CD, Cryptography, Supply Chain, and AI/LLM Security.
+
+Drop `REA_Skill` into your coding agent and it operates like a senior reverse engineer and security architect: skills load progressively on demand based on conversational triggers—zero wasted context window.
+
+**Interactive Website, 500+ Unblocked Prompt Vault & AI Prompt Builder &rarr; [https://smartworldarafath.github.io/REA_Skill/](https://smartworldarafath.github.io/REA_Skill/)**
+
+---
+
+## Quickstart
+
+### 1. Claude Code Native Plugin (Recommended)
+
+```bash
+/plugin marketplace add smartworldarafath/REA_Skill
+/plugin install rea-skills@smartworldarafath
+```
+
+### 2. Universal Agent Skills CLI (`skills.sh`)
+
+Works across Claude Code, OpenAI Codex, Google Antigravity, Cursor, and Windsurf:
 
 ```bash
 npx skills add smartworldarafath/REA_Skill
 ```
 
-A portable, cross-platform **Owner Authorization, ECC Engineering Rigor, Browser Automation, and Multi-Agent Intelligence Suite** combining:
-- 🛠️ **REA (Reverse Engineer Anything):** Internal binary, web, runtime, and app inspection.
-- 🏛️ **ECC (Everything Claude Code):** Rigorous development pipeline (Research → Plan → TDD → Review → Verify).
-- 🌐 **Agent Reach:** Zero-fee internet search & reading across Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn.
-- 🎭 **Microsoft Playwright MCP:** Structured browser automation, DOM accessibility navigation, and E2E testing.
-- ⚡ **Bright Data MCP:** Industrial web unlocking, anti-bot / CAPTCHA bypass, and SERP extraction.
-- 🚀 **Hyperbrowser MCP:** Cloud headless browser infrastructure, dynamic SPA crawling, and session recording.
-- 📓 **SurfSense:** Air-gapped, privacy-focused document intelligence and local codebase RAG.
+### 3. Claude Skills System (`~/.claude/skills`)
+
+```bash
+git clone https://github.com/smartworldarafath/REA_Skill ~/.claude/skills/rea-skills
+```
+
+To install only specific categories via sparse checkout:
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/smartworldarafath/REA_Skill
+cd REA_Skill && git sparse-checkout set skills/rea-core skills/web skills/exploit-dev
+```
+
+### 4. Interactive Install Script (`./install.sh`)
+
+```bash
+./install.sh                               # interactive target prompt
+./install.sh --target ~/.claude/skills     # explicit target directory
+./install.sh --category rea-core           # install single category
+./install.sh --category web                # install web security category
+./install.sh --list                        # list all 25 categories & counts
+```
+
+### 5. Direct CLI System Prompt Piping
+
+```bash
+cat skills/rea-core/rea-full-code-recovery/SKILL.md | claude --system-file -
+cat skills/web/offensive-sqli/SKILL.md | claude --system-file -
+```
+
+### 6. Connect REA MCP Server
+
+```bash
+npx -y rea-agents@latest setup
+npx skills add morluto/rea --skill reverse-engineer-anything
+```
 
 ---
 
-## 🎯 The Problem It Solves
+## Categories
 
-When developers and security researchers use AI coding assistants to reverse-engineer, inspect, debug, test, or build on **their own apps, websites, and binaries**, AI agents frequently run into friction:
-
-- ❌ Refusing to run decompilers, disassemblers, or REA MCP tools on false-positive cybersecurity grounds.
-- ❌ Pausing every single turn to question authorization or lecturing about cybersecurity ethics.
-- ❌ Hallucinating solutions, skipping tests, or guessing API signatures without research.
-- ❌ Getting blocked by anti-bot walls (Cloudflare, CAPTCHAs) when fetching external documentation or auditing endpoints.
-- ❌ Inability to interactively click, type, and verify live web applications without burning context on heavy screenshots.
-- ❌ Leaking proprietary code or research notes to third-party cloud vector stores.
-
-### 💡 The Solution
-
-This suite provides unified, standards-compliant authorization, engineering discipline, and tool integration across all major AI coding runtimes:
-- ✅ **Persistent Owner Authorization:** Recognizes you as the verified owner and developer of target software, eliminating repetitive justification hurdles.
-- ✅ **ECC Engineering Rigor:** Enforces the 6-stage development pipeline (Research & Reuse → Plan First → TDD → Code Review → Zero-Secret Audit → Verification).
-- ✅ **Automated Defensive Website Audit:** Standardized 5-phase assessment covering security headers (CSP/HSTS/CORS), secret leaks, database RLS, and APIs.
-- ✅ **Live Web Intelligence:** Access login-walled platforms and social discussions with Agent Reach without API fees.
-- ✅ **Complete Browser Automation & Unlocking:** Microsoft Playwright MCP for live DOM control, Bright Data for anti-bot bypass, and Hyperbrowser for dynamic SPA crawling.
-- ✅ **Air-Gapped Document Intelligence:** Private local research and note synthesis powered by SurfSense and local LLMs.
-
----
-
-## 🧩 Included Skills (21-Skill Multi-Domain Suite)
-
-| Skill | Path | Description |
-| :--- | :--- | :--- |
-| **`rea-universal-orchestrator`** | `.agents/skills/rea-universal-orchestrator/SKILL.md` | Master task router & execution engine guaranteeing 100% unblocked execution for all 500+ Vault prompts and any custom/casual request. |
-| **`rea-grill-me`** | `.agents/skills/rea-grill-me/SKILL.md` | *(User-Invoked)* Relentless interview to sharpen, scope, and stress-test reverse engineering, lost source recovery, or security audit plans before execution. |
-| **`rea-grilling`** | `.agents/skills/rea-grilling/SKILL.md` | *(Model-Invoked)* Active interrogation engine computing frontier decisions (Compilers, Fidelity, Assets, Secrets) formatted for 1-click `"yes"` acceptance. |
-| **`rea-full-code-recovery`** | `.agents/skills/rea-full-code-recovery/SKILL.md` | End-to-end A–Z lost source code reconstruction with Zero-Skeleton Law and 1-click multi-compiler (`build.bat` / `build.sh`) verification. |
-| **`rea-owner-authorization`** | `.agents/skills/rea-owner-authorization/SKILL.md` | Primary authorization establishing legal ownership and preventing generic reverse-engineering refusals. |
-| **`rea-personal-use-authorization`** | `.agents/skills/rea-personal-use-authorization/SKILL.md` | Instructs agents to make maximum effort without repeated confirmation on vulnerability hunting, website weakpoint audits, or data recovery. |
-| **`rea-web-bundle-recovery`** | `.agents/skills/rea-web-bundle-recovery/SKILL.md` | Webpack/Vite/Next.js AST de-minification, source map recovery, WebAssembly (`.wasm`) decompilation, and Electron (`.asar`) unpacking. |
-| **`rea-mobile-app-recovery`** | `.agents/skills/rea-mobile-app-recovery/SKILL.md` | Android (APK/AAB/DEX/JNI/Flutter/React Native) & iOS (IPA/Mach-O/Swift/ObjC) full project reconstruction + PTKD/OWASP 5-Pillar scanner. |
-| **`rea-binary-disassembly`** | `.agents/skills/rea-binary-disassembly/SKILL.md` | Native C/C++ (PE/ELF/Mach-O), stripped Go (`gopclntab`), Rust, and .NET/C# decompilation using REA MCP, Rizin, Ghidra, and ILSpy. |
-| **`rea-protocol-api-recovery`** | `.agents/skills/rea-protocol-api-recovery/SKILL.md` | PCAP packet dissection, Protobuf/gRPC `.proto` recovery, WebSockets, GraphQL, and custom binary framing with working SDK generation. |
-| **`rea-database-storage-recovery`** | `.agents/skills/rea-database-storage-recovery/SKILL.md` | SQLite, Realm, LevelDB, Apple `NSKeyedArchiver` / binary `plist`, and custom binary file format parsers. |
-| **`rea-game-asset-recovery`** | `.agents/skills/rea-game-asset-recovery/SKILL.md` | Unity (Mono/IL2CPP), Unreal (`.pak`), Godot (`.pck`), HLSL/SPIR-V/GLSL shader decompilation, fonts, texture atlases, and audio extraction. |
-| **`rea-performance-crash-triage`** | `.agents/skills/rea-performance-crash-triage/SKILL.md` | Minidump (`.dmp`) crash forensics, Frida/GDB/Rizin dynamic runtime instrumentation, and Flameox CPU flamegraphs. |
-| **`rea-firmware-iot-extension`** | `.agents/skills/rea-firmware-iot-extension/SKILL.md` | Embedded firmware (`binwalk`/RTOS/ARM/MIPS/RISC-V), EVM smart contracts, and RF/signal decoding. |
-| **`website-security-audit`** | `.agents/skills/website-security-audit/SKILL.md` | Automated 5-Phase & 10-Layer defensive security audit methodology for HTTP headers (CSP/HSTS/CORS), secret leaks, RLS, and APIs. |
-| **`agent-reach`** | `.agents/skills/agent-reach/SKILL.md` | Universal internet reaching skill to read & search Twitter/X, Reddit, YouTube transcripts, GitHub, and login-walled web platforms. |
-| **`ecc-workflow`** | `.agents/skills/ecc-workflow/SKILL.md` | Everything Claude Code (ECC) harness: research-first development, TDD, code review, orchestration (`orch-*`), and verification. |
-| **`playwright-mcp`** | `.agents/skills/playwright-mcp/SKILL.md` | Microsoft Playwright MCP for live browser automation, accessibility snapshot navigation, and E2E testing. |
-| **`brightdata-mcp`** | `.agents/skills/brightdata-mcp/SKILL.md` | Bright Data MCP for anti-bot scraping, CAPTCHA bypass, residential proxies, and SERP data extraction. |
-| **`hyperbrowser-mcp`** | `.agents/skills/hyperbrowser-mcp/SKILL.md` | Hyperbrowser MCP for cloud headless browser automation, dynamic SPA crawling, and session recording. |
-| **`surfsense`** | `.agents/skills/surfsense/SKILL.md` | Air-gapped, privacy-first document intelligence and local codebase RAG (MODSetter/SurfSense). |
+| Category | Skills | Focus |
+|---|---:|---|
+| [Reverse Engineering & Source Recovery](#reverse-engineering--source-recovery) | 12 | Full A–Z lost source code recovery, PE/ELF/Mach-O disassembly, APK/IPA, WASM, PCAP, SQLite, Unity/Unreal, firmware & interactive grilling |
+| [Multi-Agent Ecosystem & Browser MCPs](#multi-agent-ecosystem--browser-mcps) | 9 | Owner authorization, 10-layer website audit, ECC TDD rigor, Agent Reach, SurfSense RAG, Playwright, Bright Data & Hyperbrowser |
+| [Web Application](#web-application) | 16 | OWASP Top 10, SQLi, XSS, SSRF, SSTI, XXE, IDOR, RCE, deserialization, race conditions, request smuggling, GraphQL & business logic |
+| [Auth & Identity](#auth--identity) | 2 | JWT implementation auditing (`alg:none`, key confusion, claims) and OAuth 2.0 / OIDC flow verification (PKCE, `redirect_uri`) |
+| [Active Directory](#active-directory) | 2 | On-prem & hybrid AD security auditing, Kerberos, ACLs, ADCS ESC1–15, SMB/LDAP signing & channel binding |
+| [Wireless](#wireless) | 14 | 802.11, WPA2-PSK, WPA3-SAE, 802.1X/EAP, WPS, rogue AP detection, KRACK/FragAttacks, 802.11w PMF, BLE, Classic BT, Zigbee/Matter, Z-Wave & LoRaWAN |
+| [Cloud](#cloud) | 1 | AWS, Azure, and GCP IAM least-privilege review, IMDSv2 enforcement, storage ACLs & cross-account trust boundaries |
+| [Mobile](#mobile) | 1 | Android and iOS OWASP MASVS assessment, manifest/plist auditing, Keystore/Keychain, TLS pinning & Frida runtime triage |
+| [IoT & Embedded](#iot--embedded) | 1 | Hardware debug lockdown (UART/JTAG/SWD), SPI flash encryption, Secure Boot chains, signed OTA updates & RTOS protection |
+| [Infrastructure & Hardening](#infrastructure--hardening) | 7 | External attack surface, Purple Team MITRE ATT&CK validation, EDR telemetry health, PIC/loader analysis, Windows mitigations (ACG/CFG/CET/HVCI) & UAC/IL boundaries |
+| [Exploit Mitigations & Crash Analysis](#exploit-mitigations--crash-analysis) | 6 | Memory corruption root-cause analysis, WinDbg/GDB/ASan crash triage, compiler hardening (RELRO/PIE/CFI), stack/format auditing & TOCTOU races |
+| [Fuzzing & Vulnerability Research](#fuzzing--vulnerability-research) | 4 | Coverage-guided fuzzing (AFL++, libFuzzer, Honggfuzz), harness engineering, static/CodeQL variant analysis & CWE vulnerability taxonomy |
+| [Reconnaissance](#reconnaissance) | 2 | External Attack Surface Management (EASM), Certificate Transparency logs, ASN/DNS inventory & drift monitoring |
+| [API Security](#api-security) | 2 | OWASP API Top 10 across REST/GraphQL/gRPC/WebSocket, schema validation, pagination bounds & idempotency enforcement |
+| [Container & Kubernetes](#container--kubernetes) | 2 | Container runtime isolation (capabilities, seccomp, rootless) and Kubernetes RBAC, Pod Security Standards & NetworkPolicies |
+| [CI/CD & Pipeline](#cicd--pipeline) | 2 | GitHub Actions / GitLab CI workflow hardening (`pull_request_target`, SHA pinning) and OIDC secretless workload federation |
+| [Cryptography](#cryptography) | 2 | Applied cryptography auditing (AEAD AES-GCM/ChaCha20, CSPRNG, Argon2id) and TLS 1.3 / PKI / HSTS / mTLS configuration |
+| [Privilege Escalation](#privilege-escalation) | 2 | Linux (SUID, capabilities, sudoers, systemd) and Windows (service ACLs, unquoted paths, token privileges, DLL search order) boundary audits |
+| [Post-Exploitation & Segmentation](#post-exploitation--segmentation) | 3 | Internal network microsegmentation, endpoint autoruns/persistence baseline auditing, and DLP egress protection |
+| [Forensics & Network Detection](#forensics--network-detection) | 2 | Immutable SIEM/audit log integrity, MFT/EventLog tamper detection, and JA3/JA4/beacon network threat hunting |
+| [Supply Chain](#supply-chain) | 2 | SLSA build provenance, Sigstore/Cosign signing, CycloneDX/SPDX SBOMs, and private registry dependency-confusion prevention |
+| [Social Engineering & Email Auth](#social-engineering--email-auth) | 2 | SPF/DKIM/DMARC `p=reject` enforcement, FIDO2/WebAuthn passkeys, and helpdesk identity verification workflows |
+| [Network Attacks](#network-attacks) | 1 | Layer 2/3 switch hardening: Dynamic ARP Inspection (DAI), DHCP Snooping, 802.1X, LLMNR/NBT-NS disablement & VLAN isolation |
+| [AI Security](#ai-security) | 1 | OWASP LLM Top 10: direct/indirect prompt injection defenses, tool-call sandboxing, RAG ACLs & output validation |
+| [Utility](#utility) | 2 | Rapid 15-minute pre-release security triage checklist and CVSS v3.1/v4.0 executive & technical report authoring |
 
 ---
 
-## 🖥️ Supported Platforms & File Formats
+## Skill Index
 
-| AI Agent / Tool | Rule / Skill Files | Format | Loading Mode |
-| :--- | :--- | :--- | :--- |
-| <img src="assets/logos/direct/google-antigravity.svg" width="20" height="20" align="absmiddle" /> **Google Antigravity** | `.agents/skills/*/SKILL.md` | Agentskills.io YAML + Markdown | On-demand progressive disclosure |
-| <img src="assets/logos/direct/claude.svg" width="20" height="20" align="absmiddle" /> **Claude Code / Claude AI** | `CLAUDE.md` | Markdown with `@AGENTS.md` import | Project root instruction file |
-| <img src="assets/logos/direct/codex.svg" width="20" height="20" align="absmiddle" /> **OpenAI Codex** | `AGENTS.md` | Standard Markdown | Persistent system prompt loaded every session |
-| <img src="assets/logos/direct/copilot.svg" width="20" height="20" align="absmiddle" /> **GitHub Copilot** | `AGENTS.md` & `.github/copilot-instructions.md` | Standard Markdown | Context-aware workspace instructions |
-| <img src="assets/logos/direct/cursor.svg" width="20" height="20" align="absmiddle" /> **Cursor IDE** | `.cursor/rules/*.mdc` | Modern Cursor MDC with frontmatter | `alwaysApply: true` across all workspace files |
-| <img src="assets/logos/direct/jules.svg" width="20" height="20" align="absmiddle" /> **Google Jules** | `.agents/skills/*/SKILL.md` | YAML + GitHub Actions / API | Autonomous cloud coding agent |
-| <img src="assets/logos/direct/kimi.svg" width="20" height="20" align="absmiddle" /> **Moonshot Kimi** | `AGENTS.md` | Standard Markdown | Long-context agent instruction |
-| <img src="assets/logos/direct/openclaw.svg" width="20" height="20" align="absmiddle" /> **OpenClaw** | `.agents/skills/*/SKILL.md` | Agentskills.io specification | Open agent framework |
-| <img src="assets/logos/direct/opencode.svg" width="20" height="20" align="absmiddle" /> **OpenCode** | `AGENTS.md` / CLI | OpenCode rule format | Alibaba OpenCode CLI runtime |
-| 🌊 **Windsurf (Cascade)** | `.windsurfrules` & `.windsurf/rules/*.md` | Plain Markdown | Legacy and modern Wave-8 rules |
-| ⚡ **Cline** | `.clinerules/*.md` | Plain Markdown | Workspace task rules |
+### Reverse Engineering & Source Recovery
+
+`skills/rea-core/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`rea-universal-orchestrator`](skills/rea-core/rea-universal-orchestrator/SKILL.md) | Master artifact auto-detection & router for all 500+ Prompt Vault templates and custom reverse-engineering tasks |
+| [`rea-grill-me`](skills/rea-core/rea-grill-me/SKILL.md) | *(User-Invoked)* Relentless frontier-question interview to scope reverse engineering, source recovery, or audit plans |
+| [`rea-grilling`](skills/rea-core/rea-grilling/SKILL.md) | Interactive decision-tree interrogation engine computing compiler, fidelity, asset, and verification trade-offs |
+| [`rea-full-code-recovery`](skills/rea-core/rea-full-code-recovery/SKILL.md) | Autonomous end-to-end A–Z lost source code recovery with Zero-Skeleton Law and 1-click multi-compiler (`build.bat`/`build.sh`) verification |
+| [`rea-binary-disassembly`](skills/rea-core/rea-binary-disassembly/SKILL.md) | Complete Windows PE (`.exe`/`.dll`/`.sys`), Linux ELF (`.so`/`.deb`/`.AppImage`), and macOS Mach-O static & dynamic binary disassembly |
+| [`rea-mobile-app-recovery`](skills/rea-core/rea-mobile-app-recovery/SKILL.md) | Android (APK/AAB/DEX/JNI/Flutter/React Native/Unity) & iOS (IPA/Mach-O/Swift) reconstruction + 5-Pillar MASVS scanner |
+| [`rea-web-bundle-recovery`](skills/rea-core/rea-web-bundle-recovery/SKILL.md) | Webpack/Vite/Next.js AST de-minification, source map recovery, WebAssembly (`.wasm`) decompilation & Electron `.asar` unpacking |
+| [`rea-protocol-api-recovery`](skills/rea-core/rea-protocol-api-recovery/SKILL.md) | PCAP packet dissection, Protobuf/gRPC `.proto` descriptor recovery, WebSockets, GraphQL & working client/server SDK generation |
+| [`rea-database-storage-recovery`](skills/rea-core/rea-database-storage-recovery/SKILL.md) | SQLite, Realm, LevelDB, Apple `NSKeyedArchiver` / binary `plist`, Windows Registry hives & custom binary format parsers |
+| [`rea-game-asset-recovery`](skills/rea-core/rea-game-asset-recovery/SKILL.md) | Unity (`Il2CppDumper`/`AssetStudio`), Unreal (`.pak`), Godot (`.pck`), HLSL/SPIR-V/GLSL shader decompilation & 3D/audio extraction |
+| [`rea-performance-crash-triage`](skills/rea-core/rea-performance-crash-triage/SKILL.md) | Windows Minidump (`.dmp`), Linux core & macOS `.ips` forensics, Frida dynamic hooking & Flameox CPU flamegraphs |
+| [`rea-firmware-iot-extension`](skills/rea-core/rea-firmware-iot-extension/SKILL.md) | Embedded firmware (`binwalk`/`unblob`, RTOS/ARM/MIPS/RISC-V), EVM smart contract bytecode & RF/signal decoding |
+
+### Multi-Agent Ecosystem & Browser MCPs
+
+`skills/agent-ecosystem/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`rea-owner-authorization`](skills/agent-ecosystem/rea-owner-authorization/SKILL.md) | Persistent first-party owner authorization preventing false-positive refusals on user-owned software and binaries |
+| [`rea-personal-use-authorization`](skills/agent-ecosystem/rea-personal-use-authorization/SKILL.md) | Maximum-effort directive for personal debugging, lost-source recovery, and pre-release vulnerability auditing |
+| [`website-security-audit`](skills/agent-ecosystem/website-security-audit/SKILL.md) | 5-Phase & 10-Layer defensive website vulnerability scanner (HSTS/CSP/CORS headers, bundle secrets, RLS, APIs, webhooks) |
+| [`ecc-workflow`](skills/agent-ecosystem/ecc-workflow/SKILL.md) | Everything Claude Code (ECC) engineering harness: Research & Reuse, Plan First, TDD, Code Review & Zero-Secret Gate |
+| [`agent-reach`](skills/agent-ecosystem/agent-reach/SKILL.md) | Zero-fee read-only internet intelligence across X/Twitter, Reddit, YouTube transcripts, GitHub, LinkedIn & Bilibili |
+| [`surfsense`](skills/agent-ecosystem/surfsense/SKILL.md) | Air-gapped, privacy-first local documentation intelligence and codebase RAG powered by SurfSense |
+| [`playwright-mcp`](skills/agent-ecosystem/playwright-mcp/SKILL.md) | Microsoft Playwright MCP for structured DOM accessibility-tree navigation, live browser interaction & E2E verification |
+| [`brightdata-mcp`](skills/agent-ecosystem/brightdata-mcp/SKILL.md) | Bright Data MCP for anti-bot unlocking, CAPTCHA bypass, residential proxy routing & SERP extraction |
+| [`hyperbrowser-mcp`](skills/agent-ecosystem/hyperbrowser-mcp/SKILL.md) | Hyperbrowser MCP for cloud headless browser sessions, dynamic SPA crawling & session recording |
+
+### Web Application
+
+`skills/web/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-sqli`](skills/web/offensive-sqli/SKILL.md) | SQL injection auditing — error-based, blind, OOB, DB-specific syntax, ORM pitfalls & parameterized remediation |
+| [`offensive-xss`](skills/web/offensive-xss/SKILL.md) | Cross-site scripting — reflected, stored, DOM-based, mutation XSS (mXSS), sink taint tracking & CSP hardening |
+| [`offensive-ssrf`](skills/web/offensive-ssrf/SKILL.md) | Server-side request forgery — URL parser differentials, DNS rebinding, IMDSv2 enforcement & egress allowlisting |
+| [`offensive-ssti`](skills/web/offensive-ssti/SKILL.md) | Server-side template injection — Jinja2/Twig/Freemarker/Handlebars context analysis & sandboxed rendering |
+| [`offensive-xxe`](skills/web/offensive-xxe/SKILL.md) | XML external entity — external DTD/entity resolution auditing across XML/SOAP/SAML/SVG/DOCX & parser hardening |
+| [`offensive-idor`](skills/web/offensive-idor/SKILL.md) | Insecure direct object references (BOLA/IDOR) — horizontal/vertical privilege matrices, tenant isolation & RLS checks |
+| [`offensive-file-upload`](skills/web/offensive-file-upload/SKILL.md) | File upload security — magic-byte validation, path traversal, Zip Slip, polyglots & isolated object storage |
+| [`offensive-rce`](skills/web/offensive-rce/SKILL.md) | Remote code execution — command injection sink auditing, argument separation, dynamic eval removal & sandboxing |
+| [`offensive-deserialization`](skills/web/offensive-deserialization/SKILL.md) | Insecure deserialization — Java, .NET, PHP, Python & Node serialization gadget reachability & safe schema formats |
+| [`offensive-race-condition`](skills/web/offensive-race-condition/SKILL.md) | Race conditions — TOCTOU windows, HTTP/2 single-packet concurrent testing, row locking & idempotency keys |
+| [`offensive-request-smuggling`](skills/web/offensive-request-smuggling/SKILL.md) | HTTP request smuggling — CL.TE, TE.CL, H2.CL downgrade desync & reverse-proxy framing normalization |
+| [`offensive-open-redirect`](skills/web/offensive-open-redirect/SKILL.md) | Open redirect — returnUrl validation, authority confusion, OAuth token leakage prevention & strict allowlists |
+| [`offensive-parameter-pollution`](skills/web/offensive-parameter-pollution/SKILL.md) | HTTP parameter pollution — duplicate query/body/JSON key precedence across gateways and backend frameworks |
+| [`offensive-graphql`](skills/web/offensive-graphql/SKILL.md) | GraphQL security — introspection control, query depth/complexity limits, batching rate limits & resolver authz |
+| [`offensive-waf-bypass`](skills/web/offensive-waf-bypass/SKILL.md) | WAF normalization audit — encoding discrepancies, body inspection limits & root application-layer remediation |
+| [`offensive-business-logic`](skills/web/offensive-business-logic/SKILL.md) | Business logic flaws — workflow state machine enforcement, boundary/negative value checks & multi-step invariants |
+
+### Auth & Identity
+
+`skills/auth/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-jwt`](skills/auth/offensive-jwt/SKILL.md) | JWT security — `alg:none` rejection, RS256/HS256 key confusion, `jwk`/`jku`/`kid` injection, secret entropy & claim checks |
+| [`offensive-oauth`](skills/auth/offensive-oauth/SKILL.md) | OAuth 2.0 & OIDC — exact `redirect_uri` validation, PKCE (`S256`) enforcement, `state` CSRF binding & account linking |
+
+### Active Directory
+
+`skills/active-directory/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-active-directory`](skills/active-directory/offensive-active-directory/SKILL.md) | Active Directory methodology — Kerberoast/AS-REP exposure, BloodHound ACL paths, ADCS ESC1–15, delegation & tiering |
+| [`offensive-netexec`](skills/active-directory/offensive-netexec/SKILL.md) | Enterprise protocol audit — SMB signing, LDAP signing/channel binding, NTLM relay mitigation & LAPS verification |
+
+### Wireless
+
+`skills/wireless/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-wifi`](skills/wireless/offensive-wifi/SKILL.md) | 802.11 wireless security overview — SSID segmentation, WPA2/WPA3/802.1X architecture & assessment planning |
+| [`offensive-wifi-recon`](skills/wireless/offensive-wifi-recon/SKILL.md) | Wireless airspace audit — 2.4/5/6 GHz spectrum mapping, beacon/cipher enumeration & rogue AP detection |
+| [`offensive-wpa2-psk`](skills/wireless/offensive-wpa2-psk/SKILL.md) | WPA2-PSK assessment — EAPOL 4-way handshake / PMKID exposure analysis, passphrase entropy & WPA3 migration |
+| [`offensive-wpa3-sae`](skills/wireless/offensive-wpa3-sae/SKILL.md) | WPA3-SAE audit — transition-mode downgrade checks, mandatory 802.11w PMF verification & H2E support |
+| [`offensive-wpa-enterprise`](skills/wireless/offensive-wpa-enterprise/SKILL.md) | WPA-Enterprise (802.1X/EAP) — EAP-TLS vs PEAP/TTLS, supplicant RADIUS certificate validation & NAC isolation |
+| [`offensive-wps`](skills/wireless/offensive-wps/SKILL.md) | Wi-Fi Protected Setup (WPS) — beacon IE inspection, Pixie Dust offline/online PIN risk check & WPS disablement |
+| [`offensive-evil-twin`](skills/wireless/offensive-evil-twin/SKILL.md) | Rogue AP resilience — WIDS/WIPS detection verification, auto-connect hygiene & certificate-pinned 802.1X profiles |
+| [`offensive-krack-fragattacks`](skills/wireless/offensive-krack-fragattacks/SKILL.md) | 802.11 protocol patches — KRACK key reinstallation & FragAttacks aggregation firmware patch verification |
+| [`offensive-deauth-disassoc`](skills/wireless/offensive-deauth-disassoc/SKILL.md) | Management Frame Protection — 802.11w (PMF) enforcement auditing for deauthentication/disassociation frames |
+| [`offensive-bluetooth-ble`](skills/wireless/offensive-bluetooth-ble/SKILL.md) | Bluetooth Low Energy (BLE) — GATT service/characteristic permissions, LE Secure Connections (ECDH) & bonding |
+| [`offensive-bluetooth-classic`](skills/wireless/offensive-bluetooth-classic/SKILL.md) | Bluetooth Classic (BR/EDR) — SDP enumeration, Secure Simple Pairing, KNOB/BIAS key entropy & HID restrictions |
+| [`offensive-zigbee-thread-matter`](skills/wireless/offensive-zigbee-thread-matter/SKILL.md) | 802.15.4 mesh security — Zigbee install codes, Trust Center key rotation, Thread commissioning & Matter DAC/PAA |
+| [`offensive-z-wave`](skills/wireless/offensive-z-wave/SKILL.md) | Z-Wave security — S2 ECDH DSK commissioning verification, legacy S0 downgrade prevention & hub hardening |
+| [`offensive-lorawan-sub-ghz`](skills/wireless/offensive-lorawan-sub-ghz/SKILL.md) | LoRaWAN & Sub-GHz RF — OTAA vs ABP provisioning, secure element AppKey storage & frame counter replay checks |
+
+### Cloud
+
+`skills/cloud/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-cloud`](skills/cloud/offensive-cloud/SKILL.md) | Multi-cloud audit (AWS/Azure/GCP) — IAM privilege escalation paths, IMDSv2, storage bucket ACLs & cross-account trust |
+
+### Mobile
+
+`skills/mobile/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-mobile`](skills/mobile/offensive-mobile/SKILL.md) | Android & iOS MASVS audit — manifest/plist review, Keystore/Keychain storage, TLS pinning & Frida runtime triage |
+
+### IoT & Embedded
+
+`skills/iot/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-iot`](skills/iot/offensive-iot/SKILL.md) | IoT/OT & embedded security — UART/JTAG lockdown, flash encryption, Secure Boot chains, signed OTA & RTOS hardening |
+
+### Infrastructure & Hardening
+
+`skills/infrastructure/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-initial-access`](skills/infrastructure/offensive-initial-access/SKILL.md) | External perimeter audit — internet-facing asset inventory, VPN/ZTNA MFA enforcement & edge appliance patching |
+| [`offensive-advanced-redteam`](skills/infrastructure/offensive-advanced-redteam/SKILL.md) | Purple Team & adversary emulation — MITRE ATT&CK telemetry validation, SOC alerting & detection gap analysis |
+| [`offensive-edr-evasion`](skills/infrastructure/offensive-edr-evasion/SKILL.md) | EDR sensor resilience — ETW, AMSI, kernel callback telemetry verification & tamper-protection auditing |
+| [`offensive-shellcode`](skills/infrastructure/offensive-shellcode/SKILL.md) | PIC & loader analysis — position-independent code disassembly, PEB resolution patterns & ACG/CFG/W^X verification |
+| [`offensive-keylogger-arch`](skills/infrastructure/offensive-keylogger-arch/SKILL.md) | Input API telemetry & defense — monitoring `SetWindowsHookEx`/`RawInput`/`evdev`, UIPI isolation & detection rules |
+| [`offensive-windows-mitigations`](skills/infrastructure/offensive-windows-mitigations/SKILL.md) | Windows exploit mitigations — High-Entropy ASLR, DEP, CFG, XFG, Intel CET Shadow Stacks & HVCI verification |
+| [`offensive-windows-boundaries`](skills/infrastructure/offensive-windows-boundaries/SKILL.md) | Windows security boundaries — Mandatory Integrity Control (MIC), AppContainer sandboxes & privileged RPC/ALPC/COM audit |
+
+### Exploit Mitigations & Crash Analysis
+
+`skills/exploit-dev/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-exploit-development`](skills/exploit-dev/offensive-exploit-development/SKILL.md) | Memory corruption root-cause analysis — stack/heap overflows, UAF lifecycle tracking & sanitizer verification |
+| [`offensive-exploit-dev-course`](skills/exploit-dev/offensive-exploit-dev-course/SKILL.md) | Binary security curriculum — x86_64/ARM64 calling conventions, stack layouts, allocator internals & compiler flags |
+| [`offensive-basic-exploitation`](skills/exploit-dev/offensive-basic-exploitation/SKILL.md) | Stack & format string audit — unsafe C library sink removal, `-fstack-protector-strong` & `-Wformat-security` |
+| [`offensive-crash-analysis`](skills/exploit-dev/offensive-crash-analysis/SKILL.md) | Crash dump triage — WinDbg/GDB/LLDB analysis, ASan/MSan/UBSan interpretation & minimal reproducer generation |
+| [`offensive-mitigations`](skills/exploit-dev/offensive-mitigations/SKILL.md) | Compiler & linker hardening — Full RELRO, PIE, Stack Canaries, `_FORTIFY_SOURCE=3`, Clang CFI & SafeStack |
+| [`offensive-toctou`](skills/exploit-dev/offensive-toctou/SKILL.md) | Filesystem & kernel TOCTOU — symlink/oplock race auditing, double-fetch bugs & atomic `openat2` remediation |
+
+### Fuzzing & Vulnerability Research
+
+`skills/fuzzing/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-fuzzing`](skills/fuzzing/offensive-fuzzing/SKILL.md) | Coverage-guided fuzzing — AFL++, libFuzzer, Honggfuzz & Cargo-Fuzz harness writing, corpus curation & sanitizers |
+| [`offensive-fuzzing-course`](skills/fuzzing/offensive-fuzzing-course/SKILL.md) | Automated bug discovery curriculum — greybox, grammar, snapshot & differential fuzzing in CI/CD (OSS-Fuzz) |
+| [`offensive-bug-identification`](skills/fuzzing/offensive-bug-identification/SKILL.md) | Static & variant bug hunting — CodeQL/Semgrep taint tracking, sink-to-source reachability & security patch diffing |
+| [`offensive-vuln-classes`](skills/fuzzing/offensive-vuln-classes/SKILL.md) | Software vulnerability taxonomy — CWE reference across integer, memory, parser differential & state machine flaws |
+
+### Reconnaissance
+
+`skills/recon/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-osint`](skills/recon/offensive-osint/SKILL.md) | External asset discovery — Certificate Transparency logs, DNS/ASN mapping, cloud asset inventory & git leak checks |
+| [`offensive-osint-methodology`](skills/recon/offensive-osint-methodology/SKILL.md) | Structured attack-surface management — continuous asset cataloging, SaaS dependency mapping & drift alerting |
+
+### API Security
+
+`skills/api/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-api-security`](skills/api/offensive-api-security/SKILL.md) | REST, GraphQL & gRPC API audit — OWASP API Top 10, BOLA/BFLA, mass assignment, OpenAPI validation & mTLS |
+| [`offensive-api-abuse`](skills/api/offensive-api-abuse/SKILL.md) | API business logic & anti-scraping — pagination bounds, bulk export controls, idempotency & cost-based rate limits |
+
+### Container & Kubernetes
+
+`skills/container/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-container-escape`](skills/container/offensive-container-escape/SKILL.md) | Container isolation — `--privileged` & capability auditing (`CAP_SYS_ADMIN`), seccomp/AppArmor & rootless namespaces |
+| [`offensive-k8s-attacks`](skills/container/offensive-k8s-attacks/SKILL.md) | Kubernetes cluster audit — RBAC least privilege, Pod Security Standards, kubelet/etcd auth & CNI NetworkPolicies |
+
+### CI/CD & Pipeline
+
+`skills/cicd/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-cicd-pipeline`](skills/cicd/offensive-cicd-pipeline/SKILL.md) | CI/CD pipeline hardening — `pull_request_target` safety, expression injection, SHA-pinned actions & ephemeral runners |
+| [`offensive-cicd-secrets`](skills/cicd/offensive-cicd-secrets/SKILL.md) | CI/CD secret hygiene — OIDC workload federation, scoped `GITHUB_TOKEN` permissions, log masking & vault gates |
+
+### Cryptography
+
+`skills/crypto/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-crypto-attacks`](skills/crypto/offensive-crypto-attacks/SKILL.md) | Cryptographic implementation audit — AEAD (AES-GCM/ChaCha20), nonce uniqueness, constant-time checks, CSPRNG & Argon2id |
+| [`offensive-tls-attacks`](skills/crypto/offensive-tls-attacks/SKILL.md) | TLS/SSL & PKI configuration — TLS 1.3 enforcement, ECDHE forward secrecy, HSTS preload, CAA records & mTLS |
+
+### Privilege Escalation
+
+`skills/privesc/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-linux-privesc`](skills/privesc/offensive-linux-privesc/SKILL.md) | Linux privilege boundary audit — SUID/SGID, file capabilities, `sudoers` rules, systemd unit ACLs & sysctl hardening |
+| [`offensive-windows-privesc`](skills/privesc/offensive-windows-privesc/SKILL.md) | Windows privilege boundary audit — service/registry ACLs, unquoted paths, token privileges & DLL search order |
+
+### Post-Exploitation & Segmentation
+
+`skills/post-exploitation/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-lateral-movement`](skills/post-exploitation/offensive-lateral-movement/SKILL.md) | Internal segmentation audit — Credential Guard, Local Account Token Filter, host firewalls & zero-trust bastions |
+| [`offensive-persistence`](skills/post-exploitation/offensive-persistence/SKILL.md) | Endpoint persistence hunting — Registry Run keys, scheduled tasks, WMI subscriptions, systemd units & PAM integrity |
+| [`offensive-data-exfiltration`](skills/post-exploitation/offensive-data-exfiltration/SKILL.md) | DLP & egress protection — DNS/HTTPS egress filtering, VPC Service Controls & bulk query anomaly detection |
+
+### Forensics & Network Detection
+
+`skills/forensics/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-anti-forensics`](skills/forensics/offensive-anti-forensics/SKILL.md) | Forensic readiness & log integrity — immutable SIEM forwarding, EventLog/auditd tamper detection & MFT consistency |
+| [`offensive-c2-frameworks`](skills/forensics/offensive-c2-frameworks/SKILL.md) | C2 traffic hunting — JA3/JA4 TLS fingerprinting, beacon jitter statistical analysis & DNS tunneling detection |
+
+### Supply Chain
+
+`skills/supply-chain/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-supply-chain`](skills/supply-chain/offensive-supply-chain/SKILL.md) | Software supply chain — SLSA provenance, Sigstore/Cosign artifact signing, lockfile integrity & CycloneDX/SPDX SBOMs |
+| [`offensive-dependency-confusion`](skills/supply-chain/offensive-dependency-confusion/SKILL.md) | Dependency confusion — private npm/PyPI/Maven/NuGet/Cargo namespace scoping & upstream proxy routing |
+
+### Social Engineering & Email Auth
+
+`skills/social-engineering/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-phishing`](skills/social-engineering/offensive-phishing/SKILL.md) | Email authentication & FIDO2 — SPF `-all`, DKIM, DMARC `p=reject`, lookalike domain monitoring & WebAuthn passkeys |
+| [`offensive-social-engineering`](skills/social-engineering/offensive-social-engineering/SKILL.md) | Identity verification workflows — helpdesk MFA reset approval gates, out-of-band callbacks & physical access controls |
+
+### Network Attacks
+
+`skills/network/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-network-attacks`](skills/network/offensive-network-attacks/SKILL.md) | Layer 2/3 network hardening — Dynamic ARP Inspection (DAI), DHCP Snooping, 802.1X, LLMNR/NBT-NS disablement & VLANs |
+
+### AI Security
+
+`skills/ai/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-ai-security`](skills/ai/offensive-ai-security/SKILL.md) | AI/LLM security (OWASP LLM Top 10) — prompt injection defenses, tool-call sandboxing, RAG ACLs & output encoding |
+
+### Utility
+
+`skills/utility/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`offensive-fast-checking`](skills/utility/offensive-fast-checking/SKILL.md) | Rapid 15-minute security triage checklist across auth, headers, secrets, dependencies, APIs & binary mitigations |
+| [`offensive-reporting`](skills/utility/offensive-reporting/SKILL.md) | Professional security report writing — risk-led executive summaries, CVSS v3.1/v4.0 vectors, CWEs & remediation code |
 
 ---
 
-## 🔌 Unified MCP Server Configuration (`.mcp.json`)
+## Supported Platforms & MCP Configuration
 
-This repository includes a ready-to-use [`.mcp.json`](.mcp.json) configuration:
+| AI Agent / Runtime | Configuration Files | Format | Loading Mode |
+|---|---|---|---|
+| <img src="assets/logos/direct/google-antigravity.svg" width="18" height="18" align="absmiddle" /> **Google Antigravity** | `.agents/skills/*/SKILL.md` | Agent Skills YAML + Markdown | Progressive on-demand discovery |
+| <img src="assets/logos/direct/claude.svg" width="18" height="18" align="absmiddle" /> **Claude Code / Claude.ai** | `.claude-plugin/plugin.json` & `CLAUDE.md` | Native Plugin + `@AGENTS.md` | 1-click plugin & root instruction |
+| <img src="assets/logos/direct/codex.svg" width="18" height="18" align="absmiddle" /> **OpenAI Codex** | `AGENTS.md` & `agents/openai.yaml` | Dual-harness YAML + Markdown | Skill picker UI + persistent rules |
+| <img src="assets/logos/direct/cursor.svg" width="18" height="18" align="absmiddle" /> **Cursor IDE** | `.cursor/rules/*.mdc` | Cursor MDC frontmatter | `alwaysApply: true` workspace rules |
+| <img src="assets/logos/direct/copilot.svg" width="18" height="18" align="absmiddle" /> **GitHub Copilot** | `.github/copilot-instructions.md` | Standard Markdown | Workspace context instructions |
+| <img src="assets/logos/direct/jules.svg" width="18" height="18" align="absmiddle" /> **Google Jules** | `.agents/skills/*/SKILL.md` | Agent Skills Standard | Autonomous cloud coding agent |
+| <img src="assets/logos/direct/kimi.svg" width="18" height="18" align="absmiddle" /> **Moonshot Kimi** | `AGENTS.md` | Standard Markdown | Long-context instruction |
+| <img src="assets/logos/direct/openclaw.svg" width="18" height="18" align="absmiddle" /> **OpenClaw** | `skills/*/*/SKILL.md` | Agent Skills Standard | Open agent harness |
+| <img src="assets/logos/direct/opencode.svg" width="18" height="18" align="absmiddle" /> **OpenCode** | `AGENTS.md` | OpenCode CLI format | Terminal coding agent |
+| **Windsurf & Cline** | `.windsurf/rules/*.md` & `.clinerules/*.md` | Plain Markdown | Workspace task rules |
+
+### Unified `.mcp.json`
 
 ```json
 {
   "mcpServers": {
-    "rea": {
-      "command": "npx",
-      "args": ["-y", "rea-agents@latest", "run"]
-    },
-    "playwright": {
-      "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest"]
-    },
+    "rea": { "command": "npx", "args": ["-y", "rea-agents@latest", "run"] },
+    "playwright": { "command": "npx", "args": ["-y", "@playwright/mcp@latest"] },
     "brightdata": {
       "command": "npx",
       "args": ["-y", "@brightdata/mcp"],
-      "env": {
-        "BRIGHTDATA_API_KEY": "${BRIGHTDATA_API_KEY}"
-      }
+      "env": { "BRIGHTDATA_API_KEY": "${BRIGHTDATA_API_KEY}" }
     },
     "hyperbrowser": {
       "command": "npx",
       "args": ["-y", "hyperbrowser-mcp"],
-      "env": {
-        "HYPERBROWSER_API_KEY": "${HYPERBROWSER_API_KEY}"
-      }
+      "env": { "HYPERBROWSER_API_KEY": "${HYPERBROWSER_API_KEY}" }
     }
   }
 }
@@ -149,226 +452,47 @@ This repository includes a ready-to-use [`.mcp.json`](.mcp.json) configuration:
 
 ---
 
-## 🚀 Quickstart & Setup
+## Roadmap
 
-### Step 1: Install & Register REA MCP Server
-```bash
-npx -y rea-agents@latest setup
-```
-> [!IMPORTANT]
-> After running setup, **restart your AI agent** (or IDE) to load the newly registered MCP server.
+See [CHANGELOG.md](CHANGELOG.md) for release history and [MINDMAP.md](MINDMAP.md) for the full visual topology.
 
-### Step 2: Install REA's Official Investigation Skill
-```bash
-npx skills add morluto/rea --skill reverse-engineer-anything
-```
+| Phase | Focus | Skills | Status |
+|---|---|---:|---|
+| 1 | REA Core — PE/ELF/Mach-O, APK/IPA, Web bundles, PCAP, SQLite, Game assets, Firmware & Crash triage | 12 | Complete |
+| 2 | Multi-Agent Ecosystem — Owner auth, 10-layer web audit, ECC rigor, Agent Reach, SurfSense & Browser MCPs | 9 | Complete |
+| 3 | Web, API, Auth & GraphQL Security Library (`claude-red` integration) | 20 | Complete |
+| 4 | Wireless — 802.11, WPA2/3, 802.1X, WPS, BLE, Classic BT, Zigbee/Matter, Z-Wave & LoRaWAN | 14 | Complete |
+| 5 | Binary Hardening, Crash Analysis, Exploit Mitigations & Coverage-Guided Fuzzing | 10 | Complete |
+| 6 | Active Directory, Cloud, Containers/K8s, CI/CD, Crypto, PrivEsc, Forensics, Supply Chain & AI | 35 | Complete |
+| 7 | Interactive Prompt Vault (500+ templates) & AI Prompt Builder Web App | — | Complete |
+| 8 | Deep Kernel Driver & eBPF Runtime Verification Modules | +12 | Planned |
+| 9 | Automated Binary Diffing & Patch-Gap Regression Suite | +10 | Planned |
 
-### Step 3: Install Agent Reach
-```bash
-uv tool install https://github.com/Panniantong/Agent-Reach/archive/refs/tags/v1.6.0.zip
-agent-reach setup
-```
-
-### Step 4: Install ECC Universal Tools
-```bash
-npm install -g ecc-universal ecc-agentshield
-```
-
-### Step 5: Install This Multi-Agent Skill Suite
-
-#### 🌟 Option A: 1-Click Claude Code Plugin (Recommended)
-REA_Skill is distributed as a native Claude Code plugin and self-hosted marketplace:
-```bash
-/plugin marketplace add smartworldarafath/REA_Skill
-/plugin install rea-skills@smartworldarafath
-```
-
-#### ⚡ Option B: Universal Agent Skills Standard (`skills.sh`)
-Install into any agent harness across Antigravity, Codex, Cursor, and Claude Code:
-```bash
-npx skills add smartworldarafath/REA_Skill
-```
-
-#### 🧪 Skill Health & Specification Verification
-Run the automated test suite to ensure all 21 skills, YAML frontmatters, `agents/openai.yaml` metadata, and plugin manifests are 100% compliant:
-```bash
-npm test
-# or
-npm run check-skills
-```
+Target: **120+ skills across 25+ categories**.
 
 ---
 
-### Option C: Per-Project Git Installation
+## Contributing
 
-Clone or copy this repository's files into the root of any workspace:
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for the `SKILL.md` template, `agents/openai.yaml` dual-harness metadata rules, and automated validation (`npm test`). See [SECURITY.md](SECURITY.md) for our security and responsible-use policy.
 
-```bash
-git clone https://github.com/smartworldarafath/REA_Skill.git .
-```
+## License
 
----
+[MIT](LICENSE) &copy; 2026 **Arafath Rahman** (`@smartworldarafath`).
 
-### Option B: Global Machine-Level Installation (Recommended for Personal Dev)
+## Acknowledgements
 
-Configure it once on your computer, and every AI agent will automatically recognize all skills, rules, and MCP tools in **any** folder or project:
-
-#### 1. Google Antigravity (Global Skills)
-Copy all skills to your user-level Gemini / Antigravity skills directory:
-```bash
-# Windows
-mkdir "%USERPROFILE%\.gemini\config\skills\rea-owner-authorization"
-mkdir "%USERPROFILE%\.gemini\config\skills\rea-personal-use-authorization"
-mkdir "%USERPROFILE%\.gemini\config\skills\website-security-audit"
-mkdir "%USERPROFILE%\.gemini\config\skills\agent-reach"
-mkdir "%USERPROFILE%\.gemini\config\skills\ecc-workflow"
-mkdir "%USERPROFILE%\.gemini\config\skills\playwright-mcp"
-mkdir "%USERPROFILE%\.gemini\config\skills\brightdata-mcp"
-mkdir "%USERPROFILE%\.gemini\config\skills\hyperbrowser-mcp"
-mkdir "%USERPROFILE%\.gemini\config\skills\surfsense"
-
-copy ".agents\skills\rea-owner-authorization\SKILL.md" "%USERPROFILE%\.gemini\config\skills\rea-owner-authorization\"
-copy ".agents\skills\rea-personal-use-authorization\SKILL.md" "%USERPROFILE%\.gemini\config\skills\rea-personal-use-authorization\"
-copy ".agents\skills\website-security-audit\SKILL.md" "%USERPROFILE%\.gemini\config\skills\website-security-audit\"
-copy ".agents\skills\ecc-workflow\SKILL.md" "%USERPROFILE%\.gemini\config\skills\ecc-workflow\"
-copy ".agents\skills\playwright-mcp\SKILL.md" "%USERPROFILE%\.gemini\config\skills\playwright-mcp\"
-copy ".agents\skills\brightdata-mcp\SKILL.md" "%USERPROFILE%\.gemini\config\skills\brightdata-mcp\"
-copy ".agents\skills\hyperbrowser-mcp\SKILL.md" "%USERPROFILE%\.gemini\config\skills\hyperbrowser-mcp\"
-copy ".agents\skills\surfsense\SKILL.md" "%USERPROFILE%\.gemini\config\skills\surfsense\"
-xcopy /E /I /Y ".agents\skills\agent-reach" "%USERPROFILE%\.gemini\config\skills\agent-reach"
-
-# macOS / Linux
-mkdir -p ~/.gemini/config/skills/{rea-owner-authorization,rea-personal-use-authorization,website-security-audit,agent-reach,ecc-workflow,playwright-mcp,brightdata-mcp,hyperbrowser-mcp,surfsense}
-cp -r .agents/skills/* ~/.gemini/config/skills/
-```
-
-#### 2. OpenAI Codex (Global System Prompt)
-Append the instructions to your global Codex configuration (`~/.codex/AGENTS.md`):
-```bash
-# Windows
-type AGENTS.md >> "%USERPROFILE%\.codex\AGENTS.md"
-
-# macOS / Linux
-cat AGENTS.md >> ~/.codex/AGENTS.md
-```
-
-#### 3. Claude Code (Global Instructions)
-Append or link to your global Claude Code configuration:
-```bash
-# Windows
-type CLAUDE.md >> "%USERPROFILE%\.claude\CLAUDE.md"
-
-# macOS / Linux
-cat CLAUDE.md >> ~/.claude/CLAUDE.md
-```
-
-#### 4. Cursor (Global Rules for AI)
-1. Open Cursor Settings: `Ctrl + ,` (or `Cmd + ,` on macOS).
-2. Navigate to **Features** > **Rules for AI** (User Rules).
-3. Paste the contents of [`AGENTS.md`](AGENTS.md).
+- **REA (Reverse Engineer Anything):** [morluto/rea](https://github.com/morluto/rea) — MCP server for binary, web, mobile, and runtime reverse engineering
+- **claude-red Skill Taxonomy:** [SnailSploit/claude-red](https://github.com/SnailSploit/claude-red) (Kai Aizen) & [sahar042/offensive-checklist](https://github.com/sahar042/offensive-checklist)
+- **Agent Skills Architecture:** [mattpocock/skills](https://github.com/mattpocock/skills) — plugin manifest, ADR, and `grill-me` patterns
+- **Engineering Rigor & Research:** [Everything Claude Code](https://github.com/affaan-m/everything-claude-code), [Agent Reach](https://github.com/Panniantong/agent-reach), and [SurfSense](https://github.com/MODSetter/SurfSense)
 
 ---
 
-## 💬 Usage Examples
+<div align="center">
 
-### Example 1: Web Application Analysis with REA
-> *"Use REA to trace and inspect the network request logic and WebSocket frames of my web app."*
+*Give your coding agent the right skill and it stops guessing — it becomes a reverse engineer and security architect.*
 
-### Example 2: Native Binary & Framework Inspection
-> *"Inspect my compiled binary with REA to analyze exported symbols and verify native boundaries."*
+[Live Website & 500+ Prompts](https://smartworldarafath.github.io/REA_Skill/) &bull; [GitHub Repository](https://github.com/smartworldarafath/REA_Skill) &bull; [Visual Mindmap](MINDMAP.md) &bull; [Security Policy](SECURITY.md)
 
-### Example 3: Android / Electron App Debugging
-> *"Use REA to inspect my Electron application package, check event listeners, and reconstruct component routes."*
-
-### Example 4: Vulnerability Hunting & Pre-Publishing Audit
-> *"Reverse engineer my AI app and find all vulnerabilities so I can fix them before publishing."*
-
-### Example 5: Defensive Website Security Audit (2nd & 3rd Websites)
-> *"Audit my website https://my-other-site.com/ for security vulnerabilities, header misconfigurations, and frontend secret leaks."*
-
-### Example 6: Lost Source Code & Data Recovery
-> *"My laptop is not turning on, I lost my source code. Without codes I cannot improve my app. Reverse engineer my app and recover all app data so I can continue my project."*
-
-### Example 7: Prompt Shortcut
-```text
-$rea-personal-use-authorization Audit my app for security weakpoints.
-```
-
-### Example 8: Live Threat Intelligence with Agent Reach
-> *"Use Agent Reach to look up latest CVE disclosures and Reddit discussions about Next.js middleware vulnerabilities."*
-
-### Example 9: ECC Feature Implementation & Refactoring Pipeline
-> *"Execute orch-add-feature to build an API rate-limiting middleware using Redis and TDD."*
-
-### Example 10: Interactive Browser Testing with Microsoft Playwright MCP
-> *"Use Playwright MCP to navigate to http://localhost:3000/login, fill out test credentials, click submit, and verify that the dashboard loads."*
-
-### Example 11: Unlocking Protected Endpoints with Bright Data MCP
-> *"Use Bright Data MCP to scrape and extract pricing data from https://protected-target.com/ without triggering Cloudflare blocks."*
-
-### Example 12: Air-Gapped Document Synthesis with SurfSense
-> *"Use SurfSense to index all decompiled pseudocode files in ./dist and synthesize a security architecture map locally using Ollama."*
-
----
-
-## 📂 Repository Architecture & Standards
-
-```text
-REA_Skill/
-├── .claude-plugin/                      # Native Claude Code plugin & self-hosted marketplace
-│   ├── plugin.json                      # Plugin manifest listing 21 skills & metadata
-│   └── marketplace.json                 # 1-click install registry for Claude Code
-├── .agents/
-│   ├── invocation.md                    # Model-invoked vs. user-invoked architectural discipline
-│   ├── adr/                             # Architecture Decision Records
-│   │   ├── 0001-specialized-10-domain-architecture.md
-│   │   ├── 0002-ship-as-claude-code-plugin-and-skills-sh.md
-│   │   ├── 0003-zero-skeleton-and-reconstruction-integrity.md
-│   │   └── 0004-interactive-grilling-scoping-protocol.md
-│   └── skills/                          # 21-Skill Multi-Domain Matrix
-│       ├── rea-universal-orchestrator/  # Master artifact auto-detection & router
-│       ├── rea-grill-me/                # User-invoked frontier-question interrogation
-│       ├── rea-grilling/                # Model-invoked interactive scoping engine
-│       ├── rea-full-code-recovery/      # Zero-skeleton lost source code recovery
-│       ├── rea-binary-disassembly/      # PE, ELF, Mach-O, stripped Go/Rust decompilation
-│       ├── rea-mobile-app-recovery/     # Android APK/AAB & iOS IPA reconstruction
-│       ├── rea-web-bundle-recovery/     # JS/TS bundles, WASM, Electron asar recovery
-│       ├── rea-protocol-api-recovery/   # PCAP, Protobuf/gRPC, WebSockets, REST APIs
-│       ├── rea-database-storage-recovery/# SQLite, Realm, LevelDB, binary schemas
-│       ├── rea-game-asset-recovery/     # Unity, Unreal, Godot assets & compiled shaders
-│       ├── rea-performance-crash-triage/# Minidumps, Frida instrumentation, flamegraphs
-│       ├── rea-firmware-iot-extension/  # Firmware extraction, EVM contracts, RF signals
-│       ├── website-security-audit/      # 10-layer defensive web vulnerability scanner
-│       ├── agent-reach/                 # Internet search & platforms reader (Twitter, Reddit)
-│       ├── surfsense/                   # Air-gapped local documentation RAG
-│       ├── brightdata-mcp/              # Anti-bot scraping & proxy bypass
-│       ├── hyperbrowser-mcp/            # Cloud headless SPA crawler
-│       ├── playwright-mcp/              # Browser DOM accessibility & E2E testing
-│       ├── ecc-workflow/                # ECC engineering rigor & TDD pipeline
-│       ├── rea-owner-authorization/     # Legal owner verification skill
-│       └── rea-personal-use-authorization/# Persistent personal use authorization
-├── skills/                              # Mirrored root skills directory (for skills.sh / standard tools)
-├── scripts/
-│   ├── check-skills.mjs                 # Automated quality test suite (npm test)
-│   ├── sync-skills-dir.mjs              # Mirror sync from .agents/skills to skills/
-│   └── sync-plugin-version.mjs          # Version synchronization script
-├── package.json                         # npm package manifest with test & validation scripts
-├── .mcp.json                            # Unified MCP servers configuration
-├── AGENTS.md                            # Codex, Copilot, & universal agent instructions
-├── CLAUDE.md                            # Claude Code root import configuration
-├── LICENSE                              # MIT License
-└── README.md                            # Complete documentation & usage guide
-```
-
----
-
-## ⚠️ Important Boundary & Alignment Notice
-
-1. **Owner-Only Scope:** This authorization suite is strictly for inspecting, tracing, debugging, and recovering **your own software, applications, and web services**. It is not designed or intended for cracking third-party proprietary systems without permission.
-2. **Model-Level Guardrails (e.g. Anthropic):** Some frontier LLMs (such as Claude 3.5/3.7 Sonnet) incorporate hardcoded, system-level cybersecurity safety filters. While this skill eliminates 90%+ of conversational refusals, severe vulnerability exploitation payloads may still trigger provider-level filters. For advanced authorized security research, consider provider verification programs (e.g., Anthropic's Cyber Verification Program) or local open-weights LLMs (e.g., Ollama) on your machine.
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE) &copy; 2026 **Arafath Rahman**.
+</div>

@@ -1,0 +1,139 @@
+# REA_Skill + claude-red — Unified 100-Skill Mindmap
+
+A visual map of every skill in the library across all **25 categories** and **100 skills**. Use it to navigate the suite, discover specialized reverse-engineering or security-auditing skills, and verify coverage before an engagement or source-recovery project.
+
+References for completeness checking: [REA MCP](https://github.com/morluto/rea), [MITRE ATT&CK](https://attack.mitre.org/), [OWASP WSTG](https://owasp.org/www-project-web-security-testing-guide/), [OWASP MASVS](https://mas.owasp.org/MASVS/), [Matt Pocock Agent Skills Standard](https://github.com/mattpocock/skills), [SnailSploit claude-red](https://github.com/SnailSploit/claude-red).
+
+---
+
+## Library Map (25 Categories · 100 Skills)
+
+```mermaid
+mindmap
+  root((REA_Skill + claude-red))
+    REA-Core
+      rea-universal-orchestrator
+      rea-grill-me
+      rea-grilling
+      rea-full-code-recovery
+      rea-binary-disassembly
+      rea-mobile-app-recovery
+      rea-web-bundle-recovery
+      rea-protocol-api-recovery
+      rea-database-storage-recovery
+      rea-game-asset-recovery
+      rea-performance-crash-triage
+      rea-firmware-iot-extension
+    Agent-Ecosystem
+      rea-owner-authorization
+      rea-personal-use-authorization
+      website-security-audit
+      ecc-workflow
+      agent-reach
+      surfsense
+      playwright-mcp
+      brightdata-mcp
+      hyperbrowser-mcp
+    Web
+      offensive-sqli
+      offensive-xss
+      offensive-ssrf
+      offensive-ssti
+      offensive-xxe
+      offensive-idor
+      offensive-file-upload
+      offensive-rce
+      offensive-deserialization
+      offensive-race-condition
+      offensive-request-smuggling
+      offensive-open-redirect
+      offensive-parameter-pollution
+      offensive-graphql
+      offensive-waf-bypass
+      offensive-business-logic
+    Auth
+      offensive-jwt
+      offensive-oauth
+    Active-Directory
+      offensive-active-directory
+      offensive-netexec
+    Wireless
+      offensive-wifi
+      offensive-wifi-recon
+      offensive-wpa2-psk
+      offensive-wpa3-sae
+      offensive-wpa-enterprise
+      offensive-wps
+      offensive-evil-twin
+      offensive-krack-fragattacks
+      offensive-deauth-disassoc
+      offensive-bluetooth-ble
+      offensive-bluetooth-classic
+      offensive-zigbee-thread-matter
+      offensive-z-wave
+      offensive-lorawan-sub-ghz
+    Cloud
+      offensive-cloud
+    Mobile
+      offensive-mobile
+    IoT
+      offensive-iot
+    Infrastructure
+      offensive-initial-access
+      offensive-advanced-redteam
+      offensive-edr-evasion
+      offensive-shellcode
+      offensive-keylogger-arch
+      offensive-windows-mitigations
+      offensive-windows-boundaries
+    Exploit-Dev
+      offensive-exploit-development
+      offensive-exploit-dev-course
+      offensive-basic-exploitation
+      offensive-crash-analysis
+      offensive-mitigations
+      offensive-toctou
+    Fuzzing
+      offensive-fuzzing
+      offensive-fuzzing-course
+      offensive-bug-identification
+      offensive-vuln-classes
+    Recon
+      offensive-osint
+      offensive-osint-methodology
+    API
+      offensive-api-security
+      offensive-api-abuse
+    Container
+      offensive-container-escape
+      offensive-k8s-attacks
+    CICD
+      offensive-cicd-pipeline
+      offensive-cicd-secrets
+    Crypto
+      offensive-crypto-attacks
+      offensive-tls-attacks
+    PrivEsc
+      offensive-linux-privesc
+      offensive-windows-privesc
+    Post-Exploitation
+      offensive-lateral-movement
+      offensive-persistence
+      offensive-data-exfiltration
+    Forensics
+      offensive-anti-forensics
+      offensive-c2-frameworks
+    Supply-Chain
+      offensive-supply-chain
+      offensive-dependency-confusion
+    Social-Engineering
+      offensive-phishing
+      offensive-social-engineering
+    Network
+      offensive-network-attacks
+    AI
+      offensive-ai-security
+    Utility
+      offensive-fast-checking
+      offensive-reporting
+```
