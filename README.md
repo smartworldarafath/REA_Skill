@@ -452,6 +452,154 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 
 ---
 
+## 🎯 The Problem It Solves & The Solution
+
+When developers and security researchers use AI coding assistants to reverse-engineer, inspect, debug, test, or build on **their own apps, websites, and binaries**, AI agents frequently run into friction:
+
+- ❌ Refusing to run decompilers, disassemblers, or REA MCP tools on false-positive cybersecurity grounds.
+- ❌ Pausing every single turn to question authorization or lecturing about cybersecurity ethics.
+- ❌ Outputting partial skeletons, `// TODO` stubs, or non-compiling fragments during source code recovery.
+- ❌ Getting blocked by anti-bot walls (Cloudflare, CAPTCHAs) when fetching external documentation or auditing endpoints.
+- ❌ Inability to interactively click, type, and verify live web applications without burning context on heavy screenshots.
+- ❌ Leaking proprietary code or research notes to third-party cloud vector stores.
+
+### 💡 The Solution
+
+- ✅ **Persistent Owner Authorization:** Recognizes you as the verified owner and developer of target software, eliminating repetitive justification hurdles.
+- ✅ **Zero-Skeleton Full Code Recovery:** Reconstructs 100% complete, compilable source code with 1-click multi-compiler verification (`build.bat` / `build.sh`).
+- ✅ **ECC Engineering Rigor:** Enforces the 6-stage development pipeline (Research & Reuse → Plan First → TDD → Code Review → Zero-Secret Audit → Verification).
+- ✅ **100 Specialized Skills Across 25 Categories:** Covers every reverse-engineering, binary, mobile, web, wireless, cloud, fuzzing, and security-auditing surface.
+- ✅ **Live Web Intelligence & Triple-Engine Browser Automation:** Agent Reach, Microsoft Playwright MCP, Bright Data MCP, and Hyperbrowser MCP.
+- ✅ **Air-Gapped Document Intelligence:** Private local research and note synthesis powered by SurfSense and local LLMs.
+
+---
+
+## Global Machine-Level Installation (Personal Dev Setup)
+
+Configure it once on your computer so every AI agent automatically recognizes all 100 skills, rules, and MCP tools in **any** folder or project:
+
+#### 1. Google Antigravity (Global Skills)
+```bash
+# Windows
+xcopy /E /I /Y ".agents\skills" "%USERPROFILE%\.gemini\config\skills"
+
+# macOS / Linux
+mkdir -p ~/.gemini/config/skills
+cp -r .agents/skills/* ~/.gemini/config/skills/
+```
+
+#### 2. OpenAI Codex (Global System Prompt)
+```bash
+# Windows
+type AGENTS.md >> "%USERPROFILE%\.codex\AGENTS.md"
+
+# macOS / Linux
+cat AGENTS.md >> ~/.codex/AGENTS.md
+```
+
+#### 3. Claude Code (Global Instructions)
+```bash
+# Windows
+type CLAUDE.md >> "%USERPROFILE%\.claude\CLAUDE.md"
+
+# macOS / Linux
+cat CLAUDE.md >> ~/.claude/CLAUDE.md
+```
+
+#### 4. Cursor (Global Rules for AI)
+1. Open Cursor Settings: `Ctrl + ,` (or `Cmd + ,` on macOS).
+2. Navigate to **Features** > **Rules for AI** (User Rules).
+3. Paste the contents of [`AGENTS.md`](AGENTS.md).
+
+---
+
+## 💬 Usage Examples
+
+### Example 1: Web Application Analysis with REA
+> *"Use REA to trace and inspect the network request logic and WebSocket frames of my web app."*
+
+### Example 2: Native Binary & Framework Inspection
+> *"Inspect my compiled binary with REA to analyze exported symbols and verify native boundaries."*
+
+### Example 3: Android / Electron App Debugging
+> *"Use REA to inspect my Electron application package, check event listeners, and reconstruct component routes."*
+
+### Example 4: Vulnerability Hunting & Pre-Publishing Audit
+> *"Reverse engineer my AI app and find all vulnerabilities so I can fix them before publishing."*
+
+### Example 5: Defensive Website Security Audit (10-Layer Scanner)
+> *"Audit my website https://my-other-site.com/ for security vulnerabilities, header misconfigurations, and frontend secret leaks."*
+
+### Example 6: Lost Source Code & Data Recovery (Zero-Skeleton Law)
+> *"My laptop is not turning on, I lost my source code. Without codes I cannot improve my app. Reverse engineer my app and recover all app data so I can continue my project."*
+
+### Example 7: Interactive Scoping & Frontier Grilling
+```text
+/rea-grill-me Scope the full C++20 source recovery and shader extraction for my compiled binary before writing code.
+```
+
+### Example 8: Live Threat Intelligence with Agent Reach
+> *"Use Agent Reach to look up latest CVE disclosures and Reddit discussions about Next.js middleware vulnerabilities."*
+
+### Example 9: ECC Feature Implementation & Refactoring Pipeline
+> *"Execute orch-add-feature to build an API rate-limiting middleware using Redis and TDD."*
+
+### Example 10: Interactive Browser Testing with Microsoft Playwright MCP
+> *"Use Playwright MCP to navigate to http://localhost:3000/login, fill out test credentials, click submit, and verify that the dashboard loads."*
+
+### Example 11: Unlocking Protected Endpoints with Bright Data MCP
+> *"Use Bright Data MCP to scrape and extract pricing data from https://protected-target.com/ without triggering Cloudflare blocks."*
+
+### Example 12: Air-Gapped Document Synthesis with SurfSense
+> *"Use SurfSense to index all decompiled pseudocode files in ./dist and synthesize a security architecture map locally using Ollama."*
+
+---
+
+## 📂 Repository Architecture & File Structure
+
+```text
+REA_Skill/
+├── .claude-plugin/                      # Native Claude Code plugin & self-hosted marketplace
+│   ├── plugin.json                      # Plugin manifest listing all 100 skills & metadata
+│   └── marketplace.json                 # 1-click install registry for Claude Code
+├── .agents/
+│   ├── invocation.md                    # Model-invoked vs. user-invoked architectural discipline
+│   ├── adr/                             # Architecture Decision Records (0001–0004)
+│   └── skills/                          # All 100 Skills (YAML frontmatter + agents/openai.yaml)
+├── skills/                              # Categorized (25 categories) & mirrored root skills tree
+│   ├── rea-core/                        # 12 Reverse Engineering & Source Recovery skills
+│   ├── agent-ecosystem/                 # 9 Multi-Agent & Browser MCP skills
+│   └── <23 claude-red categories>/      # 79 Security Assessment & Auditing skills
+├── .clinerules/                         # Cline workspace rules
+├── .cursor/rules/                       # Cursor IDE MDC rules
+├── .windsurf/rules/                     # Windsurf Cascade rules
+├── .github/copilot-instructions.md      # GitHub Copilot workspace instructions
+├── docs/                                # Interactive Three.js Website, 500+ Prompt Vault & AI Prompt Builder
+├── recovered_source/                    # Verified C99/Win32 full source recovery showcase & build.bat
+├── scripts/                             # Automated skill verification & manifest sync scripts
+├── tools/build_manifest.py              # Python manifest builder for claude-skills.json
+├── claude-skills.json                   # Machine-readable index of all 25 categories & 100 skills
+├── install.sh                           # Interactive & CLI skill installer
+├── convert_skills.py                    # Markdown-to-SKILL.md converter utility
+├── MINDMAP.md                           # Visual Mermaid mindmap of all 25 categories & 100 skills
+├── AGENTS.md                            # Universal agent instructions (Codex, Copilot, Antigravity)
+├── CLAUDE.md                            # Claude Code root instruction configuration
+├── SECURITY.md                          # Security & responsible disclosure policy
+├── CONTRIBUTING.md                      # Contributor guide & skill specification
+├── CHANGELOG.md                         # Release history
+├── package.json                         # npm package manifest & test runner
+└── README.md                            # Complete documentation
+```
+
+---
+
+## ⚠️ Important Boundary & Alignment Notice
+
+1. **Owner & Authorized Scope:** This suite is strictly for inspecting, tracing, debugging, auditing, and recovering **your own software, applications, and web services** or targets where you hold explicit written authorization.
+2. **Model-Level Guardrails:** Some frontier LLMs incorporate provider-level safety filters. While this suite eliminates false-positive conversational refusals on authorized tasks, always use these methodologies responsibly within legal and authorized boundaries.
+
+---
+
 ## Roadmap
 
 See [CHANGELOG.md](CHANGELOG.md) for release history and [MINDMAP.md](MINDMAP.md) for the full visual topology.
