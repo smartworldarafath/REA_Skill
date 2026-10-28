@@ -4,8 +4,8 @@
   "license": "MIT",
   "homepage": "https://smartworldarafath.github.io/REA_Skill/",
   "repository": "https://github.com/smartworldarafath/REA_Skill",
-  "totalCategories": 29,
-  "totalSkills": 163,
+  "totalCategories": 30,
+  "totalSkills": 164,
   "categories": {
     "rea-core": [
       "rea-binary-disassembly",
@@ -31,6 +31,9 @@
       "rea-personal-use-authorization",
       "surfsense",
       "website-security-audit"
+    ],
+    "ai-pentest": [
+      "strix"
     ],
     "web": [
       "offensive-business-logic",
@@ -1370,6 +1373,13 @@
       "path": "skills/payloads-resources/payloads-methodology/SKILL.md",
       "agentPath": ".agents/skills/payloads-methodology/SKILL.md",
       "description": "Penetration testing methodology cheatsheets from PayloadsAllTheThings covering Active Directory, Cloud (AWS/Azure/GCP), network pivoting, reverse shells, C2 frameworks, and structured pentest engagement resources."
+    },
+    {
+      "name": "strix",
+      "category": "ai-pentest",
+      "path": "skills/strix/SKILL.md",
+      "agentPath": ".agents/skills/strix/SKILL.md",
+      "description": "Autonomous AI penetration testing agent that finds and fixes vulnerabilities in your own applications and web services using the Strix AI pentest agent (usestrix/strix). Owner-authorized, defensive security auditing only."
     }
   ]
 }

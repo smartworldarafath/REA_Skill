@@ -5,11 +5,11 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 163 drop-in `SKILL.md` files across 29 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 164 drop-in `SKILL.md` files across 30 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-163-red.svg)](#skill-index)
-[![Categories](https://img.shields.io/badge/categories-29-orange.svg)](#categories)
+[![Skills](https://img.shields.io/badge/skills-164-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-30-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
 [![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
@@ -35,7 +35,7 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **163 specialized skills across 29 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **164 specialized skills across 30 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
 1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (12 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
@@ -514,6 +514,16 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 | Skill | Description |
 |---|---|
 | [`payloads-methodology`](skills/payloads-resources/payloads-methodology/SKILL.md) | Pentest methodology cheatsheets — AD Attack, Reverse Shells, Network Pivoting, Linux/Windows PrivEsc, Cloud Pentest (AWS/Azure/GCP), Kubernetes, Docker |
+
+---
+
+### AI Penetration Testing (Strix)
+
+`skills/strix/` &bull; `.agents/skills/strix/`
+
+| Skill | Description |
+|---|---|
+| [`strix`](skills/strix/SKILL.md) | Autonomous AI penetration testing — find and fix vulnerabilities in your own applications and web services with the Strix AI pentest agent |
 
 ---
 
