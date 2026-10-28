@@ -71,3 +71,6 @@ recovered_source/
 recovered_fpilot_assets/
 Simple2D.*.hlsl
 fpilot_*.png
+
+!assets/*.png
+!docs/assets/*.png
