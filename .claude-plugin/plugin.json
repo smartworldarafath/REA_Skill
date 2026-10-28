@@ -1,7 +1,7 @@
 {
   "name": "rea-skills",
   "version": "2.1.0",
-  "description": "Unified 163-Skill Reverse Engineering, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite (REA_Skill + claude-red + PayloadsAllTheThings) across 29 categories.",
+  "description": "Unified 169-Skill Reverse Engineering, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite across 34 categories.",
   "author": {
     "name": "smartworldarafath",
     "url": "https://github.com/smartworldarafath"
@@ -23,8 +23,13 @@
   ],
   "skills": [
     "./.agents/skills/agent-reach",
+    "./.agents/skills/awesome-hacking",
+    "./.agents/skills/awesome-hacking-resources",
     "./.agents/skills/brightdata-mcp",
+    "./.agents/skills/claude-bughunter",
     "./.agents/skills/ecc-workflow",
+    "./.agents/skills/gtfobins",
+    "./.agents/skills/hacktricks",
     "./.agents/skills/hyperbrowser-mcp",
     "./.agents/skills/offensive-active-directory",
     "./.agents/skills/offensive-advanced-redteam",
@@ -183,6 +188,7 @@
     "./.agents/skills/rea-protocol-api-recovery",
     "./.agents/skills/rea-universal-orchestrator",
     "./.agents/skills/rea-web-bundle-recovery",
+    "./.agents/skills/strix",
     "./.agents/skills/surfsense",
     "./.agents/skills/website-security-audit"
   ]
