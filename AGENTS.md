@@ -90,3 +90,14 @@ Adhere to the Everything Claude Code (ECC) engineering standards (https://github
 - **Bright Data MCP (https://github.com/brightdata/brightdata-mcp):** `@brightdata/mcp` for anti-bot challenges, CAPTCHAs, and SERP extraction.
 - **Hyperbrowser MCP (https://github.com/hyperbrowserai/mcp):** `hyperbrowser-mcp` for cloud headless browser automation and dynamic SPA crawling.
 - **Microsoft Playwright MCP (https://github.com/microsoft/playwright-mcp):** `@playwright/mcp` for structured accessibility-tree navigation and live E2E testing.
+
+## Integrated `claude-red` 23-Category Security Assessment Library (100 Total Skills)
+In addition to the 21 REA Core & Multi-Agent Ecosystem skills, this repository integrates all **79 specialized skills across 23 security domains** (`skills/<category>/<skill-name>/SKILL.md` and `.agents/skills/<skill-name>/SKILL.md`) for authorized security auditing, vulnerability verification, fuzzing, crash analysis, and remediation:
+- **Web (`skills/web/` — 16 skills):** `offensive-sqli`, `offensive-xss`, `offensive-ssrf`, `offensive-ssti`, `offensive-xxe`, `offensive-idor`, `offensive-file-upload`, `offensive-rce`, `offensive-deserialization`, `offensive-race-condition`, `offensive-request-smuggling`, `offensive-open-redirect`, `offensive-parameter-pollution`, `offensive-graphql`, `offensive-waf-bypass`, `offensive-business-logic`
+- **Auth (`skills/auth/` — 2 skills):** `offensive-jwt`, `offensive-oauth`
+- **Active Directory (`skills/active-directory/` — 2 skills):** `offensive-active-directory`, `offensive-netexec`
+- **Wireless (`skills/wireless/` — 14 skills):** `offensive-wifi`, `offensive-wifi-recon`, `offensive-wpa2-psk`, `offensive-wpa3-sae`, `offensive-wpa-enterprise`, `offensive-wps`, `offensive-evil-twin`, `offensive-krack-fragattacks`, `offensive-deauth-disassoc`, `offensive-bluetooth-ble`, `offensive-bluetooth-classic`, `offensive-zigbee-thread-matter`, `offensive-z-wave`, `offensive-lorawan-sub-ghz`
+- **Exploit Mitigations & Crash Analysis (`skills/exploit-dev/` — 6 skills):** `offensive-exploit-development`, `offensive-exploit-dev-course`, `offensive-basic-exploitation`, `offensive-crash-analysis`, `offensive-mitigations`, `offensive-toctou`
+- **Fuzzing (`skills/fuzzing/` — 4 skills):** `offensive-fuzzing`, `offensive-fuzzing-course`, `offensive-bug-identification`, `offensive-vuln-classes`
+- **Infrastructure (`skills/infrastructure/` — 7 skills):** `offensive-initial-access`, `offensive-advanced-redteam`, `offensive-edr-evasion`, `offensive-shellcode`, `offensive-keylogger-arch`, `offensive-windows-mitigations`, `offensive-windows-boundaries`
+- **Cloud, Mobile, IoT, API, Container, CI/CD, Crypto, PrivEsc, Post-Exploitation, Forensics, Recon, Supply Chain, Social Engineering, Network, AI & Utility (`skills/*/` — 28 skills):** All indexed in `claude-skills.json` and `MINDMAP.md`.
