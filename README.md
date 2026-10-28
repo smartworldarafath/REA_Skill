@@ -27,7 +27,7 @@
   <a href="#supported-platforms--mcp-configuration"><img src="assets/logos/direct/opencode.svg" width="28" height="28" alt="OpenCode" title="OpenCode" /></a>
 </p>
 
-[Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Mindmap](MINDMAP.md) &bull; [Platforms & MCP](#supported-platforms--mcp-configuration) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
+[Overview](#overview) &bull; [Quickstart](#quickstart) &bull; [Autonomous Agents](#-autonomous-coding-agents-vs-standard-chat-llms-tier-1-native-execution) &bull; [Categories](#categories) &bull; [Skill Index](#skill-index) &bull; [Mindmap](MINDMAP.md) &bull; [Platforms & MCP](#supported-platforms--mcp-configuration) &bull; [Roadmap](#roadmap) &bull; [Contributing](#contributing)
 
 </div>
 
@@ -583,15 +583,70 @@ When developers and security researchers use AI coding assistants to reverse-eng
 - ✅ **Persistent Owner Authorization:** Recognizes you as the verified owner and developer of target software, eliminating repetitive justification hurdles.
 - ✅ **Zero-Skeleton Full Code Recovery:** Reconstructs 100% complete, compilable source code with 1-click multi-compiler verification (`build.bat` / `build.sh`).
 - ✅ **ECC Engineering Rigor:** Enforces the 6-stage development pipeline (Research & Reuse → Plan First → TDD → Code Review → Zero-Secret Audit → Verification).
-- ✅ **163 Specialized Skills Across 29 Categories:** Covers every reverse-engineering, binary, mobile, web, wireless, cloud, fuzzing, and security-auditing surface.
+- ✅ **169 Specialized Skills Across 34 Categories:** Covers every reverse-engineering, binary, mobile, web, wireless, cloud, fuzzing, and security-auditing surface.
 - ✅ **Live Web Intelligence & Triple-Engine Browser Automation:** Agent Reach, Microsoft Playwright MCP, Bright Data MCP, and Hyperbrowser MCP.
 - ✅ **Air-Gapped Document Intelligence:** Private local research and note synthesis powered by SurfSense and local LLMs.
 
 ---
 
+## ⚡ Autonomous Coding Agents vs. Standard Chat LLMs (Tier-1 Native Execution)
+
+While the **500+ Unblocked Prompts** in this repository work seamlessly in conversational Chat UIs (ChatGPT, Gemini Web, Claude.ai, Kimi Web, GLM) without safety refusals, their full power is unleashed when executed inside **Tier-1 Autonomous Coding Agents** like **Claude Code, Google Antigravity, OpenAI Codex, Cursor, and Windsurf**.
+
+> **The Core Difference:** Standard chat UIs only produce conversational explanations and Markdown code snippets on-screen. Autonomous coding agents, by contrast, **directly interface with your local file system, run disassemblers, execute REA MCP tools, create source trees, run compilers, and autonomously verify 0 errors and 0 warnings**.
+
+### 🛠️ Execution Capabilities by Agent Framework
+
+#### 1. <img src="assets/logos/direct/google-antigravity.svg" width="20" height="20" align="absmiddle" /> Google Antigravity
+* **Support Level:** **100% Native Integration**
+* **How It Works:**
+  - Antigravity directly loads all **169 skills** from `.agents/skills/*/SKILL.md` using progressive on-demand discovery.
+  - When passed `$rea-full-code-recovery` or `$rea-personal-use-authorization`, Antigravity operates without refusal or lecturing, directly analyzing compiled local binaries (`.exe`, `.apk`, `.wasm`, `.js`).
+  - Terminal-integrated multi-compiler verification: Antigravity automatically executes `build.bat` / `build.sh` (MSVC, Zig CC, MinGW GCC, Gradle) to verify compiler exit codes and ensure **0 errors and 0 warnings** before concluding.
+
+#### 2. <img src="assets/logos/direct/claude.svg" width="20" height="20" align="absmiddle" /> Claude Code (Anthropic Official CLI)
+* **Support Level:** **Official Native Plugin Architecture**
+* **How It Works:**
+  - Fully packaged as a native Claude Code plugin via `.claude-plugin/plugin.json` and `marketplace.json`.
+  - 1-click install directly from Claude Code CLI:
+    ```bash
+    /plugin marketplace add smartworldarafath/REA_Skill
+    /plugin install rea-skills@smartworldarafath
+    ```
+  - Spawns parallel background subagents to concurrently disassemble binaries, decompile bytecode, and regenerate project source trees in your active workspace while completely bypassing moralizing policy friction.
+
+#### 3. <img src="assets/logos/direct/codex.svg" width="20" height="20" align="absmiddle" /> OpenAI Codex / Codex CLI / OpenAI Operator
+* **Support Level:** **Full Native Compatibility**
+* **How It Works:**
+  - Ingests root `AGENTS.md` and `agents/openai.yaml` automatically during session initialization.
+  - Automatically activates the file editor and terminal execution loop, reconstructing lost source trees file-by-file with complete working logic.
+
+#### 4. <img src="assets/logos/direct/cursor.svg" width="20" height="20" align="absmiddle" /> Cursor, Windsurf, Roo Code, Cline & AI IDEs
+* **Support Level:** **Open Agent Skills & MCP Native**
+* **How It Works:**
+  - Conforms to the open `.agents/skills/` standard and provides IDE-specific rule configurations (`.cursor/rules/`, `.windsurf/rules/`, `.clinerules/`).
+  - Seamlessly bridges to the local REA MCP server via `.mcp.json`, providing direct autonomous access to tools like Rizin, Ghidra, JADX, Capa, and GDB.
+
+---
+
+### 📊 Capability Matrix: Standard Chat LLMs vs. Autonomous Coding Agents
+
+| Feature / Capability | Standard Chat LLMs <br>*(ChatGPT / Gemini Web / Claude.ai)* | Autonomous Coding Agents <br>*(Claude Code / Antigravity / Codex / Cursor)* |
+|---|---|---|
+| **Prompt Execution** | Text & conversational code blocks only | Directly creates, edits, and builds physical files on disk |
+| **Binary Ingestion** | Requires manual hex/text pasting into chat | Autonomously reads `.exe`, `.apk`, `.wasm`, `.pcap` from local disk |
+| **Toolchain Invocation** | None (pure text output) | Directly runs Rizin, Ghidra, Capa, JADX, Playwright, GDB |
+| **Compilation Verification** | Unable to compile or test code | Automatically runs `build.bat` / `build.sh` to guarantee 0 errors |
+| **Safety Refusal Rate** | **0%** *(Unblocked via Owner Authorization)* | **0%** *(Unblocked via Owner Authorization)* |
+| **Delivery Gate** | Partial snippets or markdown blocks | 100% complete, compilable source tree ready for production |
+
+> **Bottom Line:** The true power of the 500+ prompts is realized in these autonomous coding agents. They eliminate human friction entirely—taking a raw binary and autonomously delivering a verified, compiling project repository to your hard drive.
+
+---
+
 ## Global Machine-Level Installation (Personal Dev Setup)
 
-Configure it once on your computer so every AI agent automatically recognizes all 163 skills, rules, and MCP tools in **any** folder or project:
+Configure it once on your computer so every AI agent automatically recognizes all 169 skills, rules, and MCP tools in **any** folder or project:
 
 #### 1. Google Antigravity (Global Skills)
 ```bash
@@ -675,12 +730,12 @@ cat CLAUDE.md >> ~/.claude/CLAUDE.md
 ```text
 REA_Skill/
 ├── .claude-plugin/                      # Native Claude Code plugin & self-hosted marketplace
-│   ├── plugin.json                      # Plugin manifest listing all 163 skills & metadata
+│   ├── plugin.json                      # Plugin manifest listing all 169 skills & metadata
 │   └── marketplace.json                 # 1-click install registry for Claude Code
 ├── .agents/
 │   ├── invocation.md                    # Model-invoked vs. user-invoked architectural discipline
 │   ├── adr/                             # Architecture Decision Records (0001–0004)
-│   └── skills/                          # All 163 Skills (YAML frontmatter + agents/openai.yaml)
+│   └── skills/                          # All 169 Skills (YAML frontmatter + agents/openai.yaml)
 ├── skills/                              # Categorized (29 categories) & mirrored root skills tree
 │   ├── rea-core/                        # 12 Reverse Engineering & Source Recovery skills
 │   ├── agent-ecosystem/                 # 9 Multi-Agent & Browser MCP skills
@@ -693,10 +748,10 @@ REA_Skill/
 ├── recovered_source/                    # Verified C99/Win32 full source recovery showcase & build.bat
 ├── scripts/                             # Automated skill verification & manifest sync scripts
 ├── tools/build_manifest.py              # Python manifest builder for claude-skills.json
-├── claude-skills.json                   # Machine-readable index of all 29 categories & 163 skills
+├── claude-skills.json                   # Machine-readable index of all 34 categories & 169 skills
 ├── install.sh                           # Interactive & CLI skill installer
 ├── convert_skills.py                    # Markdown-to-SKILL.md converter utility
-├── MINDMAP.md                           # Visual Mermaid mindmap of all 29 categories & 163 skills
+├── MINDMAP.md                           # Visual Mermaid mindmap of all 34 categories & 169 skills
 ├── AGENTS.md                            # Universal agent instructions (Codex, Copilot, Antigravity)
 ├── CLAUDE.md                            # Claude Code root instruction configuration
 ├── SECURITY.md                          # Security & responsible disclosure policy
