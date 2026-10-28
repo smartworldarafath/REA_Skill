@@ -104,6 +104,12 @@ In addition to the 21 REA Core & Multi-Agent Ecosystem skills, this repository i
 - **AI Penetration Testing (`skills/strix/` — 1 skill):** `strix` — autonomous AI pentest agent (usestrix/strix) to find and fix vulnerabilities in your own applications and web services. Owner-authorized only; see `SECURITY.md` and the Strix authorized-use policy.
 - **Privilege Escalation (`skills/gtfobins/` — 1 skill):** `gtfobins` — curated GTFOBins reference of Unix-like executables for bypassing local security restrictions (SUID/sudo, bind/reverse shell, exfiltration) on owner-authorized systems. References GTFOBins externally (GPL-3.0); no content copied. Owner-authorized only.
 
+- **Resources (`skills/awesome-hacking-resources/`, `skills/awesome-hacking/` — 2 skills):** `awesome-hacking-resources` — curated hacking/penetration testing resource collection (learning, CTF, exploit dev, priv esc, OSINT, malware analysis, AI red teaming, vulnerable apps/OS, exploits, forums). References vitalysim/awesome-hacking-resources externally (GPL-3.0); no content copied. `awesome-hacking` — collection of curated security lists for hackers/pentesters (Android, AppSec, Bug Bounty, AI Security, Cryptography, Forensics, Payloads, Reverse Engineering, Web Security, etc.). References hack-with-github/awesome-hacking externally (CC0-1.0); no content copied. Owner-authorized only.
+
+- **Pentest Tricks (`skills/hacktricks/` — 1 skill):** `hacktricks` — pentesting tricks and techniques from CTFs, real-world apps, and security research covering web, network, AD, cloud, mobile, reversing, WiFi, IoT, and CTF methodology. References HackTricks/book.hacktricks.xyz externally; no content copied. Owner-authorized only.
+
+- **Bug Bounty & Red Team (`skills/claude-bughunter/` — 1 skill):** `claude-bughunter` — Claude Code skill bundle for bug hunting and external red-team work (82 skills, 15 slash commands, 681 disclosed-report patterns across 24 vulnerability classes, enterprise attack matrices). References elementalsouls/Claude-BugHunter externally (MIT code + CC-BY-4.0 content); no content copied. Owner-authorized only; stay within bug bounty program scope.
+
 ## Integrated PayloadsAllTheThings Payload Library (163 Total Skills — NEW in v2.1.0)
 In addition to the 100 REA + claude-red skills, this repository now integrates **63 payload skills** from [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) across 4 categories, for a total of **163 skills across 29 categories**:
 

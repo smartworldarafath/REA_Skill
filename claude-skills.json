@@ -4,8 +4,8 @@
   "license": "MIT",
   "homepage": "https://smartworldarafath.github.io/REA_Skill/",
   "repository": "https://github.com/smartworldarafath/REA_Skill",
-  "totalCategories": 31,
-  "totalSkills": 165,
+  "totalCategories": 34,
+  "totalSkills": 169,
   "categories": {
     "rea-core": [
       "rea-binary-disassembly",
@@ -233,6 +233,16 @@
     ],
     "payloads-resources": [
       "payloads-methodology"
+    ],
+    "resources": [
+      "awesome-hacking-resources",
+      "awesome-hacking"
+    ],
+    "pentest-tricks": [
+      "hacktricks"
+    ],
+    "bug-bounty": [
+      "claude-bughunter"
     ]
   },
   "skills": [
@@ -1390,6 +1400,34 @@
       "path": "skills/gtfobins/SKILL.md",
       "agentPath": ".agents/skills/gtfobins/SKILL.md",
       "description": "Curated GTFOBins reference of Unix-like executables for bypassing local security restrictions (SUID/sudo abuse, bind/reverse shell, exfiltration) on owner-authorized systems. References GTFOBins externally (GPL-3.0); no content copied into REA_Skill (MIT). Owner-authorized, defensive security auditing only."
+    },
+    {
+      "name": "awesome-hacking-resources",
+      "category": "resources",
+      "path": "skills/awesome-hacking-resources/SKILL.md",
+      "agentPath": ".agents/skills/awesome-hacking-resources/SKILL.md",
+      "description": "Curated collection of hacking/penetration testing resources (learning, CTF, exploit dev, privilege escalation, OSINT, malware analysis, AI red teaming, vulnerable apps/OS, exploits, forums) for owner-authorized learning and auditing. References Awesome Hacking Resources externally (GPL-3.0); no content copied into REA_Skill (MIT)."
+    },
+    {
+      "name": "awesome-hacking",
+      "category": "resources",
+      "path": "skills/awesome-hacking/SKILL.md",
+      "agentPath": ".agents/skills/awesome-hacking/SKILL.md",
+      "description": "Collection of curated security lists for hackers, pentesters, and security researchers (Android, AppSec, Bug Bounty, AI Security, Cryptography, Forensics, Payloads, Reverse Engineering, Web Security, etc.) for owner-authorized auditing. References Awesome Hacking externally (CC0-1.0); no content copied into REA_Skill (MIT)."
+    },
+    {
+      "name": "hacktricks",
+      "category": "pentest-tricks",
+      "path": "skills/hacktricks/SKILL.md",
+      "agentPath": ".agents/skills/hacktricks/SKILL.md",
+      "description": "Pentesting tricks and techniques from CTFs, real-world apps, and security research covering web, network, AD, cloud, mobile, reversing, WiFi, IoT, and CTF methodology for owner-authorized auditing. References HackTricks externally; no content copied into REA_Skill (MIT)."
+    },
+    {
+      "name": "claude-bughunter",
+      "category": "bug-bounty",
+      "path": "skills/claude-bughunter/SKILL.md",
+      "agentPath": ".agents/skills/claude-bughunter/SKILL.md",
+      "description": "Claude Code skill bundle for bug hunting and external red-team work (82 skills, 15 slash commands, 681 disclosed-report patterns across 24 vulnerability classes) for owner-authorized security auditing. References Claude-BugHunter externally (MIT code + CC-BY-4.0 content); no content copied into REA_Skill."
     }
   ]
 }
