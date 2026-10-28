@@ -372,22 +372,17 @@ a {
   line-height: 0.9;
   letter-spacing: -0.055em;
   margin: 0;
-  background: linear-gradient(135deg, var(--fg) 0%, var(--fg) 40%, var(--accent-cool) 50%, var(--fg) 60%, var(--fg) 100%);
-  background-size: 500% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: ss-text-shimmer 12s ease-in-out infinite alternate, ss-glitch-flash 8s ease infinite;
+  color: var(--fg);
   position: relative;
 }
 
 .hero-tagline span[style*="color:var(--fg-3)"] {
-  -webkit-text-fill-color: var(--fg-3) !important;
+  color: var(--fg-3) !important;
 }
 
 .hero-tagline::after {
   content: "_";
-  -webkit-text-fill-color: var(--accent-cool);
+  color: var(--accent-cool);
   animation: ss-blink 1.2s step-end infinite;
   font-weight: 300;
   margin-left: 2px;

@@ -44,6 +44,7 @@
 
   /* ==========================================================================
      2. SNAILSPLOIT TEXT SCRAMBLE GLITCH DECODER (.fx-scramble)
+     Executes ONLY once on page entry / refresh (identical to snailsploit.com)
      ========================================================================== */
   function initTextScramble() {
     if (prefersReduced) return;
@@ -53,52 +54,59 @@
     function scramble(el) {
       const targetText = el.getAttribute('data-fx') || el.textContent;
       let frame = 0;
-      const queue = [];
+      const q = [];
 
       for (let i = 0; i < targetText.length; i++) {
-        const start = Math.floor(Math.random() * 24);
-        const end = start + 28 + Math.floor(Math.random() * 28);
-        queue.push({
+        const s = Math.floor(Math.random() * 28);
+        q.push({
           to: targetText[i],
-          start: start,
-          end: end,
-          char: ''
+          s: s,
+          e: s + 30 + Math.floor(Math.random() * 30),
+          c: ''
         });
       }
 
-      function update() {
-        let output = '';
-        let completed = 0;
+      function tick() {
+        let out = '';
+        let done = 0;
 
-        for (let i = 0; i < queue.length; i++) {
-          const item = queue[i];
-          if (frame >= item.end) {
-            completed++;
-            output += item.to;
-          } else if (frame >= item.start) {
-            if (!item.char || Math.random() < 0.28) {
-              item.char = glyphs[Math.floor(Math.random() * glyphs.length)];
+        for (let i = 0; i < q.length; i++) {
+          const o = q[i];
+          if (o.to === ' ') {
+            out += ' ';
+            done++;
+            continue;
+          }
+          if (frame >= o.e) {
+            out += o.to;
+            done++;
+          } else if (frame >= o.s) {
+            if (!o.c || Math.random() < 0.28) {
+              o.c = glyphs[Math.floor(Math.random() * glyphs.length)];
             }
-            output += '<span class="fx-glitch">' + item.char + '</span>';
+            out += '<span class="fx-glitch">' + o.c + '</span>';
           } else {
-            output += item.to;
+            out += o.to;
           }
         }
 
-        el.innerHTML = output;
+        el.innerHTML = out;
 
-        if (completed < queue.length) {
+        if (done < q.length) {
           frame++;
-          requestAnimationFrame(update);
+          requestAnimationFrame(tick);
+        } else {
+          // Finished: ensure clean final string
+          el.textContent = targetText;
         }
       }
 
-      requestAnimationFrame(update);
+      requestAnimationFrame(tick);
     }
 
+    // Run once on page load / refresh ONLY (no mouseenter re-scramble)
     document.querySelectorAll('.fx-scramble').forEach((el) => {
       scramble(el);
-      el.addEventListener('mouseenter', () => scramble(el));
     });
   }
 
