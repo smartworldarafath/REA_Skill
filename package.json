@@ -1,6 +1,6 @@
 {
   "name": "rea-skills",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Universal Reverse Engineering, Lost Source Code Recovery, Binary Disassembly, Web/Mobile Security Auditing & Asset Reconstruction skill suite powered by REA MCP.",
   "type": "module",
   "repository": {

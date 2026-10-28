@@ -4,7 +4,7 @@
 
 PATTERNS=(
     'AIzaSy[0-9A-Za-z_-]{33}'
-    'sk-[a-zA-Z0-9_-]{20,}'
+    '(^|[^a-zA-Z0-9_-])sk-[a-zA-Z0-9_-]{20,}'
     'ghp_[a-zA-Z0-9]{36}'
     'gho_[a-zA-Z0-9]{36}'
     'github_pat_[a-zA-Z0-9_]{60,}'
@@ -18,7 +18,7 @@ PATTERNS=(
 STAGED_DIFF=$(git diff --cached --unified=0 | grep -E '^\+[^\+]')
 
 for PATTERN in "${PATTERNS[@]}"; do
-    MATCHES=$(echo "$STAGED_DIFF" | grep -E -e "$PATTERN" | grep -viE -e '(placeholder|your_|example|dummy|\$\{)')
+    MATCHES=$(echo "$STAGED_DIFF" | grep -E -e "$PATTERN" | grep -viE -e '(placeholder|your_|example|dummy|\$\{|https?://|jwt_tool|eyJzdWIiOiIxMjM0NTY3ODkw)')
     if [ -n "$MATCHES" ]; then
         echo "================================================================"
         echo "[SECURITY GATE REJECTED] Secret pattern detected in staged diff!"

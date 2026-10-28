@@ -101,3 +101,20 @@ In addition to the 21 REA Core & Multi-Agent Ecosystem skills, this repository i
 - **Fuzzing (`skills/fuzzing/` — 4 skills):** `offensive-fuzzing`, `offensive-fuzzing-course`, `offensive-bug-identification`, `offensive-vuln-classes`
 - **Infrastructure (`skills/infrastructure/` — 7 skills):** `offensive-initial-access`, `offensive-advanced-redteam`, `offensive-edr-evasion`, `offensive-shellcode`, `offensive-keylogger-arch`, `offensive-windows-mitigations`, `offensive-windows-boundaries`
 - **Cloud, Mobile, IoT, API, Container, CI/CD, Crypto, PrivEsc, Post-Exploitation, Forensics, Recon, Supply Chain, Social Engineering, Network, AI & Utility (`skills/*/` — 28 skills):** All indexed in `claude-skills.json` and `MINDMAP.md`.
+
+## Integrated PayloadsAllTheThings Payload Library (163 Total Skills — NEW in v2.1.0)
+In addition to the 100 REA + claude-red skills, this repository now integrates **63 payload skills** from [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) across 4 categories, for a total of **163 skills across 29 categories**:
+
+### Payload Injection Library (`skills/payloads-injection/` — 18 skills)
+`payloads-sqli`, `payloads-xss`, `payloads-xxe`, `payloads-ssti`, `payloads-ssrf`, `payloads-cmdi`, `payloads-ldap`, `payloads-nosqli`, `payloads-graphql`, `payloads-xpath`, `payloads-xslt`, `payloads-latex`, `payloads-saml`, `payloads-ssi`, `payloads-hpp`, `payloads-csv`, `payloads-proto-pollution`, `payloads-prompt-injection`
+
+### Payload Web Attacks Library (`skills/payloads-web/` — 29 skills)
+`payloads-cors`, `payloads-crlf`, `payloads-csrf`, `payloads-open-redirect`, `payloads-lfi-rfi`, `payloads-path-traversal`, `payloads-deserial`, `payloads-file-upload`, `payloads-smuggling`, `payloads-cache-deception`, `payloads-oauth`, `payloads-jwt`, `payloads-idor`, `payloads-race-condition`, `payloads-websocket`, `payloads-css-injection`, `payloads-clickjacking`, `payloads-type-juggling`, `payloads-mass-assignment`, `payloads-dep-confusion`, `payloads-ato`, `payloads-bruteforce`, `payloads-bizlogic`, `payloads-api-key-leaks`, `payloads-cve`, `payloads-reverse-proxy`, `payloads-vhosts`, `payloads-hidden-params`, `payloads-orm-leak`
+
+### Payload Research Library (`skills/payloads-research/` — 15 skills)
+`payloads-dom-clobbering`, `payloads-encoding`, `payloads-regex`, `payloads-dns-rebinding`, `payloads-tabnabbing`, `payloads-xs-leak`, `payloads-headless`, `payloads-cspt`, `payloads-gwt`, `payloads-ext-var`, `payloads-java-rmi`, `payloads-insecure-random`, `payloads-mgmt-interface`, `payloads-scm-exposure`, `payloads-zip-slip`
+
+### Payload Resources (`skills/payloads-resources/` — 1 skill)
+`payloads-methodology`
+
+Each PATT skill contains: YAML frontmatter, an operational pentest workflow, and the full PayloadsAllTheThings README content for that attack class. All skills are indexed in `claude-skills.json` and `MINDMAP.md`.

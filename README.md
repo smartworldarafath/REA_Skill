@@ -5,11 +5,11 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment & Multi-Agent Skills for Claude Code, Codex, Cursor & Antigravity — 100 drop-in `SKILL.md` files across 25 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 163 drop-in `SKILL.md` files across 29 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-100-red.svg)](#skill-index)
-[![Categories](https://img.shields.io/badge/categories-25-orange.svg)](#categories)
+[![Skills](https://img.shields.io/badge/skills-163-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-29-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
 [![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
@@ -35,11 +35,12 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **100 specialized skills across 25 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **163 specialized skills across 29 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
 1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (12 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
 3. **23-Category Security Assessment & Vulnerability Research Library (79 skills integrated from `claude-red`):** Structured `SKILL.md` methodologies spanning Web OWASP Top 10, JWT/OAuth, Active Directory, Wireless/BLE/Zigbee/LoRa, Cloud, Mobile MASVS, IoT/Firmware, Binary Mitigations, Crash Analysis, Coverage-Guided Fuzzing (AFL++/libFuzzer), APIs, Containers/Kubernetes, CI/CD, Cryptography, Supply Chain, and AI/LLM Security.
+4. **63 PayloadsAllTheThings Payload Skills (NEW in v2.1.0):** The complete [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) library adapted as structured `SKILL.md` files — covering SQL/XSS/XXE/SSRF/SSTI/Command Injection, file upload bypass, deserialization, request smuggling, OAuth/JWT attacks, CORS, CSRF, open redirect, prototype pollution, prompt injection, race conditions, and 40+ more payload categories with full PoC content.
 
 Drop `REA_Skill` into your coding agent and it operates like a senior reverse engineer and security architect: skills load progressively on demand based on conversational triggers—zero wasted context window.
 
@@ -84,7 +85,7 @@ cd REA_Skill && git sparse-checkout set skills/rea-core skills/web skills/exploi
 ./install.sh --target ~/.claude/skills     # explicit target directory
 ./install.sh --category rea-core           # install single category
 ./install.sh --category web                # install web security category
-./install.sh --list                        # list all 25 categories & counts
+./install.sh --list                        # list all 29 categories & counts
 ```
 
 ### 5. Direct CLI System Prompt Piping
@@ -132,6 +133,11 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 | [Network Attacks](#network-attacks) | 1 | Layer 2/3 switch hardening: Dynamic ARP Inspection (DAI), DHCP Snooping, 802.1X, LLMNR/NBT-NS disablement & VLAN isolation |
 | [AI Security](#ai-security) | 1 | OWASP LLM Top 10: direct/indirect prompt injection defenses, tool-call sandboxing, RAG ACLs & output validation |
 | [Utility](#utility) | 2 | Rapid 15-minute pre-release security triage checklist and CVSS v3.1/v4.0 executive & technical report authoring |
+| **PayloadsAllTheThings (NEW v2.1.0)** | | |
+| [Payload Injection Library](#payload-injection-library) | 18 | SQL, XSS, XXE, SSRF, SSTI, Command, LDAP, NoSQL, GraphQL, XPath, XSLT, LaTeX, SAML, SSI, HTTP Param Pollution, CSV, Prototype Pollution & Prompt Injection payloads |
+| [Payload Web Attacks Library](#payload-web-attacks-library) | 30 | CORS, CRLF, CSRF, Open Redirect, LFI/RFI, Path Traversal, Deserialization, File Upload, Request Smuggling, Cache Deception, OAuth, JWT, IDOR, Race Conditions, WebSocket, CSS Injection, Clickjacking, Type Juggling, Mass Assignment, Dependency Confusion, Account Takeover, Brute Force, Business Logic, API Key Leaks, CVE Exploits, Reverse Proxy, vHosts, Hidden Params, ORM Leak, CSS Injection |
+| [Payload Research Library](#payload-research-library) | 14 | DOM Clobbering, Encoding, ReDoS, DNS Rebinding, Tabnabbing, XS-Leak, Headless Browser, Client-Side Path Traversal, GWT, Ext Variable, Java RMI, Insecure Randomness, Management Interface Exposure, SCM Exposure, Zip Slip |
+| [Payload Resources](#payload-resources) | 1 | Pentest methodology cheatsheets: AD Attack, Reverse Shells, Network Pivoting, Linux/Windows PrivEsc, Cloud Pentest (AWS/Azure/GCP), Kubernetes, Docker |
 
 ---
 
@@ -414,6 +420,103 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 
 ---
 
+## PayloadsAllTheThings Integration (v2.1.0)
+
+> 63 skills from [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) fully integrated as structured `SKILL.md` files with operational workflows, REA MCP integration, and the complete payload reference content.
+
+### Payload Injection Library
+
+`skills/payloads-injection/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`payloads-sqli`](skills/payloads-injection/payloads-sqli/SKILL.md) | SQL Injection payloads — error-based, UNION, blind, time-based, and WAF bypass techniques |
+| [`payloads-xss`](skills/payloads-injection/payloads-xss/SKILL.md) | XSS payloads — reflected, stored, DOM, filter bypass, and polyglot vectors |
+| [`payloads-xxe`](skills/payloads-injection/payloads-xxe/SKILL.md) | XXE injection payloads — file read, SSRF, blind OOB, and DOCTYPE bypass |
+| [`payloads-ssti`](skills/payloads-injection/payloads-ssti/SKILL.md) | SSTI payloads — Jinja2, Twig, Freemarker, Pebble, ERB, and Velocity templates |
+| [`payloads-ssrf`](skills/payloads-injection/payloads-ssrf/SKILL.md) | SSRF payloads — cloud metadata bypass, URL filter bypass, and Gopher protocol chains |
+| [`payloads-cmdi`](skills/payloads-injection/payloads-cmdi/SKILL.md) | Command injection payloads — Linux, Windows, blind OOB, and filter bypass operators |
+| [`payloads-ldap`](skills/payloads-injection/payloads-ldap/SKILL.md) | LDAP injection payloads — authentication bypass and directory enumeration |
+| [`payloads-nosqli`](skills/payloads-injection/payloads-nosqli/SKILL.md) | NoSQL injection payloads — MongoDB, CouchDB, Redis operator injection and bypass |
+| [`payloads-graphql`](skills/payloads-injection/payloads-graphql/SKILL.md) | GraphQL injection — introspection abuse, batching attacks, authorization bypass |
+| [`payloads-xpath`](skills/payloads-injection/payloads-xpath/SKILL.md) | XPath injection payloads for XML authentication bypass and data extraction |
+| [`payloads-xslt`](skills/payloads-injection/payloads-xslt/SKILL.md) | XSLT injection payloads — RCE via server-side XML transformation abuse |
+| [`payloads-latex`](skills/payloads-injection/payloads-latex/SKILL.md) | LaTeX injection payloads — file read and command execution in PDF/math renderers |
+| [`payloads-saml`](skills/payloads-injection/payloads-saml/SKILL.md) | SAML injection payloads — XML signature wrapping, SSO bypass, and assertion forgery |
+| [`payloads-ssi`](skills/payloads-injection/payloads-ssi/SKILL.md) | SSI injection payloads — Apache/Nginx Server-Side Include RCE and file disclosure |
+| [`payloads-hpp`](skills/payloads-injection/payloads-hpp/SKILL.md) | HTTP Parameter Pollution payloads — WAF bypass via duplicate parameter manipulation |
+| [`payloads-csv`](skills/payloads-injection/payloads-csv/SKILL.md) | CSV/formula injection payloads — spreadsheet-based code execution via cell injection |
+| [`payloads-proto-pollution`](skills/payloads-injection/payloads-proto-pollution/SKILL.md) | Prototype pollution payloads — server-side Node.js and client-side browser exploitation |
+| [`payloads-prompt-injection`](skills/payloads-injection/payloads-prompt-injection/SKILL.md) | LLM prompt injection payloads — goal hijacking, data exfiltration, and jailbreak vectors |
+
+### Payload Web Attacks Library
+
+`skills/payloads-web/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`payloads-cors`](skills/payloads-web/payloads-cors/SKILL.md) | CORS misconfiguration payloads — cross-origin credential and token theft PoC scripts |
+| [`payloads-crlf`](skills/payloads-web/payloads-crlf/SKILL.md) | CRLF injection payloads — HTTP response splitting, header injection, log poisoning |
+| [`payloads-csrf`](skills/payloads-web/payloads-csrf/SKILL.md) | CSRF payload templates — form-based, JSON, and CORS token bypass PoCs |
+| [`payloads-open-redirect`](skills/payloads-web/payloads-open-redirect/SKILL.md) | Open redirect bypass payloads — OAuth token theft and phishing via URL manipulation |
+| [`payloads-lfi-rfi`](skills/payloads-web/payloads-lfi-rfi/SKILL.md) | LFI/RFI payloads — log poisoning, PHP filter chains, and remote file inclusion |
+| [`payloads-path-traversal`](skills/payloads-web/payloads-path-traversal/SKILL.md) | Path traversal payloads — encoding variants, null bytes, and filter bypass |
+| [`payloads-deserial`](skills/payloads-web/payloads-deserial/SKILL.md) | Insecure deserialization payloads — Java/PHP/Python/.NET gadget chains |
+| [`payloads-file-upload`](skills/payloads-web/payloads-file-upload/SKILL.md) | File upload bypass payloads — extension tricks, MIME manipulation, polyglot files |
+| [`payloads-smuggling`](skills/payloads-web/payloads-smuggling/SKILL.md) | Request smuggling payloads — CL.TE, TE.CL, and TE.TE HTTP desync attacks |
+| [`payloads-cache-deception`](skills/payloads-web/payloads-cache-deception/SKILL.md) | Web cache deception payloads — path confusion to cache authenticated responses |
+| [`payloads-oauth`](skills/payloads-web/payloads-oauth/SKILL.md) | OAuth misconfiguration payloads — token theft, open redirect chains, PKCE bypass |
+| [`payloads-jwt`](skills/payloads-web/payloads-jwt/SKILL.md) | JWT attack payloads — alg:none, HMAC confusion, kid injection, JWK spoofing |
+| [`payloads-idor`](skills/payloads-web/payloads-idor/SKILL.md) | IDOR/BOLA payloads — object ID manipulation and horizontal/vertical access bypass |
+| [`payloads-race-condition`](skills/payloads-web/payloads-race-condition/SKILL.md) | Race condition payloads — concurrent request timing attacks for state manipulation |
+| [`payloads-websocket`](skills/payloads-web/payloads-websocket/SKILL.md) | WebSocket attack payloads — CSWSH, message injection, and protocol upgrade attacks |
+| [`payloads-css-injection`](skills/payloads-web/payloads-css-injection/SKILL.md) | CSS injection payloads — data exfiltration via attribute selector timing oracles |
+| [`payloads-clickjacking`](skills/payloads-web/payloads-clickjacking/SKILL.md) | Clickjacking PoC templates — iframe overlay and X-Frame-Options bypass |
+| [`payloads-type-juggling`](skills/payloads-web/payloads-type-juggling/SKILL.md) | PHP type juggling payloads — loose comparison bypass for authentication logic |
+| [`payloads-mass-assignment`](skills/payloads-web/payloads-mass-assignment/SKILL.md) | Mass assignment payloads — unauthorized parameter binding in web frameworks |
+| [`payloads-dep-confusion`](skills/payloads-web/payloads-dep-confusion/SKILL.md) | Dependency confusion attack techniques for npm/PyPI/RubyGems package hijacking |
+| [`payloads-ato`](skills/payloads-web/payloads-ato/SKILL.md) | Account takeover methodology — password reset abuse, session fixation, MFA bypass |
+| [`payloads-bruteforce`](skills/payloads-web/payloads-bruteforce/SKILL.md) | Brute force & rate limit bypass — credential stuffing and enumeration techniques |
+| [`payloads-bizlogic`](skills/payloads-web/payloads-bizlogic/SKILL.md) | Business logic flaw payloads — price manipulation, workflow bypass, privilege escalation |
+| [`payloads-api-key-leaks`](skills/payloads-web/payloads-api-key-leaks/SKILL.md) | API key leak discovery — dorks, patterns, and exploitation of exposed credentials |
+| [`payloads-cve`](skills/payloads-web/payloads-cve/SKILL.md) | CVE exploit payloads — real-world PoC scripts for known vulnerabilities |
+| [`payloads-reverse-proxy`](skills/payloads-web/payloads-reverse-proxy/SKILL.md) | Reverse proxy misconfiguration — path confusion, header injection, and SSRF via proxy |
+| [`payloads-vhosts`](skills/payloads-web/payloads-vhosts/SKILL.md) | Virtual host discovery — Host header manipulation for multi-tenant SSRF escalation |
+| [`payloads-hidden-params`](skills/payloads-web/payloads-hidden-params/SKILL.md) | Hidden parameter discovery wordlists for attack surface expansion |
+| [`payloads-orm-leak`](skills/payloads-web/payloads-orm-leak/SKILL.md) | ORM query leak payloads for Django, Hibernate, ActiveRecord data exfiltration |
+
+### Payload Research Library
+
+`skills/payloads-research/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`payloads-dom-clobbering`](skills/payloads-research/payloads-dom-clobbering/SKILL.md) | DOM clobbering payloads — global override via named HTML elements for XSS escalation |
+| [`payloads-encoding`](skills/payloads-research/payloads-encoding/SKILL.md) | Encoding transformation payloads — URL, HTML, Unicode, base for WAF bypass |
+| [`payloads-regex`](skills/payloads-research/payloads-regex/SKILL.md) | ReDoS and regex exploitation payloads — catastrophic backtracking and filter bypass |
+| [`payloads-dns-rebinding`](skills/payloads-research/payloads-dns-rebinding/SKILL.md) | DNS rebinding attack payloads — SOP bypass for internal service access via browser |
+| [`payloads-tabnabbing`](skills/payloads-research/payloads-tabnabbing/SKILL.md) | Reverse tabnabbing payloads — window.opener phishing for credential theft |
+| [`payloads-xs-leak`](skills/payloads-research/payloads-xs-leak/SKILL.md) | XS-Leak payloads — timing oracles, cache probing, cross-origin data inference |
+| [`payloads-headless`](skills/payloads-research/payloads-headless/SKILL.md) | Headless browser exploitation — SSRF/XSS/sandbox escape via Puppeteer/CDP |
+| [`payloads-cspt`](skills/payloads-research/payloads-cspt/SKILL.md) | Client-side path traversal payloads — XSS gadgets via fetch URL manipulation |
+| [`payloads-gwt`](skills/payloads-research/payloads-gwt/SKILL.md) | Google Web Toolkit attack payloads — RPC serialization abuse and endpoint discovery |
+| [`payloads-ext-var`](skills/payloads-research/payloads-ext-var/SKILL.md) | External variable modification payloads — global scope poisoning and config injection |
+| [`payloads-java-rmi`](skills/payloads-research/payloads-java-rmi/SKILL.md) | Java RMI exploitation payloads — deserialization, registry enumeration, and RCE |
+| [`payloads-insecure-random`](skills/payloads-research/payloads-insecure-random/SKILL.md) | Insecure randomness exploitation — PRNG prediction and token forge attacks |
+| [`payloads-mgmt-interface`](skills/payloads-research/payloads-mgmt-interface/SKILL.md) | Management interface exposure — default credentials, admin panel bypass, and enumeration |
+| [`payloads-scm-exposure`](skills/payloads-research/payloads-scm-exposure/SKILL.md) | SCM exposure payloads — .git/.svn/.hg directory disclosure and source extraction |
+| [`payloads-zip-slip`](skills/payloads-research/payloads-zip-slip/SKILL.md) | Zip slip payloads — arbitrary file write via malicious ZIP/TAR archive traversal |
+
+### Payload Resources
+
+`skills/payloads-resources/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`payloads-methodology`](skills/payloads-resources/payloads-methodology/SKILL.md) | Pentest methodology cheatsheets — AD Attack, Reverse Shells, Network Pivoting, Linux/Windows PrivEsc, Cloud Pentest (AWS/Azure/GCP), Kubernetes, Docker |
+
+---
+
 ## Supported Platforms & MCP Configuration
 
 | AI Agent / Runtime | Configuration Files | Format | Loading Mode |
@@ -468,7 +571,7 @@ When developers and security researchers use AI coding assistants to reverse-eng
 - ✅ **Persistent Owner Authorization:** Recognizes you as the verified owner and developer of target software, eliminating repetitive justification hurdles.
 - ✅ **Zero-Skeleton Full Code Recovery:** Reconstructs 100% complete, compilable source code with 1-click multi-compiler verification (`build.bat` / `build.sh`).
 - ✅ **ECC Engineering Rigor:** Enforces the 6-stage development pipeline (Research & Reuse → Plan First → TDD → Code Review → Zero-Secret Audit → Verification).
-- ✅ **100 Specialized Skills Across 25 Categories:** Covers every reverse-engineering, binary, mobile, web, wireless, cloud, fuzzing, and security-auditing surface.
+- ✅ **163 Specialized Skills Across 29 Categories:** Covers every reverse-engineering, binary, mobile, web, wireless, cloud, fuzzing, and security-auditing surface.
 - ✅ **Live Web Intelligence & Triple-Engine Browser Automation:** Agent Reach, Microsoft Playwright MCP, Bright Data MCP, and Hyperbrowser MCP.
 - ✅ **Air-Gapped Document Intelligence:** Private local research and note synthesis powered by SurfSense and local LLMs.
 
@@ -476,7 +579,7 @@ When developers and security researchers use AI coding assistants to reverse-eng
 
 ## Global Machine-Level Installation (Personal Dev Setup)
 
-Configure it once on your computer so every AI agent automatically recognizes all 100 skills, rules, and MCP tools in **any** folder or project:
+Configure it once on your computer so every AI agent automatically recognizes all 163 skills, rules, and MCP tools in **any** folder or project:
 
 #### 1. Google Antigravity (Global Skills)
 ```bash
@@ -560,13 +663,13 @@ cat CLAUDE.md >> ~/.claude/CLAUDE.md
 ```text
 REA_Skill/
 ├── .claude-plugin/                      # Native Claude Code plugin & self-hosted marketplace
-│   ├── plugin.json                      # Plugin manifest listing all 100 skills & metadata
+│   ├── plugin.json                      # Plugin manifest listing all 163 skills & metadata
 │   └── marketplace.json                 # 1-click install registry for Claude Code
 ├── .agents/
 │   ├── invocation.md                    # Model-invoked vs. user-invoked architectural discipline
 │   ├── adr/                             # Architecture Decision Records (0001–0004)
-│   └── skills/                          # All 100 Skills (YAML frontmatter + agents/openai.yaml)
-├── skills/                              # Categorized (25 categories) & mirrored root skills tree
+│   └── skills/                          # All 163 Skills (YAML frontmatter + agents/openai.yaml)
+├── skills/                              # Categorized (29 categories) & mirrored root skills tree
 │   ├── rea-core/                        # 12 Reverse Engineering & Source Recovery skills
 │   ├── agent-ecosystem/                 # 9 Multi-Agent & Browser MCP skills
 │   └── <23 claude-red categories>/      # 79 Security Assessment & Auditing skills
@@ -578,10 +681,10 @@ REA_Skill/
 ├── recovered_source/                    # Verified C99/Win32 full source recovery showcase & build.bat
 ├── scripts/                             # Automated skill verification & manifest sync scripts
 ├── tools/build_manifest.py              # Python manifest builder for claude-skills.json
-├── claude-skills.json                   # Machine-readable index of all 25 categories & 100 skills
+├── claude-skills.json                   # Machine-readable index of all 29 categories & 163 skills
 ├── install.sh                           # Interactive & CLI skill installer
 ├── convert_skills.py                    # Markdown-to-SKILL.md converter utility
-├── MINDMAP.md                           # Visual Mermaid mindmap of all 25 categories & 100 skills
+├── MINDMAP.md                           # Visual Mermaid mindmap of all 29 categories & 163 skills
 ├── AGENTS.md                            # Universal agent instructions (Codex, Copilot, Antigravity)
 ├── CLAUDE.md                            # Claude Code root instruction configuration
 ├── SECURITY.md                          # Security & responsible disclosure policy

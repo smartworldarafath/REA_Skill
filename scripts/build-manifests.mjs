@@ -30,7 +30,12 @@ const CATEGORIES = [
   'social-engineering',
   'network',
   'ai',
-  'utility'
+  'utility',
+  // PayloadsAllTheThings categories
+  'payloads-injection',
+  'payloads-web',
+  'payloads-research',
+  'payloads-resources',
 ];
 
 // 1. Update .claude-plugin/plugin.json with all 100 skills
@@ -42,7 +47,7 @@ const allSkills = fs
 const pluginJsonPath = path.join(root, '.claude-plugin', 'plugin.json');
 const pluginJson = JSON.parse(fs.readFileSync(pluginJsonPath, 'utf8'));
 pluginJson.description =
-  'Unified 100-Skill Reverse Engineering, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite (REA_Skill + claude-red) across 25 categories.';
+  'Unified 163-Skill Reverse Engineering, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite (REA_Skill + claude-red + PayloadsAllTheThings) across 29 categories.';
 pluginJson.skills = allSkills.map(s => `./.agents/skills/${s}`);
 fs.writeFileSync(pluginJsonPath, JSON.stringify(pluginJson, null, 2) + '\n', 'utf8');
 console.log(`Updated .claude-plugin/plugin.json with ${allSkills.length} skills.`);
