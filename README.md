@@ -5,11 +5,11 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 178 drop-in `SKILL.md` files across 35 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Anti-Slop, Design Engineering & Persistent Memory Suite for Claude Code, Codex, Cursor & Antigravity — 243 drop-in `SKILL.md` files across 41 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-178-red.svg)](#skill-index)
-[![Categories](https://img.shields.io/badge/categories-35-orange.svg)](#categories)
+[![Skills](https://img.shields.io/badge/skills-243-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-41-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
 [![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
@@ -35,13 +35,19 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **178 specialized skills across 35 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **243 specialized skills across 41 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
-1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (12 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
+1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (17 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
 3. **23-Category Security Assessment & Vulnerability Research Library (79 skills integrated from `claude-red`):** Structured `SKILL.md` methodologies spanning Web OWASP Top 10, JWT/OAuth, Active Directory, Wireless/BLE/Zigbee/LoRa, Cloud, Mobile MASVS, IoT/Firmware, Binary Mitigations, Crash Analysis, Coverage-Guided Fuzzing (AFL++/libFuzzer), APIs, Containers/Kubernetes, CI/CD, Cryptography, Supply Chain, and AI/LLM Security.
 4. **63 PayloadsAllTheThings Payload Skills (NEW in v2.1.0):** The complete [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) library adapted as structured `SKILL.md` files — covering SQL/XSS/XXE/SSRF/SSTI/Command Injection, file upload bypass, deserialization, request smuggling, OAuth/JWT attacks, CORS, CSRF, open redirect, prototype pollution, prompt injection, race conditions, and 40+ more payload categories with full PoC content.
 5. **Understand Anything Codebase Understanding & Knowledge Graph Engine (9 skills + 10 agents, NEW in v2.2.0):** Full integration of [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) — AST codebase analysis producing `.ua/knowledge-graph.json`, interactive React/xyflow dashboard with Louvain community clustering (`understand-dashboard`), deep component Q&A (`understand-chat`), git diff impact prediction (`understand-diff`), business domain flow mapping (`understand-domain`), component explainers (`understand-explain`), Figma design knowledge graphs (`understand-figma`), Karpathy LLM wiki parsing (`understand-knowledge`), and developer onboarding walkthroughs (`understand-onboard`).
+6. **Anti-Slop Clean Output System (6 skills):** Integrated from [miqdadbadjuber/anti-slop](https://github.com/miqdadbadjuber/anti-slop) — stopping generic AI interfaces, robotic comments, hyperbole marketing copy, mobile reflow issues, and accessibility flaws.
+7. **Design Engineering & Craft Systems (3 skills):** Integrated from [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), and [educlopez/ui-craft](https://github.com/educlopez/ui-craft) — 24-command design steering vocabulary (`/impeccable`), Awwwards-distilled frontend art direction (`design-taste-frontend`), and 10-item designer acceptance bar (`ui-craft`).
+8. **Anti-AI-Slop Writing Discipline (1 skill):** Integrated from [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing) — eliminates 50+ robotic words, formulaic phrases, and rule-of-three tells.
+9. **Persistent Memory Compression (1 skill):** Integrated from [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — cross-session memory compression system distilling conversation transcripts into durable project snapshots.
+10. **High-Performance Headless Browser (1 skill):** Integrated from [lightpanda-io/browser](https://github.com/lightpanda-io/browser) — headless browser built in Zig (16x lighter, 9x faster than Chromium) with full CDP compatibility.
+11. **Expanded REA Core & Everything Claude Code Suite (52 skills):** 5 new REA core additions (`rea-analysis-optimization`, `rea-changelog-update`, `rea-ci-tests-audit`, `rea-tool-design`, `reverse-engineer-anything`) and 47 new Everything Claude Code (ECC) skills spanning full-stack development, TDD, and multi-agent coordination.
 
 Drop `REA_Skill` into your coding agent and it operates like a senior reverse engineer and security architect: skills load progressively on demand based on conversational triggers—zero wasted context window.
 
@@ -109,7 +115,7 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 
 | Category | Skills | Focus |
 |---|---:|---|
-| [Reverse Engineering & Source Recovery](#reverse-engineering--source-recovery) | 12 | Full A–Z lost source code recovery, PE/ELF/Mach-O disassembly, APK/IPA, WASM, PCAP, SQLite, Unity/Unreal, firmware & interactive grilling |
+| [Reverse Engineering & Source Recovery](#reverse-engineering--source-recovery) | 17 | Full A–Z lost source code recovery, PE/ELF/Mach-O disassembly, APK/IPA, WASM, PCAP, SQLite, Unity/Unreal, firmware & interactive grilling |
 | [Multi-Agent Ecosystem & Browser MCPs](#multi-agent-ecosystem--browser-mcps) | 9 | Owner authorization, 10-layer website audit, ECC TDD rigor, Agent Reach, SurfSense RAG, Playwright, Bright Data & Hyperbrowser |
 | [Codebase Understanding & Knowledge Graphs](#codebase-understanding--interactive-knowledge-graphs) | 9 | AST codebase analysis, interactive React/xyflow dashboard, component Q&A, git diff impact, domain flows, Figma & Karpathy wiki graphs |
 | [Web Application](#web-application) | 16 | OWASP Top 10, SQLi, XSS, SSRF, SSTI, XXE, IDOR, RCE, deserialization, race conditions, request smuggling, GraphQL & business logic |
@@ -140,6 +146,13 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 | [Payload Web Attacks Library](#payload-web-attacks-library) | 30 | CORS, CRLF, CSRF, Open Redirect, LFI/RFI, Path Traversal, Deserialization, File Upload, Request Smuggling, Cache Deception, OAuth, JWT, IDOR, Race Conditions, WebSocket, CSS Injection, Clickjacking, Type Juggling, Mass Assignment, Dependency Confusion, Account Takeover, Brute Force, Business Logic, API Key Leaks, CVE Exploits, Reverse Proxy, vHosts, Hidden Params, ORM Leak, CSS Injection |
 | [Payload Research Library](#payload-research-library) | 14 | DOM Clobbering, Encoding, ReDoS, DNS Rebinding, Tabnabbing, XS-Leak, Headless Browser, Client-Side Path Traversal, GWT, Ext Variable, Java RMI, Insecure Randomness, Management Interface Exposure, SCM Exposure, Zip Slip |
 | [Payload Resources](#payload-resources) | 1 | Pentest methodology cheatsheets: AD Attack, Reverse Shells, Network Pivoting, Linux/Windows PrivEsc, Cloud Pentest (AWS/Azure/GCP), Kubernetes, Docker |
+| **Anti-Slop, Design & Memory (NEW v2.3.0)** | | |
+  | [Anti-Slop Clean Output](#anti-slop-clean-output) | 6 | Core anti-slop filter, code comment hygiene, authentic copywriting, accessibility checks, mobile layouts, and UI polish |
+  | [Design Taste & Engineering](#design-taste--engineering) | 3 | Impeccable 24-command design vocabulary, TasteSkill v2 gallery-distilled art direction, and UI Craft designer acceptance gates |
+  | [Writing Quality & Anti-AI-Slop](#writing-quality--anti-ai-slop) | 1 | 50+ banned AI words, 35+ formulaic phrases, and structural pattern elimination for human-grade writing |
+  | [Persistent Agent Memory](#persistent-agent-memory) | 1 | Claude-Mem cross-session transcript memory compression, knowledge graph distillation & multi-agent memory sharing |
+  | [Headless Browser Automation](#headless-browser-automation) | 1 | Lightpanda Zig headless browser (16x lighter, 9x faster than Chromium) with full CDP support for Playwright & Puppeteer |
+  | [Everything Claude Code (ECC)](#everything-claude-code-ecc) | 48 | Complete full-stack engineering suite covering TDD rigor, coding standards, CI/CD audits, and multi-agent loops |
 
 ---
 

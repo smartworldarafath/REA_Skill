@@ -144,3 +144,42 @@ In addition to REA Core, claude-red, and PayloadsAllTheThings, this repository f
 ### 10 Multi-Agent Analysis Engines (`understand-anything-plugin/agents/`)
 `architecture-analyzer`, `article-analyzer`, `assemble-reviewer`, `design-analyzer`, `domain-analyzer`, `file-analyzer`, `graph-reviewer`, `knowledge-graph-reviewer`, `project-scanner`, `tour-builder`.
 
+## Integrated Anti-Slop, Design Engineering & Persistent Agent Suite (243 Total Skills — NEW in v2.3.0)
+In addition to REA Core, claude-red, PayloadsAllTheThings, and Understand-Anything, this repository integrates **65 additional specialized skills across 6 new categories** for a grand total of **243 skills across 41 categories**:
+
+### 1. Anti-Slop Rules & Clean Output System (`skills/anti-slop/` — 6 skills)
+From [miqdadbadjuber/anti-slop](https://github.com/miqdadbadjuber/anti-slop):
+- **`antislop`** — The core anti-slop filter for AI coding agents. Follows strict heuristics to prevent generic AI-generated interfaces, placeholder UI, and cliché aesthetics.
+- **`antislop-code`** — Code comment hygiene for AI coding agents: strips generic robotic boilerplate, keeps high-signal comments, and leaves pristine code untouched.
+- **`antislop-copywriting`** — Authentic copy and text directive: eliminates hyperbole, emoji bullet spam, "delve/tapestry" cliches, and corporate filler from headlines, CTAs, and documentation.
+- **`antislop-human`** — Human-centric accessibility & interaction rules: contrast checks, focus rings, keyboard navigability, hover/active states, and real-user touch targets.
+- **`antislop-layoutmobile`** — Mobile & responsive layout discipline: fluid flex/grid reflows, overflow safeguards, and touch target sizing across desktop to mobile viewports.
+- **`antislop-ui`** — UI & visual design rigor: enforces real color systems, typography scale, component polish, physics-based motion, and page performance.
+
+### 2. Design Vocabulary & Craft Systems (`skills/design-taste/` — 3 skills)
+From [pbakaus/impeccable](https://github.com/pbakaus/impeccable), [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill), and [educlopez/ui-craft](https://github.com/educlopez/ui-craft):
+- **`impeccable`** — Complete design vocabulary for coding agents with 24 steering commands (`bolder`, `quieter`, `distill`, `colorize`, `typeset`, `layout`, `animate`, `delight`, `overdrive`, `critique`, `audit`, `polish`, `harden`, `clarify`, `adapt`, `optimize`, `onboard`, `live`, `generate`, `shape`, `init`, `document`, `extract`) and 62 deterministic anti-slop rules.
+- **`design-taste-frontend`** — TasteSkill v2 art direction distilled from 247 curated gallery websites (Awwwards, One Page Love). Provides researched directions, typography pairings, color harmonies, and a screenshot-and-fix visual feedback loop.
+- **`ui-craft`** — Design engineering system enforcing a 10-item acceptance bar ("would a designer retouch this?") before reporting done, with persona walkthroughs and business impact scoring.
+
+### 3. Anti-AI-Slop Writing Discipline (`skills/writing-quality/` — 1 skill)
+From [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing):
+- **`anti-ai-slop-writing`** — Eliminates 50+ banned AI words, 35+ formulaic phrases, 16 robotic openers, uniform sentence lengths, and rule-of-three structures across documentation, reports, and communications.
+
+### 4. Agent Persistent Memory Compression (`skills/agent-memory/` — 1 skill)
+From [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem):
+- **`claude-mem`** — Cross-session persistent memory compression system that distills conversation transcripts and project knowledge graphs into compact snapshots surviving across coding sessions.
+
+### 5. High-Performance Headless Browser (`skills/browser-automation/` — 1 skill)
+From [lightpanda-io/browser](https://github.com/lightpanda-io/browser):
+- **`lightpanda`** — Headless browser built from scratch in Zig for AI agents and automation. 16x lighter (123MB peak RAM) and 9x faster than Chromium, with full CDP compatibility for drop-in Playwright/Puppeteer replacement.
+
+### 6. Official Agent Skills Community Catalog (`skills/resources/` — 1 skill)
+From [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills):
+- **`awesome-agent-skills`** — Curated reference index of 1497+ hand-picked agent skills from real-world engineering teams across frontend, backend, security, DevOps, and cloud.
+
+### 7. Expanded REA Core & Everything Claude Code Suite (52 skills)
+- **5 New REA Core Additions (`skills/rea-core/`):** `rea-analysis-optimization` (latency/memory profiling), `rea-changelog-update` (release attributions), `rea-ci-tests-audit` (test suite performance), `rea-tool-design` (MCP boundaries & contracts), and `reverse-engineer-anything` (master REA multi-target decompilation engine).
+- **47 New Everything Claude Code Skills (`skills/ecc-workflow/`):** Full engineering suite spanning `agent-introspection-debugging`, `agent-sort`, `api-design`, `article-writing`, `backend-patterns`, `benchmark-methodology`, `brand-discovery`, `brand-voice`, `bun-runtime`, `change-impact`, `coding-standards`, `competitive-platform-analysis`, `competitive-report-structure`, `content-engine`, `context-and-decisions`, `crosspost`, `deep-research`, `dmux-workflows`, `docs-governance`, `documentation-lookup`, `e2e-testing`, `ecc-conventions`, `eval-harness`, `exa-search`, `fal-ai-media`, `frontend-patterns`, `frontend-slides`, `investor-materials`, `investor-outreach`, `market-research`, `mcp-dependency-review`, `mcp-server-patterns`, `mle-workflow`, `module-governance`, `module-regression`, `nextjs-turbopack`, `plan-canvas`, `product-capability`, `security-review`, `skill-host-compat`, `strategic-compact`, `tdd-workflow`, `test-collaboration`, `unified-memory`, `verification-loop`, `video-editing`, and `x-api`.
+
+
