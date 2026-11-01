@@ -4,8 +4,8 @@
   "license": "MIT",
   "homepage": "https://smartworldarafath.github.io/REA_Skill/",
   "repository": "https://github.com/smartworldarafath/REA_Skill",
-  "totalCategories": 34,
-  "totalSkills": 169,
+  "totalCategories": 35,
+  "totalSkills": 178,
   "categories": {
     "rea-core": [
       "rea-binary-disassembly",
@@ -243,6 +243,17 @@
     ],
     "bug-bounty": [
       "claude-bughunter"
+    ],
+    "codebase-understanding": [
+      "understand",
+      "understand-chat",
+      "understand-dashboard",
+      "understand-diff",
+      "understand-domain",
+      "understand-explain",
+      "understand-figma",
+      "understand-knowledge",
+      "understand-onboard"
     ]
   },
   "skills": [

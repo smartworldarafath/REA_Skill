@@ -1,7 +1,7 @@
 {
   "name": "rea-skills",
   "version": "2.1.0",
-  "description": "Unified 169-Skill Reverse Engineering, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite across 34 categories.",
+  "description": "Unified 178-Skill Reverse Engineering, Codebase Understanding & Knowledge Graphs, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite across 35 categories.",
   "author": {
     "name": "smartworldarafath",
     "url": "https://github.com/smartworldarafath"
@@ -19,7 +19,10 @@
     "rea",
     "mobile-security",
     "web-security",
-    "grilling"
+    "grilling",
+    "codebase-understanding",
+    "knowledge-graph",
+    "architecture-visualization"
   ],
   "skills": [
     "./.agents/skills/agent-reach",
@@ -190,6 +193,15 @@
     "./.agents/skills/rea-web-bundle-recovery",
     "./.agents/skills/strix",
     "./.agents/skills/surfsense",
+    "./.agents/skills/understand",
+    "./.agents/skills/understand-chat",
+    "./.agents/skills/understand-dashboard",
+    "./.agents/skills/understand-diff",
+    "./.agents/skills/understand-domain",
+    "./.agents/skills/understand-explain",
+    "./.agents/skills/understand-figma",
+    "./.agents/skills/understand-knowledge",
+    "./.agents/skills/understand-onboard",
     "./.agents/skills/website-security-audit"
   ]
 }

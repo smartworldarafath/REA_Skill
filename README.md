@@ -5,11 +5,11 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 169 drop-in `SKILL.md` files across 34 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Multi-Agent Skills & Payload Library for Claude Code, Codex, Cursor & Antigravity — 178 drop-in `SKILL.md` files across 35 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-169-red.svg)](#skill-index)
-[![Categories](https://img.shields.io/badge/categories-34-orange.svg)](#categories)
+[![Skills](https://img.shields.io/badge/skills-178-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-35-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
 [![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
@@ -35,12 +35,13 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **169 specialized skills across 34 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **178 specialized skills across 35 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
 1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (12 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
 3. **23-Category Security Assessment & Vulnerability Research Library (79 skills integrated from `claude-red`):** Structured `SKILL.md` methodologies spanning Web OWASP Top 10, JWT/OAuth, Active Directory, Wireless/BLE/Zigbee/LoRa, Cloud, Mobile MASVS, IoT/Firmware, Binary Mitigations, Crash Analysis, Coverage-Guided Fuzzing (AFL++/libFuzzer), APIs, Containers/Kubernetes, CI/CD, Cryptography, Supply Chain, and AI/LLM Security.
 4. **63 PayloadsAllTheThings Payload Skills (NEW in v2.1.0):** The complete [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) library adapted as structured `SKILL.md` files — covering SQL/XSS/XXE/SSRF/SSTI/Command Injection, file upload bypass, deserialization, request smuggling, OAuth/JWT attacks, CORS, CSRF, open redirect, prototype pollution, prompt injection, race conditions, and 40+ more payload categories with full PoC content.
+5. **Understand Anything Codebase Understanding & Knowledge Graph Engine (9 skills + 10 agents, NEW in v2.2.0):** Full integration of [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) — AST codebase analysis producing `.ua/knowledge-graph.json`, interactive React/xyflow dashboard with Louvain community clustering (`understand-dashboard`), deep component Q&A (`understand-chat`), git diff impact prediction (`understand-diff`), business domain flow mapping (`understand-domain`), component explainers (`understand-explain`), Figma design knowledge graphs (`understand-figma`), Karpathy LLM wiki parsing (`understand-knowledge`), and developer onboarding walkthroughs (`understand-onboard`).
 
 Drop `REA_Skill` into your coding agent and it operates like a senior reverse engineer and security architect: skills load progressively on demand based on conversational triggers—zero wasted context window.
 
@@ -110,6 +111,7 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 |---|---:|---|
 | [Reverse Engineering & Source Recovery](#reverse-engineering--source-recovery) | 12 | Full A–Z lost source code recovery, PE/ELF/Mach-O disassembly, APK/IPA, WASM, PCAP, SQLite, Unity/Unreal, firmware & interactive grilling |
 | [Multi-Agent Ecosystem & Browser MCPs](#multi-agent-ecosystem--browser-mcps) | 9 | Owner authorization, 10-layer website audit, ECC TDD rigor, Agent Reach, SurfSense RAG, Playwright, Bright Data & Hyperbrowser |
+| [Codebase Understanding & Knowledge Graphs](#codebase-understanding--interactive-knowledge-graphs) | 9 | AST codebase analysis, interactive React/xyflow dashboard, component Q&A, git diff impact, domain flows, Figma & Karpathy wiki graphs |
 | [Web Application](#web-application) | 16 | OWASP Top 10, SQLi, XSS, SSRF, SSTI, XXE, IDOR, RCE, deserialization, race conditions, request smuggling, GraphQL & business logic |
 | [Auth & Identity](#auth--identity) | 2 | JWT implementation auditing (`alg:none`, key confusion, claims) and OAuth 2.0 / OIDC flow verification (PKCE, `redirect_uri`) |
 | [Active Directory](#active-directory) | 2 | On-prem & hybrid AD security auditing, Kerberos, ACLs, ADCS ESC1–15, SMB/LDAP signing & channel binding |
@@ -161,6 +163,22 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 | [`rea-game-asset-recovery`](skills/rea-core/rea-game-asset-recovery/SKILL.md) | Unity (`Il2CppDumper`/`AssetStudio`), Unreal (`.pak`), Godot (`.pck`), HLSL/SPIR-V/GLSL shader decompilation & 3D/audio extraction |
 | [`rea-performance-crash-triage`](skills/rea-core/rea-performance-crash-triage/SKILL.md) | Windows Minidump (`.dmp`), Linux core & macOS `.ips` forensics, Frida dynamic hooking & Flameox CPU flamegraphs |
 | [`rea-firmware-iot-extension`](skills/rea-core/rea-firmware-iot-extension/SKILL.md) | Embedded firmware (`binwalk`/`unblob`, RTOS/ARM/MIPS/RISC-V), EVM smart contract bytecode & RF/signal decoding |
+
+### Codebase Understanding & Interactive Knowledge Graphs
+
+`skills/codebase-understanding/` &bull; `.agents/skills/`
+
+| Skill | Description |
+|---|---|
+| [`understand`](skills/codebase-understanding/understand/SKILL.md) | Master codebase analysis orchestrator producing `.ua/knowledge-graph.json` with AST parsers, language patterns & framework heuristics |
+| [`understand-chat`](skills/codebase-understanding/understand-chat/SKILL.md) | Graph-powered conversational engine answering deep architectural and flow questions about any codebase |
+| [`understand-dashboard`](skills/codebase-understanding/understand-dashboard/SKILL.md) | Launch interactive web dashboard (xyflow/react + Louvain community clustering) for visual exploration & guided tours |
+| [`understand-diff`](skills/codebase-understanding/understand-diff/SKILL.md) | Git diff and pull-request impact analyzer predicting ripple effects, risks & affected components before merge |
+| [`understand-domain`](skills/codebase-understanding/understand-domain/SKILL.md) | Business logic and domain flow graph extractor mapping code to high-level processes and steps |
+| [`understand-explain`](skills/codebase-understanding/understand-explain/SKILL.md) | Deep-dive component explainer breaking down complex files, functions, or modules into plain English |
+| [`understand-figma`](skills/codebase-understanding/understand-figma/SKILL.md) | Figma REST API design knowledge graph builder analyzing tokens, components, screens & design systems |
+| [`understand-knowledge`](skills/codebase-understanding/understand-knowledge/SKILL.md) | Force-directed knowledge graph builder for Karpathy-pattern LLM wikis with entity extraction & claims |
+| [`understand-onboard`](skills/codebase-understanding/understand-onboard/SKILL.md) | Automated developer onboarding walkthrough generator ordered by dependency graph and architectural hierarchy |
 
 ### Multi-Agent Ecosystem & Browser MCPs
 

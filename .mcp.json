@@ -21,6 +21,10 @@
       "env": {
         "HYPERBROWSER_API_KEY": "${HYPERBROWSER_API_KEY}"
       }
+    },
+    "Appllama": {
+      "type": "http",
+      "url": "https://mcp.appllama.io/mcp"
     }
   }
 }

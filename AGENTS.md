@@ -126,3 +126,21 @@ In addition to the 100 REA + claude-red skills, this repository now integrates *
 `payloads-methodology`
 
 Each PATT skill contains: YAML frontmatter, an operational pentest workflow, and the full PayloadsAllTheThings README content for that attack class. All skills are indexed in `claude-skills.json` and `MINDMAP.md`.
+
+## Integrated Understand Anything Codebase Understanding & Knowledge Graph Engine (178 Total Skills — NEW in v2.2.0)
+In addition to REA Core, claude-red, and PayloadsAllTheThings, this repository fully integrates all **9 skills, 10 specialized analysis agents, and the interactive viewer dashboard** from [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) for a total of **178 skills across 35 categories**:
+
+### Codebase Understanding Skills (`.agents/skills/` and `skills/codebase-understanding/` — 9 skills)
+- **`understand`** — Master codebase analysis orchestrator producing `.ua/knowledge-graph.json` across files, functions, classes, and dependencies with AST parsers, language patterns, and framework heuristics.
+- **`understand-chat`** — Graph-powered Q&A engine answering deep architectural questions about components, flow, and dependencies without reading code blind.
+- **`understand-dashboard`** — Interactive web dashboard (xyflow/react, elkjs, Louvain community clustering) providing visual graph exploration, guided tours, and architectural layer filtering.
+- **`understand-diff`** — Git diff and pull-request impact analyzer predicting ripple effects, risks, and affected components before committing.
+- **`understand-domain`** — Business logic and domain flow graph extractor mapping code to high-level processes and steps.
+- **`understand-explain`** — Deep-dive component explainer breaking down complex files, functions, or modules into plain English with architectural context.
+- **`understand-figma`** — Figma REST API design knowledge graph builder analyzing design tokens, components, screens, and design systems.
+- **`understand-knowledge`** — Force-directed knowledge graph builder for Karpathy-pattern LLM wikis with entity extraction, claims, and topic clustering.
+- **`understand-onboard`** — Automated developer onboarding walkthrough generator ordered by dependency graph and architectural hierarchy.
+
+### 10 Multi-Agent Analysis Engines (`understand-anything-plugin/agents/`)
+`architecture-analyzer`, `article-analyzer`, `assemble-reviewer`, `design-analyzer`, `domain-analyzer`, `file-analyzer`, `graph-reviewer`, `knowledge-graph-reviewer`, `project-scanner`, `tour-builder`.
+
