@@ -5,11 +5,11 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Anti-Slop, Design Engineering & Persistent Memory Suite for Claude Code, Codex, Cursor & Antigravity — 243 drop-in `SKILL.md` files across 41 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Anti-Slop, Design Engineering & Persistent Memory Suite for Claude Code, Codex, Cursor & Antigravity — 541 drop-in `SKILL.md` files across 42 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-243-red.svg)](#skill-index)
-[![Categories](https://img.shields.io/badge/categories-41-orange.svg)](#categories)
+[![Skills](https://img.shields.io/badge/skills-541-red.svg)](#skill-index)
+[![Categories](https://img.shields.io/badge/categories-42-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
 [![Stars](https://img.shields.io/github/stars/smartworldarafath/REA_Skill?style=social)](https://github.com/smartworldarafath/REA_Skill)
@@ -35,7 +35,7 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **243 specialized skills across 41 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **541 specialized skills across 42 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
 1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (17 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
@@ -47,7 +47,9 @@
 8. **Anti-AI-Slop Writing Discipline (1 skill):** Integrated from [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing) — eliminates 50+ robotic words, formulaic phrases, and rule-of-three tells.
 9. **Persistent Memory Compression (1 skill):** Integrated from [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) — cross-session memory compression system distilling conversation transcripts into durable project snapshots.
 10. **High-Performance Headless Browser (1 skill):** Integrated from [lightpanda-io/browser](https://github.com/lightpanda-io/browser) — headless browser built in Zig (16x lighter, 9x faster than Chromium) with full CDP compatibility.
-11. **Expanded REA Core & Everything Claude Code Suite (52 skills):** 5 new REA core additions (`rea-analysis-optimization`, `rea-changelog-update`, `rea-ci-tests-audit`, `rea-tool-design`, `reverse-engineer-anything`) and 47 new Everything Claude Code (ECC) skills spanning full-stack development, TDD, and multi-agent coordination.
+11. **Expanded REA Core & Everything Claude Code Suite (52 skills):** 5 new REA core additions (`rea-analysis-optimization`, `rea-changelog-update`, `rea-ci-tests-audit`, `rea-tool-design`, `reverse-engineer-anything`) and 328 Everything Claude Code (ECC) skills spanning full-stack development, TDD, and multi-agent coordination.
+12. **Agent Reasoning & Superpowers Suite (15 skills):** Integrated from [obra/superpowers](https://github.com/obra/superpowers) — systematic development discipline enforcing skill invocation before action, interactive brainstorming, rigorous plan drafting, subagent-driven development, test-driven development, and verification before completion.
+13. **Apktool Android Reverse Engineering & Smali Pipeline (1 skill):** Integrated from [iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool) — industry-standard toolchain for decoding binary Android XMLs, disassembling DEX files into Smali, modifying resources, and rebuilding/signing modified APK packages.
 
 Drop `REA_Skill` into your coding agent and it operates like a senior reverse engineer and security architect: skills load progressively on demand based on conversational triggers—zero wasted context window.
 
@@ -152,7 +154,8 @@ npx skills add morluto/rea --skill reverse-engineer-anything
   | [Writing Quality & Anti-AI-Slop](#writing-quality--anti-ai-slop) | 1 | 50+ banned AI words, 35+ formulaic phrases, and structural pattern elimination for human-grade writing |
   | [Persistent Agent Memory](#persistent-agent-memory) | 1 | Claude-Mem cross-session transcript memory compression, knowledge graph distillation & multi-agent memory sharing |
   | [Headless Browser Automation](#headless-browser-automation) | 1 | Lightpanda Zig headless browser (16x lighter, 9x faster than Chromium) with full CDP support for Playwright & Puppeteer |
-  | [Everything Claude Code (ECC)](#everything-claude-code-ecc) | 48 | Complete full-stack engineering suite covering TDD rigor, coding standards, CI/CD audits, and multi-agent loops |
+  | [Everything Claude Code (ECC)](#everything-claude-code-ecc) | 328 | Complete full-stack engineering suite covering TDD rigor, coding standards, CI/CD audits, and multi-agent loops |
+| [Superpowers & Agent Reasoning](#superpowers--agent-reasoning) | 15 | Systematic development discipline, interactive brainstorming, test-driven development, worktree management, and verification |
 
 ---
 

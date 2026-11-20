@@ -1,11 +1,11 @@
 ---
 name: agent-reach
-description: Read-only access to internet platforms (Twitter/X, Reddit, YouTube subtitles, GitHub, LinkedIn, Bilibili, web). Use when the agent needs to search, read web links, retrieve social discussions, CVE/vulnerability intel, or when standard web search/fetch is blocked or insufficient.
+description: Read-only access to internet platforms (Twitter/X, Reddit, YouTube transcripts, GitHub, LinkedIn, Instagram, Bilibili, Zhihu, Substack, web). Use when the agent needs to search, read web links, retrieve social discussions, CVE/vulnerability intel, or when standard web search or curl/fetch is blocked by Cloudflare or bot protection.
 ---
 
 # Agent Reach
 
-Give your AI agent eyes to see the entire internet. Read & search Twitter/X, Reddit, YouTube, GitHub, LinkedIn, Bilibili, and login-walled web platforms with one CLI and zero API fees.
+Give your AI agent eyes to see the entire internet. Read and search Twitter/X, Reddit, YouTube, GitHub, LinkedIn, Instagram, Bilibili, and login-walled web platforms with one CLI and zero API fees.
 
 ## Overview
 One command for every platform: `agent-reach`. Read-only; returns structured JSON output.
@@ -18,7 +18,7 @@ agent-reach read <url>                # Automatically select channel and read an
 
 ---
 
-## 🔌 Supported Channels
+## Supported Channels
 
 | Tier | Channel | Capabilities | Source / Upstream Tools |
 | :--- | :--- | :--- | :--- |
@@ -27,17 +27,20 @@ agent-reach read <url>                # Automatically select channel and read an
 | **Default** | `github` | Repositories, files, issues, commit logs, pull requests | GitHub public APIs |
 | **Default** | `bilibili` | Video details, subtitles, Danmaku comments | bili-cli, public endpoints |
 | **Default** | `v2ex` | Topic reading, community discussions | V2EX public feeds |
-| **Optional** | `reddit` | Subreddit search, threads, comment trees | Reddit json/RSS |
-| **Optional** | `linkedin` | Posts, company profiles, job postings | OpenCLI / CloakBrowser |
-| **Optional** | `twitter` / `x` | Tweets, search, user profiles | OpenCLI / CloakBrowser |
+| **Default** | `reddit` | Subreddit search, threads, comment trees, user profiles | Reddit JSON / RSS feeds |
+| **Optional** | `linkedin` | Posts, company profiles, job postings, author details | OpenCLI / CloakBrowser |
+| **Optional** | `instagram` | Public profile bio, post captions, media extraction | OpenCLI / CloakBrowser |
+| **Optional** | `twitter` / `x` | Tweets, search, user profiles, conversation threads | OpenCLI / CloakBrowser |
 | **Optional** | `xiaohongshu`| Note descriptions, tags, comments | CloakBrowser session |
+| **Optional** | `zhihu` | Questions, answers, articles, discussions | Public endpoints / OpenCLI |
+| **Optional** | `substack` | Newsletter articles, archives, publication feeds | Substack RSS / parser |
 | **Optional** | `boss` | Developer job listings, skill demands | boss-agent-cli |
 | **Optional** | `xueqiu` | Stock quotes, financial sentiment | Xueqiu public endpoints |
 | **Optional** | `xiaoyuzhou` | Podcast transcripts, summaries | Groq Whisper API |
 
 ---
 
-## ⚡ Integration with REA (Reverse Engineer Anything)
+## Integration with REA (Reverse Engineer Anything)
 
 When combined with the REA suite:
 1. **Threat & Vulnerability Research:** When auditing a website or binary with REA, use Agent Reach to instantly look up CVEs, GitHub discussions, and security advisories without leaving your terminal:
@@ -56,11 +59,11 @@ When combined with the REA suite:
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 Install Agent Reach with `uv` (recommended):
 ```bash
-uv tool install https://github.com/Panniantong/Agent-Reach/archive/refs/tags/v1.6.0.zip
+uv tool install agent-reach
 agent-reach setup
 ```
 
@@ -75,7 +78,7 @@ agent-reach update             # Upgrade Agent Reach and installed channel tools
 
 ---
 
-## 📊 Result Structure & Error Handling
+## Result Structure & Error Handling
 
 Outputs are standard JSON with `{ ok, channel, action, backend, items, meta, error }`:
 - **`ok: true`:** Results found in `items` (`title`, `url`, `author`, `published_at`, `text`, `raw`).
@@ -93,7 +96,7 @@ Outputs are standard JSON with `{ ok, channel, action, backend, items, meta, err
 
 ---
 
-## 🛡️ Security & Red Lines
+## Security & Red Lines
 
 - **Read-Only:** Agent Reach never posts, comments, likes, or sends messages.
 - **Credential Safety:** Never logs in for the user; never asks for, captures, or logs passwords.

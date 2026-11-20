@@ -178,8 +178,30 @@ From [lightpanda-io/browser](https://github.com/lightpanda-io/browser):
 From [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills):
 - **`awesome-agent-skills`** — Curated reference index of 1497+ hand-picked agent skills from real-world engineering teams across frontend, backend, security, DevOps, and cloud.
 
-### 7. Expanded REA Core & Everything Claude Code Suite (52 skills)
-- **5 New REA Core Additions (`skills/rea-core/`):** `rea-analysis-optimization` (latency/memory profiling), `rea-changelog-update` (release attributions), `rea-ci-tests-audit` (test suite performance), `rea-tool-design` (MCP boundaries & contracts), and `reverse-engineer-anything` (master REA multi-target decompilation engine).
-- **47 New Everything Claude Code Skills (`skills/ecc-workflow/`):** Full engineering suite spanning `agent-introspection-debugging`, `agent-sort`, `api-design`, `article-writing`, `backend-patterns`, `benchmark-methodology`, `brand-discovery`, `brand-voice`, `bun-runtime`, `change-impact`, `coding-standards`, `competitive-platform-analysis`, `competitive-report-structure`, `content-engine`, `context-and-decisions`, `crosspost`, `deep-research`, `dmux-workflows`, `docs-governance`, `documentation-lookup`, `e2e-testing`, `ecc-conventions`, `eval-harness`, `exa-search`, `fal-ai-media`, `frontend-patterns`, `frontend-slides`, `investor-materials`, `investor-outreach`, `market-research`, `mcp-dependency-review`, `mcp-server-patterns`, `mle-workflow`, `module-governance`, `module-regression`, `nextjs-turbopack`, `plan-canvas`, `product-capability`, `security-review`, `skill-host-compat`, `strategic-compact`, `tdd-workflow`, `test-collaboration`, `unified-memory`, `verification-loop`, `video-editing`, and `x-api`.
+### 7. Expanded REA Core & Everything Claude Code Suite (333 skills)
+- **5 REA Core Additions (`skills/rea-core/`):** `rea-analysis-optimization` (latency/memory profiling), `rea-changelog-update` (release attributions), `rea-ci-tests-audit` (test suite performance), `rea-tool-design` (MCP boundaries & contracts), and `reverse-engineer-anything` (master REA multi-target decompilation engine).
+- **328 Everything Claude Code Skills (`skills/ecc-workflow/`):** Full engineering suite spanning agent evaluation, architecture audits, TDD methodologies, framework patterns (React, Next.js, Angular, Vue, Django, Spring Boot, Quarkus, Laravel, Go, Rust, C#, .NET), observability, security reviews, and autonomous pipelines.
+
+## Integrated Superpowers & Apktool Reverse Toolchain (541 Total Skills — NEW in v2.4.0)
+
+### 1. Superpowers Agent Reasoning & Planning Suite (`skills/superpowers/` — 15 skills)
+From [obra/superpowers](https://github.com/obra/superpowers):
+- **`using-superpowers`** — Universal skill invocation gate requiring proactive skill selection before executing non-trivial actions.
+- **`brainstorming`** — Structured requirement clarification and design phase before touching code.
+- **`writing-plans`** — Multi-step implementation planning with clear acceptance criteria and verification gates.
+- **`executing-plans`** — Step-by-step plan execution with strict progress tracking.
+- **`systematic-debugging`** — Root-cause isolation and diagnostic methodology before proposing fixes.
+- **`test-driven-development`** — Red-green-refactor workflow enforcing failing tests first.
+- **`subagent-driven-development`** — Parallel subagent task delegation with isolated scopes.
+- **`using-git-worktrees`** — Isolated worktree environments for concurrent feature development.
+- **`verification-before-completion`** — Comprehensive build, test, and lint execution before declaring work complete.
+- **`requesting-code-review` & `receiving-code-review`** — Automated code review protocols for pull requests and code changes.
+- **`finishing-a-development-branch`** — Merge hygiene, verification, and branch cleanup.
+- **`diagnosing-superpowers`, `dispatching-parallel-agents`, `writing-skills`** — Meta-reasoning and agent governance skills.
+
+### 2. Apktool Android Binary Reverse Engineering (`skills/mobile/` — 1 skill)
+From [iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool):
+- **`apktool`** — Industry-standard reverse engineering toolchain for Android packages. Decodes binary XMLs and resources.arsc to human-readable XML, disassembles classes.dex into Smali bytecode, enables manifest permission patching and asset modifications, rebuilds modified APKs with aapt2, and completes the workflow with zipalign and apksigner verification.
+
 
 
