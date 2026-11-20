@@ -2,6 +2,39 @@
 
 All notable changes to **REA_Skill** are documented in this file.
 
+## [2.4.0] - 2026-11-20
+
+### Added
+- Superpowers Agent Reasoning Suite (15 skills across new superpowers category): Integrated the complete agent reasoning and planning discipline from obra/superpowers including using-superpowers, brainstorming, writing-plans, executing-plans, systematic-debugging, test-driven-development, subagent-driven-development, using-git-worktrees, verification-before-completion, requesting-code-review, receiving-code-review, finishing-a-development-branch, diagnosing-superpowers, dispatching-parallel-agents, and writing-skills.
+- Apktool Android Binary Reverse Engineering Toolchain (apktool in mobile category): Integrated the industry-standard reverse engineering toolchain from iBotPeaches/Apktool. Decodes binary XMLs and resources.arsc to human-readable form, disassembles classes.dex into Smali bytecode, enables manifest permission patching, rebuilds modified APKs with aapt2, and signs with zipalign and apksigner.
+- Expanded Everything Claude Code (ECC) Engineering Suite: Added 282 new specialized software engineering skills from affaan-m/ecc, expanding the ECC collection to 328 skills covering framework design patterns (React, Next.js, Angular, Vue, Django, Spring Boot, Quarkus, Laravel, Go, Rust, C#, .NET), observability, security audits, database query tuning, and autonomous testing.
+- Optimized Agent Reach Internet Intelligence: Updated agent-reach from Panniantong/agent-reach with dedicated parsers for Reddit comment trees, LinkedIn company profiles, Instagram bios and posts, Zhihu discussions, and Substack publication feeds.
+- Total library scale: 541 skills across 42 categories.
+
+### Changed
+- Version synchronized to 2.4.0 across package.json, .claude-plugin/plugin.json, and claude-skills.json.
+- Updated documentation across README.md, MINDMAP.md, AGENTS.md, docs/index.html, and docs/llms.txt.
+- Specification test suite check-skills.mjs verified with 0 errors and 0 warnings across all 541 skills.
+
+## [2.3.0] - 2026-11-20
+
+### Added
+- Anti-Slop Clean Output Suite (6 skills across anti-slop category): Integrated from miqdadbadjuber/anti-slop to stop generic AI interfaces, robotic comments, and marketing hyperbole (antislop, antislop-code, antislop-copywriting, antislop-human, antislop-layoutmobile, antislop-ui).
+- Design Vocabulary and Craft Systems (3 skills across design-taste category): Integrated 24-command design vocabulary from pbakaus/impeccable, gallery-distilled frontend art direction from Leonxlnx/taste-skill (design-taste-frontend), and 10-item designer acceptance gates from educlopez/ui-craft (ui-craft).
+- Writing Quality and Anti-AI-Slop (1 skill in writing-quality category): Integrated from jalaalrd/anti-ai-slop-writing to eliminate 50+ robotic words, formulaic transitions, and rule-of-three sentence structures (anti-ai-slop-writing).
+- Cross-Session Persistent Memory Compression (1 skill in agent-memory category): Integrated from thedotmack/claude-mem for transcript-based memory snapshots surviving across coding sessions (claude-mem).
+- High-Performance Headless Browser (1 skill in browser-automation category): Integrated from lightpanda-io/browser with Zig-based engine consuming 16x less memory and running 9x faster than Chromium (lightpanda).
+- Official Community Skills Catalog (1 skill in resources category): Integrated from VoltAgent/awesome-agent-skills (awesome-agent-skills).
+- 5 New REA Core Additions: rea-analysis-optimization, rea-changelog-update, rea-ci-tests-audit, rea-tool-design, and reverse-engineer-anything.
+- 47 New Everything Claude Code (ECC) skills.
+- Total library scale: 243 skills across 41 categories.
+
+## [2.2.0] - 2026-11-19
+
+### Added
+- Understand Anything Codebase Understanding and Knowledge Graph Suite (9 skills + 10 analysis agents across codebase-understanding category): Integrated from Egonex-AI/Understand-Anything for AST repository analysis, interactive React/xyflow dashboard with Louvain community detection, codebase Q&A, git diff impact prediction, domain flow mapping, and developer onboarding walkthroughs.
+- Total library scale: 178 skills across 35 categories.
+
 ## [2.1.0] - 2026-10-28
 
 ### Added
