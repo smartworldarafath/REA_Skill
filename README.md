@@ -297,6 +297,7 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 | Skill | Description |
 |---|---|
 | [`offensive-iot`](skills/iot/offensive-iot/SKILL.md) | IoT/OT & embedded security — UART/JTAG lockdown, flash encryption, Secure Boot chains, signed OTA & RTOS hardening |
+| [Reverse Engineering Wi-Fi Router](https://github.com/smartworldarafath/Reverse-Engineer-WiFi-Router) | Complete technical framework for reverse engineering Wi-Fi router hardware, UART/SPI flash extraction, MIPS/ARM daemon disassembly, and TR-069 ACS telemetry audits |
 
 ### Infrastructure & Hardening
 
