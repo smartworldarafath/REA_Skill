@@ -23,7 +23,7 @@ Covers all first-party native, managed, and packaged binary reverse engineering,
 ### 3. Unpacking & Installer Extraction
 - **7-Zip / UniExtract2:** Extracts Inno Setup, NSIS, InstallShield, and WiX installers.
 - **`lessmsi` / Orca:** Extracts tables, scripts, and payloads from Windows Installer (`.msi`) packages.
-- **Resource Hacker / RisohEditor & REA MCP (`inspect_pe_resources`):** Extracts embedded icons (`RT_ICON` with valid ICO headers), dialogs, manifests (`RT_MANIFEST`), version info, and custom RCDATA blobs.
+- **Resource Hacker / [Resource Cracker](https://www.pelock.com/products/resource-cracker) / RisohEditor & REA MCP (`inspect_pe_resources`):** Extracts embedded icons (`RT_ICON` with valid ICO headers), dialogs, manifests (`RT_MANIFEST`), version info, and custom RCDATA blobs.
 - **UPX (`upx -d file.exe`):** Unpacks UPX-compressed executables.
 
 ### 4. Native Code Disassemblers & Decompilers (C / C++ / Rust / Go / Delphi)

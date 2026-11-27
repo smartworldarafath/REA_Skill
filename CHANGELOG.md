@@ -2,6 +2,20 @@
 
 All notable changes to **REA_Skill** are documented in this file.
 
+## [2.4.1] - 2026-11-27
+
+### Added
+- Merged Pull Request #4 contributed by Bartosz Wojcik (PELock): Added Resource Cracker alongside Resource Hacker as an optional PE resource extraction and inspection tool in Windows reverse engineering rule definitions.
+- Synchronized Resource Cracker reference across Windsurf rules (.windsurf/rules/rea-universal-orchestrator.md), Universal Orchestrator skill (rea-universal-orchestrator/SKILL.md), and Binary Disassembly skill (rea-binary-disassembly/SKILL.md) across .agents/skills/, skills/, and skills/rea-core/.
+- Integrated ecosystem documentation link in README.md for the Reverse Engineering Wi-Fi Router hardware and firmware framework.
+
+### Fixed
+- Added docs/.nojekyll to disable Jekyll Liquid template processing on static documentation directories and resolve GitHub Pages build failures caused by JavaScript object braces inside markdown planning files.
+
+### Changed
+- Version synchronized to 2.4.1 across package.json, .claude-plugin/plugin.json, and claude-skills.json.
+- Verified all 541 skills via npm test (check-skills.mjs) with 0 errors and 0 warnings.
+
 ## [2.4.0] - 2026-11-20
 
 ### Added
