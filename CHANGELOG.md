@@ -2,6 +2,17 @@
 
 All notable changes to **REA_Skill** are documented in this file.
 
+## [2.4.2] - 2026-11-27
+
+### Security
+- Merged Dependabot Pull Request #5: Bumped nanoid from 3.3.11 to 3.3.20 in understand-anything-plugin/pnpm-lock.yaml to remediate high-severity integer overflow / wraparound advisory.
+- Merged Dependabot Pull Request #6: Bumped browserslist from 4.28.1 to 4.29.6 in understand-anything-plugin/pnpm-lock.yaml to remediate high-severity unbounded cache memory growth and normalizeStats prototype crash advisories.
+- Reviewed Dependabot Pull Request #7 (@babel/core 7.29.0 to 7.29.13): Triggered Dependabot rebase after PR #5 and #6; Dependabot automatically closed PR #7 after determining @babel/core was constrained cleanly under the updated dependency graph.
+
+### Changed
+- Version synchronized to 2.4.2 across package.json, .claude-plugin/plugin.json, and claude-skills.json.
+- Verified all 541 skills via npm test (check-skills.mjs) with 0 errors and 0 warnings.
+
 ## [2.4.1] - 2026-11-27
 
 ### Added
