@@ -1,14 +1,15 @@
 {
   "name": "rea-skills",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "license": "MIT",
   "homepage": "https://smartworldarafath.github.io/REA_Skill/",
   "repository": "https://github.com/smartworldarafath/REA_Skill",
   "totalCategories": 42,
-  "totalSkills": 541,
+  "totalSkills": 542,
   "categories": {
     "rea-core": [
       "rea-analysis-optimization",
+      "rea-anti-evasion",
       "rea-binary-disassembly",
       "rea-changelog-update",
       "rea-ci-tests-audit",
@@ -3587,6 +3588,13 @@
       "path": "skills/rea-core/rea-analysis-optimization/SKILL.md",
       "agentPath": ".agents/skills/rea-analysis-optimization/SKILL.md",
       "description": "Optimize REA providers and shared analysis workflows for agent context, latency, CPU, and memory while preserving correctness and Evidence. Use for analysis bottlenecks and cache or query design; CI/test-suite optimization belongs to rea-ci-tests-audit."
+    },
+    {
+      "name": "rea-anti-evasion",
+      "category": "rea-core",
+      "path": "skills/rea-core/rea-anti-evasion/SKILL.md",
+      "agentPath": ".agents/skills/rea-anti-evasion/SKILL.md",
+      "description": "Counter-Anti-REA detection, deobfuscation, budget-trap neutralization, and runtime evidence verification against anti-reverse-engineering suites (BLA, AREA, ANTI-REA, Anti-REA Forge, DeRea)."
     },
     {
       "name": "rea-binary-disassembly",
