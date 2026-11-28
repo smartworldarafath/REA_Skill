@@ -62,4 +62,5 @@ Activate this skill automatically whenever the user expresses that they lost the
 ### Step 5: Build Verification & Final Delivery
 - Execute the build script in the workspace or output directory.
 - Confirm that the generated binary runs and matches the original architecture.
+- **Counter-Anti-REA Black-Box Equivalence Gate (`$rea-anti-evasion`):** When recovering code from hardened or obfuscated targets (`BLA`, `AREA`, `ANTI-REA`, `DeRea`), verify live functional parity across genuine positive/negative inputs so unexecuted opaque-false decoys, `$00_AAA_` poisoned entries, and honey SourceMap logic are completely excluded from reconstructed source code.
 - Package everything cleanly and present clickable links to the files and build instructions.
