@@ -18,3 +18,7 @@ Covers all first-party crash dump analysis, live runtime debugging, Frida hookin
 3. **Performance Profiling & Bottleneck Elimination:**
    - Profile hot call paths using `flameox` flamegraphs and REA call graphs (`get_call_graph`).
    - Refactor O(N^2) loops, UI thread blocking calls, and heap contention into verified, zero-skeleton optimized implementations with benchmark tests.
+4. **Counter-Anti-REA Runtime & Instrumentation Resilience (`$rea-anti-evasion`):**
+   - **Crash-Trace Decoys:** Never trace bogus static error strings (`SIGSEGV_ENCLAVE_EPC_PAGE_FAULT`) blindly; anchor crash root-cause analysis exclusively on live register/stack unwinds (`!analyze -v` / `bt`).
+   - **Anti-Frida & Capture Saturation Bypass:** Bind `frida-server` off port `27042` (or use `Florida`/`Hluda`), and wrap Frida `send()` payloads in a depth-clamped (`<= 16`), chunked (`< 16 KiB`) serializer so `MAX_JSON_DEPTH = 64` and `32 KiB` limits never drop telemetry.
+   - **VM `W^X` Pre-Wipe Memory Capture:** Place write watchpoints on runtime `VirtualAlloc`/`mmap`/`mprotect` regions and break before stack/buffer wipe calls to capture decrypted S-Boxes and dynamic literals.
