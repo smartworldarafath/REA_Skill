@@ -19,3 +19,7 @@ Covers all first-party web bundle recovery, source map reconstruction, Electron 
 3. **Zero-Skeleton Project Delivery:**
    - Generate a complete, runnable project with `package.json`, `tsconfig.json`, and `vite.config.ts` / `next.config.js`.
    - Verify that `npm install && npm run build` completes with 0 errors.
+4. **Counter-Anti-REA Hardening & Deobfuscation (`$rea-anti-evasion`):**
+   - Run `node scripts/rea-preflight-sanitize.mjs <target>` first to detect `$00_AAA_` prompt poisoning, `_bla_` decoy markers, honey SourceMaps, `7x^2 - 1 != y^2 (mod 7)` opaque predicates, and `a-p` XOR piece splitters.
+   - **Never Trust Honey SourceMaps Blindly:** Cross-check decoded `.map` functions against live stack frames/breakpoints; discard fake `.map` files immediately.
+   - **Bypass AST Limits & ASAR/WASM Caps:** Fold/sandbox-evaluate `(s, m, c)` decoders dynamically rather than enumerating 256+ ternary combinations; stream `.asar` files `> 16 MiB` selectively; prune decoy WASM exports via live JS-WASM `Proxy` boundary logging; scan full `.rdata`/`.rodata` when Electron fuse sentinels exceed 32; neutralize CDP `>= 760`-depth JSON envelopes by client-side depth clamping (`<= 16`).
