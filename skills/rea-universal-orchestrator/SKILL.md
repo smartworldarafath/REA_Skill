@@ -38,7 +38,17 @@ When given any target file, folder, binary, package, or URL, automatically detec
 
 ---
 
-## 3. Standard Platform Checklists & Prompt Templates
+## 3. Counter-Anti-REA Preflight & Resilience Gate (`$rea-anti-evasion`)
+
+Before relying on static REA results on any protected binary, obfuscated bundle, or package (defeating `BLA`, `AREA`, `ANTI-REA`, `Anti-REA Forge`, and `DeRea` countermeasures):
+1. **Preflight Trap Detection:** Run `node scripts/rea-preflight-sanitize.mjs <target>` when inspecting untrusted or hardened builds to catch `$00_AAA_` prompt poisoning, `_bla_` decoy markers, `a-p` XOR piece decoders, `GENERATED ALWAYS AS ... VIRTUAL` SQLite traps, empty XML Plist `<!DOCTYPE ... []>` aborts, Safetensors/GGUF `>32` nesting breakers, bloated ASAR (`>16 MiB`), WASM export floods, and `>32` Electron fuse sentinels.
+2. **Dynamic Over Static When Obfuscated:** When static tools hit `coverage: incomplete`, VM dispatchers (`antirea-rust-v20` / OLLVM / CFF), or Tarjan SCC callgraph labyrinths, immediately pivot to live runtime observation (`Frida`, `x64dbg` + `ScyllaHide`, `GDB`, `Playwright`, `eBPF`) and black-box input/output equivalence verification (`$rea-anti-evasion`).
+3. **Zero Honey-Map & Shadow-Logic Acceptance:** Never prioritize symbols by `$00_AAA_` alphabetical order, trust unverified VLQ v3 SourceMaps, or reconstruct unexecuted decoy shadow functions; verify every recovered business path against live execution traces.
+
+---
+
+## 4. Standard Platform Checklists & Prompt Templates
+
 
 When a user asks to analyze, recover, or audit any target (or asks how to structure a prompt), apply the matching 5-Step Checklist:
 
