@@ -1,6 +1,6 @@
 {
   "name": "rea-skills",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Unified 178-Skill Reverse Engineering, Codebase Understanding & Knowledge Graphs, Payload Library, Lost Source Code Recovery, Security Auditing & Multi-Agent Intelligence Suite across 35 categories.",
   "author": {
     "name": "smartworldarafath",
@@ -447,6 +447,7 @@
     "./.agents/skills/rails-security",
     "./.agents/skills/ralphinho-rfc-pipeline",
     "./.agents/skills/rea-analysis-optimization",
+    "./.agents/skills/rea-anti-evasion",
     "./.agents/skills/rea-binary-disassembly",
     "./.agents/skills/rea-changelog-update",
     "./.agents/skills/rea-ci-tests-audit",
