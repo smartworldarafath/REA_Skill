@@ -33,6 +33,41 @@
 
 ---
 
+
+<div align="center">
+
+### 🛠️ Languages & Tech Stack
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-python.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/light/pill-python.svg" />
+    <img src="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-python.svg" alt="Python" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-js.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/light/pill-js.svg" />
+    <img src="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-js.svg" alt="JavaScript" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-ts.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/light/pill-ts.svg" />
+    <img src="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-ts.svg" alt="TypeScript" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-shell.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/light/pill-shell.svg" />
+    <img src="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-shell.svg" alt="Shell" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-css.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/light/pill-css.svg" />
+    <img src="https://raw.githubusercontent.com/smartworldarafath/smartworldarafath/main/assets/readme/dark/pill-css.svg" alt="CSS3" />
+  </picture>
+</p>
+
+</div>
+
 ## Overview
 
 `REA_Skill` is a unified library of **542 specialized skills across 42 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
