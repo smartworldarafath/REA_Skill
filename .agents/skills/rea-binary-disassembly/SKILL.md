@@ -62,6 +62,10 @@ Covers all first-party native, managed, and packaged binary reverse engineering,
 3. **Static Decompilation:** Route `.NET` to `ILSpy`/`dnSpyEx`, native `C/C++/Rust/Go` to `REA MCP`/`Ghidra`/`Rizin`, and `Electron`/`Python` to `asar`/`pyinstxtractor`.
 4. **Behavioral Monitoring:** Trace file, registry, and network activity via `ProcMon`, `System Informer`, and `Wireshark`/`Fiddler`.
 5. **Runtime Debugging & Full Code Reconstruction:** Verify runtime state via `x64dbg`/`WinDbg`/`Frida`, reconstruct 100% zero-skeleton source code, and verify compilation (`zig cc`, `cl.exe`, `gcc`, `dotnet`, `cargo`, `go`).
+6. **Counter-Anti-REA & VM/Anti-Debug Defeat (`$rea-anti-evasion`):**
+   - When hitting Pure-Rust Polymorphic VMs (`antirea-rust-v20`), VMP/Themida, OLLVM CFF, or `W^X` stack-wiped S-Boxes, use hardware watchpoints before zeroing/wipe calls plus Frida Stalker / QBDI / Unicorn handler lifting rather than reading raw VM dispatchers statically.
+   - Defeat Tarjan SCC callgraph labyrinths and crash-trace decoys (`SIGSEGV_ENCLAVE_EPC_PAGE_FAULT`) by anchoring solely on real dynamic stack traces (`!analyze -v` / `bt`) and `API Monitor` / `GetProcAddress` hooks.
+   - Cross-check bloated `.dep-v0` (`>64` decoy rustc hashes) or spoofed `.go.buildinfo` against actual binary code signatures; use `x64dbg` + **ScyllaHide** and relocated stealth Frida ports (`!= 27042`) when anti-debug or anti-Frida triggers.
 
 ---
 
