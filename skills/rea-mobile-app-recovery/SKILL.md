@@ -97,3 +97,7 @@ Execute these 5 steps automatically on every mobile task:
 3. **Decompile Code:** Use `JADX` / REA MCP `search_android_classes` & `inspect_android_class` to recover full source code, API endpoints, models, and cryptographic logic.
 4. **Analyze Native & Framework Code:** Use `Ghidra` / REA MCP `open_binary` for `.so` libraries or framework-specific tools (`Blutter`/`inspect_dart_aot`, `hermes-dec`, `Il2CppDumper`).
 5. **Dynamic Audit & Full Project Reconstruction:** Run dynamic checks with `Frida` / `adb` if a device is connected, and reconstruct a 100% complete, zero-skeleton Android Studio / Xcode project or security remediation report.
+6. **Counter-Anti-REA Mobile Defenses (`$rea-anti-evasion`):**
+   - Defeat padded/bloated DEX string/type tables by anchoring reachability exclusively from `AndroidManifest.xml` components (`apktool d`) rather than alphabetical DEX table scans.
+   - Capture encrypted/decoyed `global-metadata.dat` (`0xFAB11BAF`) via `Frida` hook on `il2cpp_init` / `MetadataCache::Initialize` or `Zygisk-Il2CppDumper`, and verify authentic Flutter snapshots (`0xdcdcf5f5`) directly with **Blutter**.
+   - Bypass anti-Frida port `27042` / `/proc/self/maps` / `TracerPid` checks using stealth builds (`Florida` / `Hluda`) or non-default `frida-server` ports, and clamp Frida IPC JSON payloads below `64` depth / `32 KiB`.
