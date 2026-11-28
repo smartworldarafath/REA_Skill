@@ -5,10 +5,10 @@
 
 # REA_Skill
 
-**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Anti-Slop, Design Engineering & Persistent Memory Suite for Claude Code, Codex, Cursor & Antigravity — 541 drop-in `SKILL.md` files across 42 categories.**
+**Reverse Engineering, Lost Source Code Recovery, Security Assessment, Anti-Slop, Design Engineering & Persistent Memory Suite for Claude Code, Codex, Cursor & Antigravity — 542 drop-in `SKILL.md` files across 42 categories.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-541-red.svg)](#skill-index)
+[![Skills](https://img.shields.io/badge/skills-542-red.svg)](#skill-index)
 [![Categories](https://img.shields.io/badge/categories-42-orange.svg)](#categories)
 [![Prompts](https://img.shields.io/badge/prompts-500%2B-0284c7.svg)](https://smartworldarafath.github.io/REA_Skill/#prompt-vault)
 [![REA MCP](https://img.shields.io/badge/REA-Reverse%20Engineer%20Anything-ff6b00.svg)](https://github.com/morluto/rea)
@@ -35,9 +35,9 @@
 
 ## Overview
 
-`REA_Skill` is a unified library of **541 specialized skills across 42 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
+`REA_Skill` is a unified library of **542 specialized skills across 42 categories** built for the [Claude Skills system](https://docs.claude.com), [OpenAI Codex](https://openai.com), [Google Antigravity](https://deepmind.google), Cursor, Windsurf, and Cline. It combines:
 
-1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (17 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
+1. **REA (Reverse Engineer Anything) Core & Full Source Recovery (18 skills):** Disassemble PE/ELF/Mach-O binaries, decompile Android APKs/iOS IPAs, unpack Webpack/Vite/WASM/Electron bundles, dissect PCAP/Protobuf protocols, extract Unity/Unreal/Godot game assets, and reconstruct **100% compilable source code with zero skeletons (`// TODO` banned)**.
 2. **Multi-Agent Intelligence & Browser MCP Suite (9 skills):** First-party owner authorization, Everything Claude Code (ECC) engineering rigor, Agent Reach zero-fee internet intelligence, SurfSense air-gapped RAG, and triple-engine browser automation (Playwright, Bright Data, Hyperbrowser).
 3. **23-Category Security Assessment & Vulnerability Research Library (79 skills integrated from `claude-red`):** Structured `SKILL.md` methodologies spanning Web OWASP Top 10, JWT/OAuth, Active Directory, Wireless/BLE/Zigbee/LoRa, Cloud, Mobile MASVS, IoT/Firmware, Binary Mitigations, Crash Analysis, Coverage-Guided Fuzzing (AFL++/libFuzzer), APIs, Containers/Kubernetes, CI/CD, Cryptography, Supply Chain, and AI/LLM Security.
 4. **63 PayloadsAllTheThings Payload Skills (NEW in v2.1.0):** The complete [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings) library adapted as structured `SKILL.md` files — covering SQL/XSS/XXE/SSRF/SSTI/Command Injection, file upload bypass, deserialization, request smuggling, OAuth/JWT attacks, CORS, CSRF, open redirect, prototype pollution, prompt injection, race conditions, and 40+ more payload categories with full PoC content.
@@ -167,6 +167,7 @@ npx skills add morluto/rea --skill reverse-engineer-anything
 
 | Skill | Description |
 |---|---|
+| [`rea-anti-evasion`](skills/rea-core/rea-anti-evasion/SKILL.md) | Counter-Anti-REA evasion detector, preflight sanitizer (`scripts/rea-preflight-sanitize.mjs`), and deobfuscation playbooks defeating BLA, AREA, ANTI-REA, Anti-REA Forge, and DeRea |
 | [`rea-universal-orchestrator`](skills/rea-core/rea-universal-orchestrator/SKILL.md) | Master artifact auto-detection & router for all 500+ Prompt Vault templates and custom reverse-engineering tasks |
 | [`rea-grill-me`](skills/rea-core/rea-grill-me/SKILL.md) | *(User-Invoked)* Relentless frontier-question interview to scope reverse engineering, source recovery, or audit plans |
 | [`rea-grilling`](skills/rea-core/rea-grilling/SKILL.md) | Interactive decision-tree interrogation engine computing compiler, fidelity, asset, and verification trade-offs |
