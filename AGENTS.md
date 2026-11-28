@@ -203,5 +203,10 @@ From [obra/superpowers](https://github.com/obra/superpowers):
 From [iBotPeaches/Apktool](https://github.com/iBotPeaches/Apktool):
 - **`apktool`** — Industry-standard reverse engineering toolchain for Android packages. Decodes binary XMLs and resources.arsc to human-readable XML, disassembles classes.dex into Smali bytecode, enables manifest permission patching and asset modifications, rebuilds modified APKs with aapt2, and completes the workflow with zipalign and apksigner verification.
 
+## Counter-Anti-REA Hardening & Resilience Suite (542 Total Skills — NEW in v2.5.0)
+To ensure REA_Skill never stalls, trusts poisoned decoys, or fails on targets hardened with anti-reverse-engineering suites (`BLA`, `AREA`, `ANTI-REA`, `Anti-REA Forge`, `DeRea`):
+- **`$rea-anti-evasion` (`skills/rea-core/rea-anti-evasion/`):** 4-phase Counter-Anti-REA playbook and 10 specialized deep references defeating JS AST budget bombs, `(s, m, c)` `a-p` XOR splitters, number-theoretic opaque predicates, VLQ v3 honey SourceMaps, `$00_AAA_` prompt-completion poisoning, >16 MiB ASAR/32+ Fuse sentinels, WASM decoy export bloat, `antirea-rust-v20` polymorphic VMs (`W^X` pre-wipe capture), Tarjan SCC labyrinths, anti-Frida port `27042` / `/proc/self/maps` checks, SQLite `GENERATED ALWAYS AS ... VIRTUAL` traps, XML Plist `<!DOCTYPE ... []>` aborts, Safetensors/GGUF >32 nesting traps, bloated DEX/IL2CPP/Dart snapshots, and Python `weave_decoys` + `sidecar_entangle`.
+- **Preflight Trap Scanner (`scripts/rea-preflight-sanitize.mjs`):** Automated preflight scanner detecting Counter-REA trap patterns before REA MCP invocation, backed by unit tests (`scripts/test-preflight.mjs`).
+
 
 
