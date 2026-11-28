@@ -17,3 +17,7 @@ Covers all first-party database recovery, local storage inspection, binary archi
    - Reverse engineer proprietary binary file headers, chunk tables, offset directories, compression blocks (zlib/LZ4/Zstd), and struct layouts from the reading/writing functions in the binary.
 3. **ORM Schema & Parser Generation:**
    - Generate 100% complete, zero-skeleton ORM schemas (Prisma, Drizzle, SQLAlchemy, TypeORM, Room, SQLDelight) and standalone bidirectional serializer/deserializer libraries with round-trip verification tests.
+4. **Counter-Anti-REA Storage & Model Trap Neutralization (`$rea-anti-evasion`):**
+   - **SQLite Generated/Virtual Traps:** Always run `node scripts/rea-preflight-sanitize.mjs <db>` and inspect `sqlite_schema` DDL first; NEVER run blind `SELECT *` on columns containing `GENERATED ALWAYS AS (... VIRTUAL)` triggers. Select strictly physical columns via `PRAGMA table_xinfo(tbl)` where `hidden == 0`.
+   - **XML Plist DOCTYPE Subset Aborts:** Strip empty `<!DOCTYPE plist ... []>` internal subsets before `inspect_plist` / `plistlib` parsing.
+   - **Safetensors & GGUF > 32 Nesting Traps:** Ignore `_bla_nesting_breaker` and decoy `>32`-depth JSON/GGUF arrays via bounded 8-byte header readers.
