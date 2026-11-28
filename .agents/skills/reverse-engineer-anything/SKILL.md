@@ -508,6 +508,8 @@ as complete while required questions remain open.
 - Agent environments (AgentEnv bundles) of a web application, recorded from
   a live instance or a HAR:
   [references/environments.md](references/environments.md)
+- Counter-Anti-REA evasion detection, deobfuscation, and runtime bypasses (`BLA`, `AREA`, `ANTI-REA`, `Anti-REA Forge`, `DeRea`):
+  Use `$rea-anti-evasion` and run `node scripts/rea-preflight-sanitize.mjs <target>` before heavy static calls whenever encountering obscured strings, honey SourceMaps, SQLite virtual traps, bloated WASM/ASAR/DEX files, or VM dispatchers.
 
 ## Finish the task
 
