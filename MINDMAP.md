@@ -1,12 +1,12 @@
-# REA_Skill + claude-red + PayloadsAllTheThings + Understand-Anything — Unified 541-Skill Mindmap
+# REA_Skill + claude-red + PayloadsAllTheThings + Understand-Anything — Unified 542-Skill Mindmap
 
-A visual map of every skill in the library across all **42 categories** and **541 skills**. Use it to navigate the suite, discover specialized reverse-engineering, codebase understanding, security-auditing, and payload skills, and verify coverage before an engagement or source-recovery project.
+A visual map of every skill in the library across all **42 categories** and **542 skills**. Use it to navigate the suite, discover specialized reverse-engineering, codebase understanding, security-auditing, and payload skills, and verify coverage before an engagement or source-recovery project.
 
 References for completeness checking: [REA MCP](https://github.com/morluto/rea), [Understand Anything](https://github.com/Egonex-AI/Understand-Anything), [PayloadsAllTheThings](https://github.com/swisskyrepo/payloadsallthethings), [MITRE ATT&CK](https://attack.mitre.org/), [OWASP WSTG](https://owasp.org/www-project-web-security-testing-guide/), [OWASP MASVS](https://mas.owasp.org/MASVS/), [Matt Pocock Agent Skills Standard](https://github.com/mattpocock/skills), [SnailSploit claude-red](https://github.com/SnailSploit/claude-red).
 
 ---
 
-## Library Map (42 Categories · 541 Skills)
+## Library Map (42 Categories · 542 Skills)
 
 ```mermaid
 mindmap
