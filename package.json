@@ -1,6 +1,6 @@
 {
   "name": "rea-skills",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Universal Reverse Engineering, Lost Source Code Recovery, Binary Disassembly, Web/Mobile Security Auditing & Asset Reconstruction skill suite powered by REA MCP.",
   "type": "module",
   "repository": {
@@ -13,8 +13,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "node scripts/check-skills.mjs",
+    "test": "node scripts/check-skills.mjs && node scripts/test-preflight.mjs",
     "check-skills": "node scripts/check-skills.mjs",
+    "test-preflight": "node scripts/test-preflight.mjs",
+    "preflight": "node scripts/rea-preflight-sanitize.mjs",
     "sync-skills": "node scripts/sync-skills-dir.mjs",
     "sync-version": "node scripts/sync-plugin-version.mjs",
     "check-plugin-version": "node scripts/sync-plugin-version.mjs --check"
