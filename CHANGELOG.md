@@ -2,6 +2,17 @@
 
 All notable changes to **REA_Skill** are documented in this file.
 
+## [2.5.0] - 2026-11-28
+
+### Added
+- New Core Skill rea-anti-evasion (skills/rea-core/rea-anti-evasion/): Complete 4-phase Counter-Anti-REA detection, deobfuscation, and runtime evidence verification engine built by analyzing and defeating anti-reverse-engineering countermeasures from Afloat16/anti-rea-forge, davepartner/anti-reverse-engineer-anything (AREA), chldbwnstm/ANTI-REA, qybaihe/bla (BLA), and zhcalvin/DeRea.
+- Added 10 specialized Counter-Anti-REA deep reference guides in .agents/skills/rea-anti-evasion/references/ covering JavaScript AST budget bombs, a-p XOR string splitters, number-theoretic opaque predicates, VLQ v3 honey SourceMaps, $00_AAA_ prompt poisoning, >16 MiB ASAR inflation, >32 Electron fuse sentinels, WASM decoy export bloat, antirea-rust-v20 polymorphic VMs (W^X pre-wipe memory capture), Tarjan SCC labyrinths, anti-Frida port 27042/proc-maps detection, Frida 64-depth/32 KiB capture saturation, SQLite GENERATED ALWAYS AS VIRTUAL traps, XML Plist DOCTYPE internal subset aborts, Safetensors/GGUF >32 nesting traps, .NET metadata floods, Android DEX/IL2CPP/Dart snapshot spoofing, CDP depth traps, and Python weave_decoys + sidecar_entangle.
+- Added executable preflight trap scanner scripts/rea-preflight-sanitize.mjs and automated unit test suite scripts/test-preflight.mjs (6 test cases wired into npm test).
+
+### Changed
+- Hardened 8 existing core skills (rea-universal-orchestrator, rea-web-bundle-recovery, rea-binary-disassembly, rea-mobile-app-recovery, rea-database-storage-recovery, rea-performance-crash-triage, rea-full-code-recovery, reverse-engineer-anything) plus all mirrors and .clinerules / .cursor/rules / .windsurf/rules / AGENTS.md with mandatory Counter-Anti-REA preflight and dynamic witness correlation.
+- Updated manifests, README, MINDMAP, website docs/index.html, and docs/llms.txt to v2.5.0 (542 skills across 42 categories).
+
 ## [2.4.2] - 2026-11-27
 
 ### Security
